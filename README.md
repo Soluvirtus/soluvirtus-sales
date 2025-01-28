@@ -21,8 +21,8 @@ Soluvirtus es una plataforma diseñada para agilizar y automatizar procesos de n
 - Seguimiento de su negocio cada semana.
 
 ### Planes Disponibles:
-- **6 meses de servicio**: 4,800 MXN (Ahorra 1,200 MXN)
-- **12 meses de servicio**: 10,000 MXN (Ahorra 2,000 MXN)
+- **6 meses de servicio**: 5,800 MXN (Ahorra 1,200 MXN)
+- **12 meses de servicio**: 11,000 MXN (Ahorra 2,000 MXN)
 - **Crear Sociedad**: 1,710 MXN
 - **Programa de Automatizaciones más Dispositivo Android (6 Meses de Servicio)**: 7,390 MXN
 - **Programa de Automatizaciones más Dispositivo Android (12 Meses de Servicio)**: 12,690 MXN
