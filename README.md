@@ -39,6 +39,10 @@ Soluvirtus es una plataforma diseñada para agilizar y automatizar procesos de n
 - **Integración con CRM**: Conectar la plataforma con sistemas de gestión de relaciones con clientes (CRM) para una gestión más eficiente de los datos de los clientes.
 - **Soporte Multilingüe**: Ampliar las capacidades de automatización para soportar múltiples idiomas y atender a una audiencia más amplia.
 
+  ### Ir a la página
+  
+[soluvirtus.com](https://soluvirtus.com/)
+
 ### Contacto:
 - **Antonio Ávila** | Desarrollador y editor de recursos tecnológicos para la automatización de tareas de negocios y agilización de empresas.
 - **Correo Electrónico**
