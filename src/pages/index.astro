@@ -67,56 +67,114 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Consola Interactiva (Sugerencia 26) -->
+	<section id="demo-console" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center max-w-3xl mx-auto mb-12">
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Consola de Simulación de Agentes</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Selecciona una tarea para observar cómo nuestros agentes autónomos resuelven e implementan flujos de trabajo locales.</p>
+			</div>
+
+			<div class="flex flex-wrap justify-center gap-3 mb-8">
+				<button id="btn-demo-catalog" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+					Simular Asesor de Catálogo
+				</button>
+				<button id="btn-demo-leads" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+					Simular Scraper de Leads
+				</button>
+				<button id="btn-demo-llm" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+					Simular LLM Local Privado
+				</button>
+			</div>
+
+			<div class="rounded-xl overflow-hidden border border-slate-300 dark:border-slate-800 bg-slate-950 shadow-2xl text-left font-mono">
+				<div class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-850">
+					<div class="flex space-x-2">
+						<span class="w-3 h-3 rounded-full bg-red-500"></span>
+						<span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+						<span class="w-3 h-3 rounded-full bg-green-500"></span>
+					</div>
+					<span class="text-xs text-slate-500 font-semibold select-none">terminal - soluvirtus-agent@local</span>
+					<div class="w-10"></div>
+				</div>
+				<div id="terminal-screen" class="p-6 h-80 overflow-y-auto text-sm text-slate-400 space-y-2 select-text scrollbar-thin scrollbar-thumb-slate-800">
+					<div class="text-slate-500">&gt; Consola lista. Selecciona una tarea para comenzar la simulación de ejecución...</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Especialidades -->
 	<section id="services" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center max-w-3xl mx-auto mb-16">
 				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Especializaciones y Experiencia Central</h2>
 				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Ayudamos a las empresas a escalar reemplazando herramientas heredadas por ecosistemas digitales modernos y autónomos.</p>
-						<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 				<!-- Card 1 -->
-				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group">
-					<img src="/images/ai_automation.png" alt="Automatización Inteligente" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
-					<div class="flex items-center gap-3 mb-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M12 18.75V21m-4.75-8.25h9.5m-9.5 3h9.5m-9.5-6h9.5M8.25 6.75h7.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5H8.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5Z" /></svg>
-						<h3 class="text-xl font-bold text-slate-900 dark:text-white">Automatización Inteligente</h3>
+				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
+					<div>
+						<img src="/images/ai_automation.png" alt="Automatización Inteligente" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<div class="flex items-center gap-3 mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M12 18.75V21m-4.75-8.25h9.5m-9.5 3h9.5m-9.5-6h9.5M8.25 6.75h7.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5H8.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5Z" /></svg>
+							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Automatización Inteligente</h3>
+						</div>
+						<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed mb-6">
+							Diseño y despliegue de sistemas de IA a la medida, scrapers personalizados y asistentes operativos que automatizan la extracción de datos, la generación de catálogos y la gestión de prospectos (leads).
+						</p>
 					</div>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
-						Diseño y despliegue de sistemas de IA a la medida, scrapers personalizados y asistentes operativos que automatizan la extracción de datos, la generación de catálogos y la gestión de prospectos (leads).
-					</p>
+					<a href="#contact" data-service="automatizacion" class="cotizar-btn inline-flex items-center justify-center w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 dark:bg-brand-bg-darkSecondary dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 dark:hover:border-brand-accent hover:border-brand-accent-light text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all duration-300">
+						Cotizar Automatización &rarr;
+					</a>
 				</div>
 				<!-- Card 2 -->
-				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group">
-					<img src="/images/fullstack_dev.png" alt="Desarrollo Full-Stack" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
-					<div class="flex items-center gap-3 mb-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg>
-						<h3 class="text-xl font-bold text-slate-900 dark:text-white">Desarrollo Full-Stack</h3>
+				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
+					<div>
+						<img src="/images/fullstack_dev.png" alt="Desarrollo Full-Stack" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<div class="flex items-center gap-3 mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg>
+							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Desarrollo Full-Stack</h3>
+						</div>
+						<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed mb-6">
+							Ingeniería de aplicaciones web y plataformas de comercio electrónico de alto rendimiento utilizando un stack moderno y seguro, basado principalmente en Next.js, React, Tailwind CSS y Supabase con seguridad robusta a nivel de fila (RLS).
+						</p>
 					</div>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
-						Ingeniería de aplicaciones web y plataformas de comercio electrónico de alto rendimiento utilizando un stack moderno y seguro, basado principalmente en Next.js, React, Tailwind CSS y Supabase con seguridad robusta a nivel de fila (RLS).
-					</p>
+					<a href="#contact" data-service="fullstack" class="cotizar-btn inline-flex items-center justify-center w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 dark:bg-brand-bg-darkSecondary dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 dark:hover:border-brand-accent hover:border-brand-accent-light text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all duration-300">
+						Cotizar Desarrollo Full-Stack &rarr;
+					</a>
 				</div>
 				<!-- Card 3 -->
-				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group">
-					<img src="/images/sovereign_infra.png" alt="Infraestructura Soberana e IA Local" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
-					<div class="flex items-center gap-3 mb-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
-						<h3 class="text-xl font-bold text-slate-900 dark:text-white">Infraestructura Soberana e IA Local</h3>
+				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
+					<div>
+						<img src="/images/sovereign_infra.png" alt="Infraestructura Soberana e IA Local" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<div class="flex items-center gap-3 mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
+							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Infraestructura Soberana e IA Local</h3>
+						</div>
+						<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed mb-6">
+							Compromiso firme con la privacidad de los datos, el control de costos y la soberanía tecnológica. Desarrollamos entornos locales personalizados, LLMs de código abierto y flujos remotos móviles a través de Termux, Tasker y SSH.
+						</p>
 					</div>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
-						Compromiso firme con la privacidad de los datos, el control de costos y la soberanía tecnológica. Desarrollamos entornos locales personalizados, LLMs de código abierto y flujos remotos móviles a través de Termux, Tasker y SSH.
-					</p>
+					<a href="#contact" data-service="infraestructura" class="cotizar-btn inline-flex items-center justify-center w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 dark:bg-brand-bg-darkSecondary dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 dark:hover:border-brand-accent hover:border-brand-accent-light text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all duration-300">
+						Cotizar IA Local &rarr;
+					</a>
 				</div>
 				<!-- Card 4 -->
-				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group">
-					<img src="/images/premium_design.png" alt="Diseño UI/UX Premium" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
-					<div class="flex items-center gap-3 mb-3">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21m0 0l-.813-5.096M9 21h3.75m-6.75 0H9m9.813-5.096L19.5 21m0 0l-.813-5.096M19.5 21h3.75m-6.75 0h3.75m-9.813-5.096a6.75 6.75 0 0110.125-9.75M9.813 15.904A6.75 6.75 0 1019.5 15.9m-9.687-9.69a6.75 6.75 0 019.687 0" /></svg>
-						<h3 class="text-xl font-bold text-slate-900 dark:text-white">Diseño UI/UX Premium</h3>
+				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
+					<div>
+						<img src="/images/premium_design.png" alt="Diseño UI/UX Premium" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<div class="flex items-center gap-3 mb-3">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21m0 0l-.813-5.096M9 21h3.75m-6.75 0H9m9.813-5.096L19.5 21m0 0l-.813-5.096M19.5 21h3.75m-6.75 0h3.75m-9.813-5.096a6.75 6.75 0 0110.125-9.75M9.813 15.904A6.75 6.75 0 1019.5 15.9m-9.687-9.69a6.75 6.75 0 019.687 0" /></svg>
+							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Diseño UI/UX Premium</h3>
+						</div>
+						<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed mb-6">
+							Creación de experiencias digitales sofisticadas y de alta gama, orientadas a estéticas pulidas y de alto contraste que resaltan la fotografía de producto de alta calidad y el branding exclusivo de su marca.
+						</p>
 					</div>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
-						Creación de experiencias digitales sofisticadas y de alta gama, orientadas a estéticas pulidas y de alto contraste que resaltan la fotografía de producto de alta calidad y el branding exclusivo de su marca.
-					</p>
+					<a href="#contact" data-service="design" class="cotizar-btn inline-flex items-center justify-center w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 dark:bg-brand-bg-darkSecondary dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 dark:hover:border-brand-accent hover:border-brand-accent-light text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all duration-300">
+						Cotizar UI/UX Premium &rarr;
+					</a>
 				</div>
 			</div>
 		</div>
@@ -201,6 +259,67 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 	</section>
 
+	<!-- Preguntas Frecuentes (Sugerencia 20) -->
+	<section id="faq" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center max-w-3xl mx-auto mb-16">
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Preguntas Frecuentes</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Resolvemos tus dudas sobre automatización, IA soberana y desarrollo a la medida.</p>
+			</div>
+
+			<div class="space-y-4">
+				<!-- FAQ 1 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span>¿Qué significa un enfoque "agent-first"?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
+							Significa que diseñamos sistemas pensando en agentes de IA que pueden razonar, tomar decisiones y ejecutar tareas de forma autónoma en lugar de depender de flujos de trabajo rígidos o intervención humana constante.
+						</p>
+					</div>
+				</div>
+				<!-- FAQ 2 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span>¿Cómo funciona la IA Local y qué beneficios tiene?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
+							Ejecutamos modelos de lenguaje de código abierto directamente en hardware privado (servidores locales, mini PCs o clústeres propios del cliente). Esto garantiza que la información confidencial nunca salga de la empresa, reduce los costos de API y elimina la dependencia de terceros.
+						</p>
+					</div>
+				</div>
+				<!-- FAQ 3 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span>¿Qué tecnologías utilizan en el desarrollo a la medida?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
+							Nos enfocamos en un stack moderno, rápido y seguro: Next.js y React para interfaces de usuario fluidas, Tailwind CSS para diseños limpios y adaptables, y Supabase como backend con políticas de seguridad a nivel de fila (RLS).
+						</p>
+					</div>
+				</div>
+				<!-- FAQ 4 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span>¿Cómo se maneja el soporte y mantenimiento?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
+							Ofrecemos soporte dedicado semanal y mensual que incluye la optimización de instrucciones (prompt engineering), la actualización de modelos de lenguaje locales a sus versiones más recientes y el monitoreo del rendimiento de los bots.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Contacto -->
 	<section id="contact" class="py-24 bg-slate-900 text-white dark:bg-brand-bg-dark border-t border-slate-800 dark:border-brand-bg-darkSecondary transition-colors duration-300">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -230,15 +349,25 @@ import Layout from '../layouts/Layout.astro';
 					<form class="space-y-4">
 						<div>
 							<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Nombre</label>
-							<input type="text" class="w-full bg-slate-900/50 dark:bg-brand-bg-dark p-3 rounded-lg border border-slate-700 dark:border-slate-800 focus:outline-none focus:border-brand-accent transition-colors" placeholder="Tu nombre" />
+							<input type="text" class="w-full bg-slate-900/50 dark:bg-brand-bg-dark p-3 rounded-lg border border-slate-700 dark:border-slate-800 focus:outline-none focus:border-brand-accent transition-colors text-slate-100" placeholder="Tu nombre" />
 						</div>
 						<div>
 							<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Correo</label>
-							<input type="email" class="w-full bg-slate-900/50 dark:bg-brand-bg-dark p-3 rounded-lg border border-slate-700 dark:border-slate-800 focus:outline-none focus:border-brand-accent transition-colors" placeholder="tu@correo.com" />
+							<input type="email" class="w-full bg-slate-900/50 dark:bg-brand-bg-dark p-3 rounded-lg border border-slate-700 dark:border-slate-800 focus:outline-none focus:border-brand-accent transition-colors text-slate-100" placeholder="tu@correo.com" />
+						</div>
+						<div>
+							<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Servicio de Interés</label>
+							<select id="contact-service" class="w-full bg-slate-900/50 dark:bg-brand-bg-dark p-3 rounded-lg border border-slate-700 dark:border-slate-800 focus:outline-none focus:border-brand-accent transition-colors text-slate-300">
+								<option value="general">Consulta General / Otro</option>
+								<option value="automatizacion">Automatización Inteligente</option>
+								<option value="fullstack">Desarrollo Full-Stack</option>
+								<option value="infraestructura">Infraestructura Soberana e IA Local</option>
+								<option value="design">Diseño UI/UX Premium</option>
+							</select>
 						</div>
 						<div>
 							<label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Mensaje</label>
-							<textarea class="w-full bg-slate-900/50 dark:bg-brand-bg-dark p-3 rounded-lg border border-slate-700 dark:border-slate-800 focus:outline-none focus:border-brand-accent transition-colors h-32" placeholder="Describe tu proyecto..."></textarea>
+							<textarea id="contact-message" class="w-full bg-slate-900/50 dark:bg-brand-bg-dark p-3 rounded-lg border border-slate-700 dark:border-slate-800 focus:outline-none focus:border-brand-accent transition-colors h-32 text-slate-100" placeholder="Describe tu proyecto..."></textarea>
 						</div>
 						<button type="submit" class="w-full py-3 bg-brand-accent text-slate-900 font-bold rounded-lg hover:bg-brand-accent-hover transition-colors shadow-lg shadow-brand-accent/10">
 							Enviar Mensaje
@@ -317,4 +446,120 @@ import Layout from '../layouts/Layout.astro';
 	};
 
 	setTimeout(typeEffect, 1000);
+
+	// Terminal simulation logic (Sugerencia 26)
+	const termScreen = document.getElementById('terminal-screen');
+	const btnCatalog = document.getElementById('btn-demo-catalog');
+	const btnLeads = document.getElementById('btn-demo-leads');
+	const btnLlm = document.getElementById('btn-demo-llm');
+
+	const simulations = {
+		catalog: [
+			{ text: "> soluvirtus run catalog-ai", color: "text-slate-300 font-bold" },
+			{ text: "[system] Inicializando agente catalog-ai-agent...", color: "text-slate-500" },
+			{ text: "[system] Cargando base de datos local de inventario (2,400 productos)...", color: "text-slate-500" },
+			{ text: '[agent] Analizando consulta del cliente: "Busco una tablet con pantalla de más de 10 pulgadas..."', color: "text-brand-accent-light dark:text-brand-accent" },
+			{ text: "[agent] Escaneando catálogo de productos y especificaciones...", color: "text-slate-400" },
+			{ text: "[agent] Producto encontrado: Samsung Galaxy Tab A7 (10.4\", 32GB, Gris) - Precio: 4,500 MXN", color: "text-emerald-400 font-semibold" },
+			{ text: "[agent] Generando respuesta personalizada con enlace de cobro de Stripe...", color: "text-slate-400" },
+			{ text: "[system] Respuesta enviada exitosamente por canal API local. Tarea completada.", color: "text-sky-400" }
+		],
+		leads: [
+			{ text: "> soluvirtus run lead-scraper", color: "text-slate-300 font-bold" },
+			{ text: "[system] Inicializando agente lead-scraper-agent...", color: "text-slate-500" },
+			{ text: "[system] Conectando a fuentes de datos inmobiliarios y listados públicos...", color: "text-slate-500" },
+			{ text: "[agent] Analizando listados de propiedades en zona metropolitana...", color: "text-slate-400" },
+			{ text: "[agent] Lead detectado: Propietario vende en Col. Roma. Precio bajo valor promedio.", color: "text-brand-accent-light dark:text-brand-accent" },
+			{ text: "[agent] Extrayendo datos de contacto y aplicando filtros de scoring de leads...", color: "text-slate-400" },
+			{ text: "[system] Lead guardado en base de datos Supabase (Score: 94/100). Notificación enviada.", color: "text-emerald-400 font-semibold" }
+		],
+		llm: [
+			{ text: "> soluvirtus run local-llm --model llama3-8b", color: "text-slate-300 font-bold" },
+			{ text: "[system] Conectando a LLM de código abierto local (Llama-3-8B-Instruct)...", color: "text-slate-500" },
+			{ text: "[system] Cargando contexto corporativo seguro (Soberanía de Datos)...", color: "text-slate-500" },
+			{ text: '[user] Consulta: "¿Cuál es la política de retención de datos interna?"', color: "text-slate-300" },
+			{ text: "[agent] Procesando tokens localmente (Sin llamadas externas a APIs comerciales)...", color: "text-slate-400" },
+			{ text: '[agent] Respuesta: "Toda la información se almacena localmente usando seguridad robusta RLS."', color: "text-emerald-400 font-semibold" },
+			{ text: "[system] Ejecución completada. Consumo de API externa: 0.00 USD.", color: "text-sky-400" }
+		]
+	};
+
+	let running = false;
+	const runSimulation = (key: 'catalog' | 'leads' | 'llm') => {
+		if (running || !termScreen) return;
+		running = true;
+		termScreen.innerHTML = '';
+		
+		const lines = simulations[key];
+		let currentLine = 0;
+
+		const printLine = () => {
+			if (currentLine >= lines.length) {
+				running = false;
+				return;
+			}
+			const line = lines[currentLine];
+			const div = document.createElement('div');
+			div.className = `${line.color} animate-fade-in`;
+			div.textContent = line.text;
+			termScreen.appendChild(div);
+			termScreen.scrollTop = termScreen.scrollHeight;
+			currentLine++;
+			setTimeout(printLine, 800 + Math.random() * 400);
+		};
+
+		printLine();
+	};
+
+	btnCatalog?.addEventListener('click', () => runSimulation('catalog'));
+	btnLeads?.addEventListener('click', () => runSimulation('leads'));
+	btnLlm?.addEventListener('click', () => runSimulation('llm'));
+
+	// FAQ accordion logic (Sugerencia 20)
+	const faqToggles = document.querySelectorAll('.faq-toggle');
+	faqToggles.forEach(toggle => {
+		toggle.addEventListener('click', () => {
+			const answer = toggle.nextElementSibling as HTMLElement;
+			const icon = toggle.querySelector('svg');
+			
+			if (answer && icon) {
+				const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+				
+				// Close all other FAQs
+				document.querySelectorAll('.faq-answer').forEach(el => {
+					(el as HTMLElement).style.maxHeight = '0px';
+				});
+				document.querySelectorAll('.faq-toggle svg').forEach(svg => {
+					(svg as HTMLElement).classList.remove('rotate-180');
+				});
+				
+				if (!isOpen) {
+					answer.style.maxHeight = `${answer.scrollHeight}px`;
+					icon.classList.add('rotate-180');
+				} else {
+					answer.style.maxHeight = '0px';
+					icon.classList.remove('rotate-180');
+				}
+			}
+		});
+	});
+
+	// Contact form service pre-selection (Sugerencia 22)
+	const cotizarBtns = document.querySelectorAll('.cotizar-btn');
+	const serviceSelect = document.getElementById('contact-service') as HTMLSelectElement | null;
+	const messageTextarea = document.getElementById('contact-message') as HTMLTextAreaElement | null;
+
+	cotizarBtns.forEach(btn => {
+		btn.addEventListener('click', () => {
+			const service = btn.getAttribute('data-service');
+			if (serviceSelect && service) {
+				serviceSelect.value = service;
+			}
+			if (messageTextarea) {
+				setTimeout(() => {
+					messageTextarea.focus();
+				}, 100);
+			}
+		});
+	});
 </script>
