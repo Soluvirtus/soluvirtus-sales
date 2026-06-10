@@ -22,6 +22,7 @@ const { title } = Astro.props;
 		
 		<!-- Preload LCP Asset -->
 		<link rel="preload" as="image" href="/images/hero_bg.png" />
+		<link rel="preload" as="image" href="/images/hero_bg_light.png" />
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website" />
@@ -118,5 +119,27 @@ const { title } = Astro.props;
 	}
 	.dark .text-neon-glow {
 		text-shadow: 0 0 8px rgba(0, 240, 255, 0.5), 0 0 15px rgba(0, 240, 255, 0.2);
+	}
+
+	/* Scroll Reveal */
+	.reveal {
+		opacity: 0;
+		transform: translateY(20px);
+		transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+	.reveal-active {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	/* Sugerencia 4: Gradiente Animado */
+	@keyframes gradientMove {
+		0% { background-position: 0% 50%; }
+		50% { background-position: 100% 50%; }
+		100% { background-position: 0% 50%; }
+	}
+	.animate-gradient {
+		background-size: 200% 200%;
+		animation: gradientMove 12s ease infinite;
 	}
 </style>
