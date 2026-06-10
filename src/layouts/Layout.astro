@@ -20,6 +20,46 @@ const { title } = Astro.props;
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" rel="stylesheet">
 		
+		<!-- Preload LCP Asset -->
+		<link rel="preload" as="image" href="/images/hero_bg.png" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://soluvirtus.com/" />
+		<meta property="og:title" content="SOLUVIRTUS - Consultora de Tecnología y Desarrollo" />
+		<meta property="og:description" content="Optimización y automatización inteligente de negocios. Ingeniería de software a la medida e IA soberana." />
+		<meta property="og:image" content="/images/hero_bg.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://soluvirtus.com/" />
+		<meta property="twitter:title" content="SOLUVIRTUS - Consultora de Tecnología y Desarrollo" />
+		<meta property="twitter:description" content="Optimización y automatización inteligente de negocios. Ingeniería de software a la medida e IA soberana." />
+		<meta property="twitter:image" content="/images/hero_bg.png" />
+
+		<!-- JSON-LD Schema (Sugerencia 8) -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "ProfessionalService",
+				"name": "Soluvirtus",
+				"description": "Consultora boutique de tecnología y desarrollo. Especializada en la optimización y automatización inteligente de procesos de negocio.",
+				"url": "https://soluvirtus.com/",
+				"telephone": "+525570603839",
+				"address": {
+					"@type": "PostalAddress",
+					"addressCountry": "MX"
+				},
+				"knowsAbout": [
+					"Software Development",
+					"Artificial Intelligence",
+					"Business Automation",
+					"UI/UX Design",
+					"Sovereign IT Infrastructure"
+				]
+			}
+		</script>
+
 		<!-- Script to set default dark/light mode based on system preference -->
 		<script is:inline>
 			const getThemePreference = () => {
@@ -71,5 +111,12 @@ const { title } = Astro.props;
 	}
 	.animate-fade-in {
 		animation: fadeIn 0.25s ease-out forwards;
+	}
+
+	.text-neon-glow {
+		text-shadow: 0 0 8px rgba(2, 132, 199, 0.2);
+	}
+	.dark .text-neon-glow {
+		text-shadow: 0 0 8px rgba(0, 240, 255, 0.5), 0 0 15px rgba(0, 240, 255, 0.2);
 	}
 </style>

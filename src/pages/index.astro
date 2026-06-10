@@ -8,8 +8,8 @@ import Layout from '../layouts/Layout.astro';
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center justify-between h-20">
 				<div class="flex items-center">
-					<a href="#" class="text-xl font-bold tracking-widest text-brand-accent-light dark:text-brand-accent dark:shadow-neon-glow transition-all duration-300">
-						S O L U V I R T U S
+					<a href="#" class="text-lg md:text-xl font-bold tracking-wider md:tracking-widest whitespace-nowrap text-brand-accent-light dark:text-brand-accent text-neon-glow transition-all duration-300">
+						SOLUVIRTUS
 					</a>
 				</div>
 				<div class="hidden md:block">
@@ -43,19 +43,26 @@ import Layout from '../layouts/Layout.astro';
 		<div class="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-20 transition-opacity" style="background-image: url('/images/hero_bg.png');"></div>
 		<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-sky-200/20 via-transparent to-transparent dark:from-brand-accent/5 dark:via-transparent dark:to-transparent"></div>
 		<div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-			<h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6">
+			<h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-slate-700 dark:from-white dark:via-slate-200 dark:to-brand-accent">
 				Acelera, Delega y Simplifica tu trabajo
 			</h1>
-			<p class="text-xl sm:text-2xl font-light text-brand-accent-light dark:text-brand-accent/90 dark:drop-shadow-[0_0_10px_rgba(0,240,255,0.3)] mb-4 max-w-3xl mx-auto">
-				&gt; Agilización _ Automatización
-			</p>
-			<div class="text-base sm:text-xl font-medium text-slate-600 dark:text-slate-400 mb-8 min-h-[4rem] sm:min-h-0 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+			<div class="mb-6">
+				<span class="inline-block px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold tracking-widest uppercase bg-slate-200/50 dark:bg-brand-bg-darkSecondary/80 border border-slate-300 dark:border-slate-800 text-brand-accent-light dark:text-brand-accent dark:drop-shadow-[0_0_8px_rgba(0,240,255,0.4)]">
+					&gt; Agilización _ Automatización
+				</span>
+			</div>
+			<div class="text-base sm:text-xl font-medium text-slate-600 dark:text-slate-400 mb-10 min-h-[4rem] sm:min-h-0 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
 				<span>Excelente para:</span>
 				<span id="dynamic-word" class="text-brand-accent-light dark:text-brand-accent border-r-2 border-brand-accent-light dark:border-brand-accent pr-1 font-bold">Delegar Tareas</span>
 			</div>
-			<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary max-w-2xl mx-auto mb-10 leading-relaxed">
-				Soluvirtus es una consultora de tecnología enfocada en la automatización de negocios, la ingeniería de software a la medida y la integración de soluciones avanzadas de IA en flujos de trabajo prácticos. Priorizando el paradigma <span class="font-bold text-slate-800 dark:text-white">"agent-first"</span>.
-			</p>
+			<div class="max-w-3xl mx-auto mb-12 text-base sm:text-lg text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed space-y-4 font-light text-center">
+				<p>
+					Soluvirtus es una consultora de tecnología enfocada en la optimización y automatización de negocios, así como en la ingeniería de software a la medida.
+				</p>
+				<p>
+					Nuestro enfoque prioritario es la eficiencia de protocolos de negocio y la automatización sólida de procesos nativos. Una vez establecida una base estructural óptima, integramos soluciones avanzadas de Inteligencia Artificial bajo un paradigma <span class="font-bold text-slate-900 dark:text-white">"agent-first"</span>, reservando su uso exclusivamente para flujos de alto valor donde la IA aporta una verdadera ventaja estratégica.
+				</p>
+			</div>
 			<div class="flex justify-center gap-4">
 				<a href="#services" class="px-8 py-3 bg-brand-accent-light hover:bg-brand-accent-lightHover dark:bg-brand-accent dark:hover:bg-brand-accent-hover text-white dark:text-slate-900 font-bold rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-sky-500/20 dark:shadow-brand-accent/20">
 					Especialidades
@@ -115,7 +122,7 @@ import Layout from '../layouts/Layout.astro';
 				<!-- Card 1 -->
 				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
 					<div>
-						<img src="/images/ai_automation.png" alt="Automatización Inteligente" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<img src="/images/ai_automation.png" alt="Automatización Inteligente" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" loading="lazy" decoding="async" fetchpriority="low" />
 						<div class="flex items-center gap-3 mb-3">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M12 18.75V21m-4.75-8.25h9.5m-9.5 3h9.5m-9.5-6h9.5M8.25 6.75h7.5a1.5 1.5 0 0 1 1.5 1.5v7.5a1.5 1.5 0 0 1-1.5 1.5H8.25a1.5 1.5 0 0 1-1.5-1.5V8.25a1.5 1.5 0 0 1 1.5-1.5Z" /></svg>
 							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Automatización Inteligente</h3>
@@ -131,7 +138,7 @@ import Layout from '../layouts/Layout.astro';
 				<!-- Card 2 -->
 				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
 					<div>
-						<img src="/images/fullstack_dev.png" alt="Desarrollo Full-Stack" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<img src="/images/fullstack_dev.png" alt="Desarrollo Full-Stack" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" loading="lazy" decoding="async" fetchpriority="low" />
 						<div class="flex items-center gap-3 mb-3">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" /></svg>
 							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Desarrollo Full-Stack</h3>
@@ -147,7 +154,7 @@ import Layout from '../layouts/Layout.astro';
 				<!-- Card 3 -->
 				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
 					<div>
-						<img src="/images/sovereign_infra.png" alt="Infraestructura Soberana e IA Local" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<img src="/images/sovereign_infra.png" alt="Infraestructura Soberana e IA Local" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" loading="lazy" decoding="async" fetchpriority="low" />
 						<div class="flex items-center gap-3 mb-3">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
 							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Infraestructura Soberana e IA Local</h3>
@@ -163,7 +170,7 @@ import Layout from '../layouts/Layout.astro';
 				<!-- Card 4 -->
 				<div class="p-8 bg-slate-50/80 dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] transition-all duration-300 group flex flex-col justify-between">
 					<div>
-						<img src="/images/premium_design.png" alt="Diseño UI/UX Premium" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" />
+						<img src="/images/premium_design.png" alt="Diseño UI/UX Premium" class="w-full h-48 object-cover rounded-xl mb-6 border border-slate-200 dark:border-slate-800" loading="lazy" decoding="async" fetchpriority="low" />
 						<div class="flex items-center gap-3 mb-3">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 21m0 0l-.813-5.096M9 21h3.75m-6.75 0H9m9.813-5.096L19.5 21m0 0l-.813-5.096M19.5 21h3.75m-6.75 0h3.75m-9.813-5.096a6.75 6.75 0 0110.125-9.75M9.813 15.904A6.75 6.75 0 1019.5 15.9m-9.687-9.69a6.75 6.75 0 019.687 0" /></svg>
 							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Diseño UI/UX Premium</h3>
@@ -250,12 +257,58 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 
 	<!-- Filosofía -->
-	<section id="philosophie" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
-		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-			<h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">La Filosofía de Soluvirtus</h2>
-			<blockquote class="text-xl italic text-slate-700 dark:text-brand-text-darkSecondary leading-relaxed border-l-4 border-brand-accent-light dark:border-brand-accent pl-6 text-left max-w-3xl mx-auto mb-8">
-				"La tecnología debe servir como un activo soberano y funcional. Al priorizar la ejecución de IA local y una arquitectura full-stack robusta, las empresas pueden maximizar su retorno de inversión mientras mantienen la propiedad absoluta de sus datos y su infraestructura."
-			</blockquote>
+	<section id="philosophie" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/30 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="text-center max-w-3xl mx-auto mb-16">
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">La Filosofía de Soluvirtus</h2>
+				<p class="text-lg font-bold text-brand-accent-light dark:text-brand-accent tracking-wider uppercase">
+					Lema: "Encontrando soluciones, Impulsando virtudes"
+				</p>
+			</div>
+
+			<div class="max-w-4xl mx-auto mb-16">
+				<p class="text-lg sm:text-xl text-slate-700 dark:text-brand-text-darkSecondary leading-relaxed text-center font-light">
+					Creemos que la tecnología debe ser un activo soberano, funcional y de alto rendimiento. Nuestra filosofía se basa en encontrar soluciones precisas a través de la optimización de protocolos y la automatización sólida de procesos, para luego impulsar las virtudes de cada empresa mediante recursos tecnológicos avanzados e IA de alto valor. Al combinar una arquitectura full-stack robusta con una ejecución estratégica y eficiente, maximizamos el retorno de inversión de los negocios mientras mantenemos la propiedad absoluta de sus datos y su infraestructura.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Pilar 1 -->
+				<div class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group">
+					<div class="flex items-center gap-3 mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg>
+						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Encontrando Soluciones</h3>
+					</div>
+					<p class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2">Eficiencia y Estructura</p>
+					<p class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
+						Consiste en diagnosticar, depurar y automatizar los flujos nativos del negocio con lógica predecible y eficiente. Es la base que resuelve los problemas operativos del día a día.
+					</p>
+				</div>
+
+				<!-- Pilar 2 -->
+				<div class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group">
+					<div class="flex items-center gap-3 mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
+						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Impulsando Virtudes</h3>
+					</div>
+					<p class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2">Aceleración y Escalabilidad</p>
+					<p class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
+						Es potenciar el talento humano y los puntos fuertes de la empresa utilizando recursos tecnológicos avanzados (como el uso avanzado de IA y agentes autónomos) allí donde realmente generan una ventaja competitiva y estratégica.
+					</p>
+				</div>
+
+				<!-- Pilar 3 -->
+				<div class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group">
+					<div class="flex items-center gap-3 mb-4">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
+						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Soberanía Tecnológica</h3>
+					</div>
+					<p class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2">Control Absoluto</p>
+					<p class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
+						Mantener el enfoque en que la infraestructura y los datos sigan siendo un activo propio, seguro y bajo el control absoluto de la empresa.
+					</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -288,7 +341,7 @@ import Layout from '../layouts/Layout.astro';
 					</button>
 					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
 						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
-							Ejecutamos modelos de lenguaje de código abierto directamente en hardware privado (servidores locales, mini PCs o clústeres propios del cliente). Esto garantiza que la información confidencial nunca salga de la empresa, reduce los costos de API y elimina la dependencia de terceros.
+							Ejecutamos modelos de lenguaje de código abierto directamente en hardware privado (servidores locales o clústeres propios del cliente). Esto garantiza que la información confidencial nunca salga de la empresa, reduce los costos de API y elimina la dependencia de terceros.
 						</p>
 					</div>
 				</div>
