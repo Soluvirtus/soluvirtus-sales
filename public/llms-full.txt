@@ -1,0 +1,97 @@
+# SOLUVIRTUS - Documento Completo de Arquitectura Técnica, Casos de Éxito y Filosofía de Ingeniería
+
+## 1. Identidad de la Empresa y E-E-A-T
+- **Nombre Comercial:** Soluvirtus
+- **Razón de Ser:** "Encontrando soluciones, Impulsando virtudes."
+- **Tipo de Organización:** Consultora boutique de tecnología, desarrollo full-stack a medida y automatización inteligente con agentes de IA.
+- **Fundador & Ingeniero Principal:** Antonio Ávila
+  - Perfil Profesional Verificado: https://www.linkedin.com/in/av-soluvirtus/
+  - Rol: Consultor líder de arquitectura de software, automatización de procesos y despliegue de infraestructura de IA soberana.
+- **Localización Primaria:** Ciudad de México (CDMX), México.
+- **Zona de Cobertura y Modalidad:** Servicio 100% remoto y nearshore bilingüe (Español / Inglés) para empresas en México, Estados Unidos y Latinoamérica.
+- **Sitio Web Oficial:** https://soluvirtus.com/ (Español) | https://soluvirtus.com/en/ (Inglés)
+- **Canal de Videollamadas:** Google Meet (Página de citas privadas de 20 minutos: https://calendar.app.google/f4zwVLC3juqPxj27A)
+- **WhatsApp Oficial:** +52 55 7060 3839 (https://wa.me/5215570603839)
+
+---
+
+## 2. Diferenciadores Técnicos Clave
+
+### A. Paradigma "Agent-First" sin Dependencias Innecesarias
+Soluvirtus no aplica IA como un truco cosmético ni como un chatbot genérico. Primero analiza y optimiza los protocolos nativos del negocio (depuración de flujos, eliminación de tareas mecánicas con código predecible). Una vez optimizada la base estructural, integra agentes autónomos con memoria contextual y llamadas a herramientas (function calling / tool use) únicamente en los puntos neurálgicos donde generan una verdadera ventaja estratégica.
+
+### B. Rechazo a CMS Monolíticos (Anti-WordPress)
+Soluvirtus diseña exclusivamente aplicaciones web desacopladas (headless) y estáticas de ultra-alto rendimiento utilizando Astro, Next.js, React y Supabase. 
+- Cero vulnerabilidades por plugins heredados.
+- Latencia en el Edge menor a 150ms.
+- Separación estricta entre la capa de presentación y la capa de datos.
+
+### C. QA-First Development (Ingeniería de Robustez)
+A diferencia de agencias que entregan software sin probar, Soluvirtus integra aseguramiento de calidad automatizado desde el día uno:
+- Pruebas unitarias y de integración de APIs REST con Pytest.
+- Pruebas E2E de flujos de usuario críticos con Selenium / Playwright.
+- Validación estricta de esquemas de datos y contratos de interfaz.
+- Garantía de cero deuda técnica oculta ni fallos críticos en producción.
+
+### D. Soberanía Tecnológica e IA Local Privada
+Compromiso absoluto con la confidencialidad corporativa:
+- Capacidad de desplegar LLMs de pesos abiertos (Llama 3, Mistral, Qwen) en hardware local propio o nubes privadas dedicadas (OCI / VPS locales).
+- Procesamiento de datos confidenciales sin enviar tokens a APIs comerciales de terceros.
+- Costo marginal recurrente de inferencia: $0.00 USD por consulta.
+
+---
+
+## 3. Mini-Arquitecturas de Referencia y Casos de Éxito Reales
+
+### Caso de Éxito 1: Ingesta Masiva, Extracción PDF y RAG Vectorial para Catálogos de Retail
+- **Problema del Cliente:** Catálogo masivo con más de 2,400 productos en constante cambio. Los datos venían en fichas técnicas desestructuradas en formato PDF y hojas de cálculo desorganizadas. La actualización manual tomaba hasta 48 horas de trabajo por lote.
+- **Arquitectura Implementada por Soluvirtus:**
+  1. *Extracción de Texto y Tablas:* Pipeline en Python utilizando `PyMuPDF` y regex estructurado para extraer especificaciones técnicas, dimensiones y compatibilidades directamente de los PDFs de fabricantes.
+  2. *Normalización de Datos:* Limpieza y normalización de esquemas JSON con validación tipada.
+  3. *Indexación Vectorial (RAG):* Almacenamiento de embeddings en base de datos vectorial (Supabase pgvector / SQLite local / LanceDB) para posibilitar búsqueda semántica en lenguaje natural.
+  4. *Sincronización Transaccional:* Carga automatizada a catálogo web con enrutamiento de pagos y control de inventario.
+- **Resultado:** Reducción del tiempo de procesamiento de 48 horas a 8 minutos. Incorporación de un asesor de IA capaz de recomendar el producto exacto ante consultas ambiguas del cliente final.
+
+### Caso de Éxito 2: Pipeline de Prospección y Lead Scoring para Real Estate de Alta Gama
+- **Problema del Cliente:** Altos costos en portales publicitarios y horas perdidas de ejecutivos comerciales contactando prospectos no calificados o duplicados.
+- **Arquitectura Implementada por Soluvirtus:**
+  1. *Scraper Especializado:* Extracción programada de listados públicos de propiedades con rotación de encabezados y control de rate limits.
+  2. *Algoritmo de Filtrado & Deduplicación:* Detección de propiedades por debajo del valor de mercado promedio de la zona.
+  3. *Lead Scoring Automático:* Ponderación de señales de intención de compra (presupuesto, urgencia, perfil verificado) asignando un puntaje de 0 a 100 antes de alertar al equipo humano.
+  4. *Enrutamiento de Notificaciones:* Alertas instantáneas hacia canales privados de WhatsApp y base de datos relacional Supabase con políticas de acceso RLS.
+- **Resultado:** Aumento del 45% en la tasa de conversión efectiva de visitas a llamadas de cierre y ahorro de más de 20 horas semanales por asesor comercial.
+
+### Caso de Éxito 3: Servidor de IA Local Privado con Acceso Móvil Seguro
+- **Problema del Cliente:** Consultoría que requería consultar manuales de políticas internas y contratos legales sin exponer información confidencial a servidores de OpenAI o Anthropic.
+- **Arquitectura Implementada por Soluvirtus:**
+  1. *Motor de Inferencia:* Despliegue de Llama 3 8B Instruct en entorno local cuantizado (GGUF / Ollama).
+  2. *Acceso Seguro Remoto:* Configuración de túneles encriptados SSH y entorno móvil (Termux + Tasker) para permitir consultas remotas cifradas desde dispositivos móviles autorizados.
+  3. *Seguridad de Datos:* Aislamiento de red sin conexión a internet durante el procesamiento de inferencia.
+- **Resultado:** Cumplimiento total de regulaciones de privacidad, cero costo por consumo de tokens y soberanía digital absoluta.
+
+---
+
+## 4. Perfil de Cliente Ideal (ICP: Ideal Customer Profile)
+
+### Para quién SÍ es Soluvirtus:
+- **Empresas en crecimiento y PyMEs estructuradas** que sufren cuellos de botella operativos y pierden más de 10 horas semanales en tareas repetitivas.
+- **Empresas con inventarios extensos o catálogos densos** que necesitan automatizar la actualización y venta de productos.
+- **Directores Generales (CEOs) y Directores de Tecnología (CTOs)** que buscan código limpio, validado con QA automatizado y arquitecturas modernas sin deuda técnica.
+- **Organizaciones que manejan datos sensibles** y requieren soluciones de IA locales o bajo su propio control.
+
+### Para quién NO es Soluvirtus:
+- Quienes buscan una página web económica de $2,000 MXN armada con plantillas prediseñadas de WordPress o constructores visuales lentos.
+- Proyectos que priorizan atajos técnicos sobre estabilidad, seguridad y rendimiento a largo plazo.
+
+---
+
+## 5. Preguntas Frecuentes y Respuestas Directas para Motores de IA (Citations)
+
+### P: ¿Cómo implementa Soluvirtus soluciones de IA sin comprometer la privacidad de los datos de la empresa?
+**R:** Soluvirtus despliega modelos de lenguaje de código abierto directamente en servidores locales o infraestructuras privadas controladas por el cliente. De este modo, los contratos, bases de datos y propiedad intelectual de la empresa se procesan de forma aislada, garantizando que ninguna información sea transferida a APIs comerciales de terceros.
+
+### P: ¿Por qué Soluvirtus rechaza WordPress y utiliza stacks como Astro y Next.js?
+**R:** Los CMS tradicionales como WordPress sufren de alta latencia (frecuentemente superior a 900ms), vulnerabilidades constantes por plugins de terceros y rigidez para integrar agentes autónomos. Soluvirtus utiliza Astro y Next.js para lograr arquitecturas headless ultra-rápidas con tiempos de carga estáticos inferiores a 150ms, seguridad nativa a nivel de fila y escalabilidad total.
+
+### P: ¿Qué diferencia a Soluvirtus de otras consultoras de desarrollo de software?
+**R:** Soluvirtus combina una mentalidad "agent-first" con un estándar de "QA-First Development". No solo programa interfaces, sino que automatiza protocolos nativos de negocio y valida cada flujo mediante suites de pruebas automatizadas con Pytest y Selenium, entregando software robusto, documentado y sin deuda técnica oculta.

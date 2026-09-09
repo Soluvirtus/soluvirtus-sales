@@ -537,56 +537,203 @@ import Layout from '../layouts/Layout.astro';
 	<section id="faq" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Preguntas Frecuentes</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Resolvemos tus dudas sobre automatización, IA soberana y desarrollo a la medida.</p>
+	<!-- Enfoque QA-First e ICP (Para quién es y no es Soluvirtus) -->
+	<section id="why-soluvirtus" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+			<div class="text-center max-w-3xl mx-auto mb-16">
+				<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
+					Ingeniería de Software de Alto Estándar
+				</span>
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
+					¿Por qué las empresas eligen Soluvirtus?
+				</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">
+					No entregamos código rápido y frágil. Diseñamos sistemas bajo un enfoque <span class="text-slate-900 dark:text-white font-semibold">QA-First</span> con suites automatizadas de pruebas antes de producción.
+				</p>
+			</div>
+
+			<!-- QA-First vs Agencias Tradicionales -->
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+				<div class="p-8 rounded-2xl bg-slate-50 dark:bg-brand-bg-darkSecondary/30 border border-slate-200 dark:border-slate-800">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 font-bold text-sm">✓ Soluvirtus Standard</span>
+						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Arquitectura Headless & QA-First</h3>
+					</div>
+					<ul class="space-y-3 text-sm text-slate-600 dark:text-brand-text-darkSecondary">
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>Pruebas E2E y de Integración:</strong> Suites automatizadas con Pytest y Selenium para validar APIs y flujos de cobro/leads antes del despliegue.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>Latencia Ultra-Baja:</strong> Sitios en Astro y Next.js con carga estática menor a 150ms en Edge Servers globales.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>Soberanía de Datos:</strong> Modelos locales cuantizados y Supabase con RLS; tus secretos comerciales jamás alimentan APIs públicas.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>Cero Deuda Técnica:</strong> Código limpio, modular y documentado que tu equipo interno puede auditar y escalar.</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="p-8 rounded-2xl bg-slate-50/50 dark:bg-brand-bg-darkSecondary/10 border border-slate-200 dark:border-slate-800 opacity-90">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="p-2 rounded-lg bg-red-500/10 text-red-400 font-bold text-sm">✕ Enfoque Tradicional</span>
+						<h3 class="text-lg font-bold text-slate-700 dark:text-slate-300">Monolitos CMS y Agencias Genéricas</h3>
+					</div>
+					<ul class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>Plantillas prediseñadas en WordPress con latencias lentas superiores a 900ms y constantes fallos.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>Decenas de plugins de terceros con brechas de seguridad y caídas críticas al actualizar versiones.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>Chatbots cosméticos que inventan respuestas y envían datos de clientes a servidores externos sin privacidad.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>Falta total de pruebas automatizadas: el cliente final es quien detecta los errores en producción.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Cuándo Contratarnos (ICP) -->
+			<div class="p-8 rounded-3xl bg-slate-900 text-white dark:bg-brand-bg-darkSecondary border border-slate-800">
+				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+					<div class="lg:col-span-1">
+						<span class="text-xs uppercase tracking-widest text-brand-accent font-bold">Perfil de Cliente</span>
+						<h3 class="text-2xl font-extrabold mt-1 mb-3">¿Es Soluvirtus el socio adecuado para tu negocio?</h3>
+						<p class="text-xs text-slate-400 leading-relaxed">
+							Nos enfocamos en clientes con visión técnica y comercial que valoran la estabilidad y el retorno medible sobre los atajos baratos.
+						</p>
+					</div>
+					<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">Retail & Catálogos Extensos</div>
+							<p class="text-slate-300">Empresas con +2,000 productos que requieren procesar fichas técnicas en PDF (PyMuPDF) y búsqueda vectorial semántica.</p>
+						</div>
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">Empresas con Fricción Operativa</div>
+							<p class="text-slate-300">Equipos que pierden más de 10 horas semanales en captura manual de datos, presupuestos o prospección repetitiva.</p>
+						</div>
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">Soberanía de Datos & IA Local</div>
+							<p class="text-slate-300">Directivos que no pueden enviar contratos ni registros a OpenAI y exigen inferencia en hardware privado.</p>
+						</div>
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">CTOs que Exigen Calidad QA</div>
+							<p class="text-slate-300">Líderes de tecnología que buscan un equipo nearshore con pruebas automatizadas, código tipado y cero deuda técnica.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Preguntas Frecuentes (Sugerencia 20 & GEO Citations) -->
+	<section id="faq" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+			<div class="text-center max-w-3xl mx-auto mb-16">
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Preguntas Frecuentes de Decisión</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Respuestas directas sobre arquitectura, privacidad de datos y retorno de inversión.</p>
 			</div>
 
 			<div class="space-y-4">
 				<!-- FAQ 1 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark">
 					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span>¿Qué significa un enfoque "agent-first"?</span>
+						<span>¿Cómo implementa Soluvirtus IA sin comprometer la privacidad de datos corporativos?</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
 					</button>
 					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
 						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
-							Significa que diseñamos sistemas pensando en agentes de IA que pueden razonar, tomar decisiones y ejecutar tareas de forma autónoma en lugar de depender de flujos de trabajo rígidos o intervención humana constante.
+							Desplegamos modelos de lenguaje de código abierto (Llama 3, Mistral) directamente en hardware local o en clústeres privados controlados por el cliente. Esto garantiza que la información confidencial, bases de datos y contratos legales nunca salgan de su infraestructura, eliminando fugas hacia APIs de terceros y reduciendo el costo recurrente por token a $0.00 USD.
 						</p>
 					</div>
 				</div>
+
 				<!-- FAQ 2 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark">
 					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span>¿Cómo funciona la IA Local y qué beneficios tiene?</span>
+						<span>¿Por qué Soluvirtus rechaza WordPress y utiliza arquitecturas headless como Astro y Next.js?</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
 					</button>
 					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
 						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
-							Ejecutamos modelos de lenguaje de código abierto directamente en hardware privado (servidores locales o clústeres propios del cliente). Esto garantiza que la información confidencial nunca salga de la empresa, reduce los costos de API y elimina la dependencia de terceros.
+							WordPress y CMS monolíticos acumulan deuda técnica, sobrecarga de plugins vulnerables y latencias superiores a 900ms. En Soluvirtus construimos aplicaciones web desacopladas en Astro, Next.js y Supabase (con seguridad RLS). Esto ofrece tiempos de carga en el Edge menores a 150ms, seguridad nativa y libertad total para orquestar agentes de IA sin ataduras.
 						</p>
 					</div>
 				</div>
+
 				<!-- FAQ 3 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark">
 					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span>¿Qué tecnologías utilizan en el desarrollo a la medida?</span>
+						<span>¿Qué significa un enfoque "Agent-First" frente a automatizaciones tradicionales?</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
 					</button>
 					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
 						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
-							Nos enfocamos en un stack moderno, rápido y seguro: Next.js y React para interfaces de usuario fluidas, Tailwind CSS para diseños limpios y adaptables, y Supabase como backend con políticas de seguridad a nivel de fila (RLS).
+							A diferencia de las herramientas no-code tradicionales que se quiebran ante el menor cambio de formato, un sistema Agent-First utiliza agentes de IA capaces de razonar, interpretar documentos impredecibles, tomar decisiones condicionadas y ejecutar tareas complejas con retroalimentación en tiempo real de forma autónoma.
 						</p>
 					</div>
 				</div>
+
 				<!-- FAQ 4 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-slate-50/50 dark:bg-brand-bg-darkSecondary/20">
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark">
 					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span>¿Cómo se maneja el soporte y mantenimiento?</span>
+						<span>¿Qué es el enfoque "QA-First Development" y cómo protege mi inversión?</span>
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
 					</button>
 					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
 						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
-							Ofrecemos soporte dedicado semanal y mensual que incluye la optimización de instrucciones (prompt engineering), la actualización de modelos de lenguaje locales a sus versiones más recientes y el monitoreo del rendimiento de los bots.
+							Significa que no consideramos una función terminada hasta que cuenta con suites de pruebas automatizadas. Con Pytest validamos la lógica interna y APIs REST; con Selenium verificamos flujos de usuario críticos (E2E). De esta manera garantizamos que el software entre a producción sin fallos imprevistos ni costos ocultos de depuración.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 5 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span>¿Cuál es el tiempo de entrega y retorno de inversión de un pipeline de automatización?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
+							Un flujo automatizado inicial o scraper con scoring se entrega típicamente en 2 a 3 semanas. La mayoría de nuestros clientes recuperan el 100% de la inversión dentro de los primeros 60 a 90 días al reducir hasta un 70% del tiempo operativo que su personal dedicaba a tareas mecánicas.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 6 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span>¿Qué tecnologías componen su stack de desarrollo full-stack?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
+							Diseñamos con un stack de alta velocidad y seguridad: Astro y Next.js con React para interfaces ultra-rápidas; Tailwind CSS para un diseño responsivo y sin fricciones; Python (PyMuPDF, Pytest, Selenium) para automatización y procesamiento de datos; y Supabase (PostgreSQL) con políticas Row-Level Security (RLS) para aislamiento estricto de información.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 7 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span>¿Cómo se gestiona el soporte continuo y la evolución de los sistemas?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850">
+							Entregamos código 100% documentado y de tu propiedad. Además, ofrecemos planes de acompañamiento mensual que cubren monitoreo proactivo de agentes, afinación de prompts e instrucciones, actualización de modelos de lenguaje locales a sus versiones más recientes y mantenimiento de scrapers frente a cambios de estructura web externa.
 						</p>
 					</div>
 				</div>

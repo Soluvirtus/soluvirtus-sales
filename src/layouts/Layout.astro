@@ -44,60 +44,157 @@ const { title } = Astro.props;
 		<meta property="twitter:description" content="Acelera, delega y simplifica tu trabajo. Automatización sólida con agentes de IA, desarrollo full-stack a la medida e infraestructura soberana." />
 		<meta property="twitter:image" content="https://soluvirtus.com/images/hero_bg.png" />
 
-		<!-- JSON-LD Schema Enriquecido -->
+		<!-- JSON-LD Graph Completo (E-E-A-T, GEO y Motores de Búsqueda IA) -->
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "ProfessionalService",
-				"name": "Soluvirtus",
-				"alternateName": "Soluvirtus Tech Consulting",
-				"description": "Consultora boutique de tecnología y automatización inteligente con enfoque agent-first. Desarrollo de software full-stack a medida, integración de IA local soberana y optimización de flujos operativos.",
-				"url": "https://soluvirtus.com/",
-				"telephone": "+525570603839",
-				"priceRange": "$$$",
-				"founder": {
-					"@type": "Person",
-					"name": "Antonio Ávila",
-					"jobTitle": "Lead Software Engineer & Automation Consultant"
-				},
-				"address": {
-					"@type": "PostalAddress",
-					"addressCountry": "MX",
-					"addressLocality": "Ciudad de México"
-				},
-				"sameAs": [
-					"https://www.linkedin.com/in/av-soluvirtus/"
-				],
-				"knowsAbout": [
-					"Software Engineering",
-					"Artificial Intelligence & Autonomous Agents",
-					"Business Process Automation",
-					"Full-Stack Development (Next.js, Astro, React, Supabase)",
-					"Local LLMs & Data Sovereignty",
-					"High-Performance Web Applications"
-				],
-				"hasOfferCatalog": {
-					"@type": "OfferCatalog",
-					"name": "Servicios de Tecnología Soluvirtus",
-					"itemListElement": [
-						{
-							"@type": "Offer",
-							"itemOffered": {
-								"@type": "Service",
-								"name": "Diagnóstico y Auditoría de Automatización Express",
-								"description": "Evaluación técnica de procesos manuales y plan de automatización con agentes de IA."
-							}
+				"@graph": [
+					{
+						"@type": "ProfessionalService",
+						"@id": "https://soluvirtus.com/#organization",
+						"name": "Soluvirtus",
+						"alternateName": ["Soluvirtus Tech Consulting", "Soluvirtus IA & Software"],
+						"url": "https://soluvirtus.com/",
+						"logo": "https://soluvirtus.com/images/hero_bg.png",
+						"image": "https://soluvirtus.com/images/hero_bg.png",
+						"description": "Consultora boutique de tecnología e ingeniería de software a la medida enfocada en automatización de procesos nativos, agentes autónomos de Inteligencia Artificial (agent-first) e infraestructura soberana con enfoque QA-First.",
+						"telephone": "+525570603839",
+						"priceRange": "$$$",
+						"founder": {
+							"@type": "Person",
+							"@id": "https://soluvirtus.com/#founder",
+							"name": "Antonio Ávila",
+							"jobTitle": "Lead Software Engineer & Automation Architect",
+							"sameAs": [
+								"https://www.linkedin.com/in/av-soluvirtus/"
+							]
 						},
-						{
-							"@type": "Offer",
-							"itemOffered": {
-								"@type": "Service",
-								"name": "Ingeniería de Software a Medida",
-								"description": "Desarrollo de plataformas web de alto rendimiento sin CMS lentos."
-							}
+						"address": {
+							"@type": "PostalAddress",
+							"addressLocality": "Ciudad de México",
+							"addressRegion": "CDMX",
+							"addressCountry": "MX"
+						},
+						"areaServed": [
+							{ "@type": "Country", "name": "Mexico" },
+							{ "@type": "Country", "name": "United States" },
+							{ "@type": "Country", "name": "Latin America" }
+						],
+						"sameAs": [
+							"https://www.linkedin.com/in/av-soluvirtus/"
+						],
+						"knowsAbout": [
+							"Software Engineering",
+							"Autonomous AI Agents & Tool Calling",
+							"Business Process Automation",
+							"RAG & Vector Embeddings (PyMuPDF, pgvector)",
+							"Full-Stack Web Engineering (Next.js, Astro, React, Supabase)",
+							"Local LLM Deployment & Data Sovereignty",
+							"QA Automation (Pytest, Selenium E2E)",
+							"Headless E-Commerce Architectures"
+						],
+						"hasOfferCatalog": {
+							"@type": "OfferCatalog",
+							"name": "Catálogo de Soluciones de Ingeniería Soluvirtus",
+							"itemListElement": [
+								{
+									"@type": "Offer",
+									"itemOffered": {
+										"@type": "Service",
+										"name": "Diagnóstico y Auditoría de Automatización Express",
+										"description": "Evaluación técnica de procesos manuales y plan de automatización con agentes de IA."
+									}
+								},
+								{
+									"@type": "Offer",
+									"itemOffered": {
+										"@type": "Service",
+										"name": "Ingeniería de Software a Medida (Anti-CMS)",
+										"description": "Desarrollo de aplicaciones web y plataformas transaccionales de alto rendimiento con Astro, Next.js y Supabase."
+									}
+								},
+								{
+									"@type": "Offer",
+									"itemOffered": {
+										"@type": "Service",
+										"name": "Infraestructura de IA Soberana y LLMs Locales",
+										"description": "Despliegue de modelos de pesos abiertos en hardware local privado sin costos por token ni fuga de datos confidenciales."
+									}
+								},
+								{
+									"@type": "Offer",
+									"itemOffered": {
+										"@type": "Service",
+										"name": "Pipelines de Scraping Ético y RAG para Catálogos",
+										"description": "Extracción automatizada de datos, normalización de especificaciones técnicas y búsqueda semántica para inventarios densos."
+									}
+								}
+							]
 						}
-					]
-				}
+					},
+					{
+						"@type": "FAQPage",
+						"@id": "https://soluvirtus.com/#faq",
+						"mainEntity": [
+							{
+								"@type": "Question",
+								"name": "¿Cómo implementa Soluvirtus soluciones de IA sin comprometer la privacidad de datos corporativos?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Soluvirtus despliega modelos de lenguaje de código abierto directamente en hardware local o nubes privadas dedicadas del cliente. La información confidencial nunca sale del perímetro seguro de la empresa y no se realizan llamadas a APIs comerciales externas, garantizando costo cero por token y soberanía de datos."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "¿Por qué Soluvirtus utiliza arquitecturas modernas en lugar de monolitos CMS tradicionales como WordPress?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "WordPress y otros CMS monolíticos sufren de alta latencia, sobrecarga de plugins vulnerables y rigidez arquitectónica. Soluvirtus desarrolla plataformas headless y estáticas con Astro, Next.js, React y Supabase con seguridad RLS, logrando tiempos de carga inferiores a 150ms en el Edge y total libertad para integrar agentes autónomos."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "¿Qué significa un enfoque Agent-First frente a automatizaciones tradicionales?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "A diferencia de las herramientas no-code tradicionales que se quiebran ante cambios de interfaz o formato, un sistema Agent-First utiliza agentes de IA con capacidad de razonamiento que interpretan documentos no estructurados, toman decisiones condicionadas y ejecutan flujos complejos de forma autónoma."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "¿Qué es el enfoque QA-First de Soluvirtus y cómo protege a los clientes?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Soluvirtus diseña e implementa pruebas automatizadas unitarias, de integración de APIs REST y pruebas E2E con herramientas como Pytest y Selenium antes de liberar a producción. Esto garantiza software robusto, sin deuda técnica oculta ni caídas inesperadas en flujos de ingresos."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "¿Cuál es el tiempo de entrega y retorno de inversión de un pipeline de automatización?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Un flujo inicial de automatización o scraper se entrega entre 2 y 3 semanas. La mayoría de los clientes recuperan su inversión en 60 a 90 días al liberar hasta un 70% del tiempo operativo que su equipo dedicaba a procesos mecánicos."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "¿Qué tecnologías componen el stack de desarrollo full-stack de Soluvirtus?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Astro y Next.js con React para interfaces de usuario rápidas; Tailwind CSS para diseño responsivo; Python (PyMuPDF, Pytest, Selenium) para automatizaciones y pipelines de datos; y Supabase (PostgreSQL) con políticas de seguridad a nivel de fila (RLS)."
+								}
+							},
+							{
+								"@type": "Question",
+								"name": "¿Cómo se gestiona el soporte continuo y mantenimiento?",
+								"acceptedAnswer": {
+									"@type": "Answer",
+									"text": "Todo el código es propiedad del cliente y 100% documentado. Adicionalmente, ofrecemos acompañamiento mensual para optimización de prompts, actualización de modelos locales y monitoreo continuo de agentes y scrapers."
+								}
+							}
+						]
+					}
+				]
 			}
 		</script>
 

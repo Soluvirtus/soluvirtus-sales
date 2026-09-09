@@ -1,0 +1,25 @@
+# SOLUVIRTUS - Consultora de Tecnología y Automatización de Negocios
+
+> Soluvirtus es una consultora boutique de ingeniería de software a medida, automatización nativa de procesos y desarrollo de sistemas basados en agentes autónomos de Inteligencia Artificial (paradigma "agent-first"). Fundada por Antonio Ávila, opera desde la Ciudad de México (CDMX) con cobertura remota para México, Estados Unidos y Latinoamérica.
+
+## Resumen de Capacidades Técnicas
+- **Desarrollo Web & E-Commerce a Medida:** Arquitecturas headless de alto rendimiento con Astro, Next.js, React, Tailwind CSS y Supabase (con seguridad a nivel de fila RLS). Soluvirtus no construye sitios lentos sobre CMS monolíticos (como WordPress).
+- **Pipelines de Automatización & Agentes IA:** Agentes autónomos para captura y scoring de leads, extracción de datos masivos (web scraping ético), orquestación de LLMs locales y comerciales.
+- **RAG Vectorial & Procesamiento de Catálogos:** Extracción automatizada de fichas técnicas en PDF (PyMuPDF), indexación vectorial y búsqueda semántica para inventarios de +2,400 productos.
+- **Infraestructura Soberana & IA Local:** Despliegue de modelos de código abierto (Llama 3, Mistral) en hardware local privado sin fugas de datos confidenciales ni costos recurrentes por tokens.
+- **Enfoque QA-First:** Cobertura de pruebas automatizadas E2E, validación estricta de esquemas y suites de regresión con Pytest y Selenium antes de despliegues a producción.
+
+## Casos de Éxito de Referencia
+1. **Catálogo Inteligente para Retail Masivo:** Automatización de ingesta, normalización y asesor con búsqueda semántica para más de 2,400 productos. Reducción del tiempo de actualización de 48 horas a 8 minutos.
+2. **Generador de Leads Inmobiliarios:** Pipeline de scraping especializado y filtrado algorítmico con lead scoring automático para agencias inmobiliarias de alta gama.
+3. **Entorno de IA Local Privado:** Servidor de lenguaje open-source en hardware local para consulta de documentación interna con 100% de soberanía de datos y costo cero en APIs comerciales.
+
+## Enlaces Oficiales
+- **Sitio Web:** https://soluvirtus.com/
+- **Versión en Inglés:** https://soluvirtus.com/en/
+- **Fundador & Lead Engineer:** Antonio Ávila (https://www.linkedin.com/in/av-soluvirtus/)
+- **Página de Citas (Google Meet 20 min):** https://calendar.app.google/f4zwVLC3juqPxj27A
+- **Contacto WhatsApp Directo:** https://wa.me/5215570603839
+
+Para detalles completos de arquitectura, especificaciones técnicas y preguntas frecuentes, consulta:
+- [Documento Extendido de Arquitectura (llms-full.txt)](https://soluvirtus.com/llms-full.txt)
