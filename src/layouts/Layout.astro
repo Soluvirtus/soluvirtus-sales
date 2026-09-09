@@ -24,40 +24,80 @@ const { title } = Astro.props;
 		<link rel="preload" as="image" href="/images/hero_bg.png" />
 		<link rel="preload" as="image" href="/images/hero_bg_light.png" />
 
-		<!-- Open Graph / Facebook -->
+		<link rel="canonical" href="https://soluvirtus.com/" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Antonio Ávila" />
+		<meta name="keywords" content="Soluvirtus, automatización de negocios, agentes de IA, IA local, desarrollo de software a medida, Next.js, Supabase, scrapers de leads, consultora de tecnología" />
+		
+		<!-- Open Graph / Facebook / LinkedIn -->
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://soluvirtus.com/" />
-		<meta property="og:title" content="SOLUVIRTUS - Consultora de Tecnología y Desarrollo" />
-		<meta property="og:description" content="Optimización y automatización inteligente de negocios. Ingeniería de software a la medida e IA soberana." />
-		<meta property="og:image" content="/images/hero_bg.png" />
+		<meta property="og:site_name" content="Soluvirtus" />
+		<meta property="og:title" content="SOLUVIRTUS - Consultora de Tecnología y Automatización de Negocios" />
+		<meta property="og:description" content="Acelera, delega y simplifica tu trabajo. Automatización sólida con agentes de IA, desarrollo full-stack a la medida e infraestructura soberana." />
+		<meta property="og:image" content="https://soluvirtus.com/images/hero_bg.png" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content="https://soluvirtus.com/" />
-		<meta property="twitter:title" content="SOLUVIRTUS - Consultora de Tecnología y Desarrollo" />
-		<meta property="twitter:description" content="Optimización y automatización inteligente de negocios. Ingeniería de software a la medida e IA soberana." />
-		<meta property="twitter:image" content="/images/hero_bg.png" />
+		<meta property="twitter:title" content="SOLUVIRTUS - Consultora de Tecnología y Automatización de Negocios" />
+		<meta property="twitter:description" content="Acelera, delega y simplifica tu trabajo. Automatización sólida con agentes de IA, desarrollo full-stack a la medida e infraestructura soberana." />
+		<meta property="twitter:image" content="https://soluvirtus.com/images/hero_bg.png" />
 
-		<!-- JSON-LD Schema (Sugerencia 8) -->
+		<!-- JSON-LD Schema Enriquecido -->
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
 				"@type": "ProfessionalService",
 				"name": "Soluvirtus",
-				"description": "Consultora boutique de tecnología y desarrollo. Especializada en la optimización y automatización inteligente de procesos de negocio.",
+				"alternateName": "Soluvirtus Tech Consulting",
+				"description": "Consultora boutique de tecnología y automatización inteligente con enfoque agent-first. Desarrollo de software full-stack a medida, integración de IA local soberana y optimización de flujos operativos.",
 				"url": "https://soluvirtus.com/",
 				"telephone": "+525570603839",
+				"priceRange": "$$$",
+				"founder": {
+					"@type": "Person",
+					"name": "Antonio Ávila",
+					"jobTitle": "Lead Software Engineer & Automation Consultant"
+				},
 				"address": {
 					"@type": "PostalAddress",
-					"addressCountry": "MX"
+					"addressCountry": "MX",
+					"addressLocality": "Ciudad de México"
 				},
+				"sameAs": [
+					"https://www.linkedin.com/in/av-soluvirtus/"
+				],
 				"knowsAbout": [
-					"Software Development",
-					"Artificial Intelligence",
-					"Business Automation",
-					"UI/UX Design",
-					"Sovereign IT Infrastructure"
-				]
+					"Software Engineering",
+					"Artificial Intelligence & Autonomous Agents",
+					"Business Process Automation",
+					"Full-Stack Development (Next.js, Astro, React, Supabase)",
+					"Local LLMs & Data Sovereignty",
+					"High-Performance Web Applications"
+				],
+				"hasOfferCatalog": {
+					"@type": "OfferCatalog",
+					"name": "Servicios de Tecnología Soluvirtus",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Diagnóstico y Auditoría de Automatización Express",
+								"description": "Evaluación técnica de procesos manuales y plan de automatización con agentes de IA."
+							}
+						},
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "Ingeniería de Software a Medida",
+								"description": "Desarrollo de plataformas web de alto rendimiento sin CMS lentos."
+							}
+						}
+					]
+				}
 			}
 		</script>
 
