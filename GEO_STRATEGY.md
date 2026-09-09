@@ -125,7 +125,7 @@ Implementación de un esquema enriquecido en formato `@graph` que valida la enti
    - **Automatización Inteligente:** Micro-diagrama interactivo de pipeline de datos en tiempo real mostrando el flujo técnico exacto (`PyMuPDF` &rarr; `Vector RAG en pgvector/Supabase` &rarr; `API Agent`, latencia `84ms`, 100% test pass).
    - **Desarrollo Full-Stack:** Ventana de navegador técnica con métricas operativas verosímiles (`app.soluvirtus.com/ops-catalog`, latencia en el Edge de `42ms`, cobertura `98.4% Pytest`, `Supabase RLS`, `0 errores Selenium E2E`).
    - **Infraestructura Soberana e IA Local:** Terminal SSH auténtica ejecutando telemetría local de hardware (`ollama ps` con modelo `llama3:8b-instruct`, `5.6 GB VRAM`, `100% GPU`, costo por token `$0.00 USD`, socket privado localhost `127.0.0.1:11434`).
-   - **Diseño UI/UX Premium:** Vista previa de componente técnico interactivo para catálogo denso de retail (`SKU-7842-IND`, tolerancia térmica, protocolos Modbus/MQTT, exportación de especificaciones técnicas a PDF en 1 clic).
+   - **Diseño UI/UX Premium:** Mockup de interfaz interactiva de alta gama (estilo e-commerce editorial / estudio boutique, tipografía con jerarquía editorial serif/Inter, contraste estricto 14.2:1, micro-animación fluida en curvas bezier, tokens HSL y estándar WCAG AAA).
 
 2. **Eliminación Total de Emoticones y Clichés:**
    - Se removieron los emoticones informales del footer y del cuerpo del sitio (rayos, candados, cohetes).
