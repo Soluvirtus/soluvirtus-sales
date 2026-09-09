@@ -1,48 +1,67 @@
 ---
 interface Props {
 	title: string;
+	description?: string;
+	lang?: string;
 }
 
-const { title } = Astro.props;
+const { 
+	title, 
+	description = "Soluvirtus - Consultora boutique de tecnología y desarrollo a medida. Automatización inteligente, agentes de IA soberana e ingeniería web de alto rendimiento.",
+	lang = "es"
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Soluvirtus - Consultora de tecnología y desarrollo. Encontrando soluciones, impulsando virtudes." />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<title>{title}</title>
 		
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700&display=swap" rel="stylesheet">
+		<!-- Performance: DNS Prefetch & Google Fonts Preconnect -->
+		<link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+		<link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
 		
-		<!-- Preload LCP Asset -->
-		<link rel="preload" as="image" href="/images/hero_bg.png" />
-		<link rel="preload" as="image" href="/images/hero_bg_light.png" />
+		<!-- Preload Critical Above-the-fold Assets -->
+		<link rel="preload" as="image" href="/images/hero_bg.png" fetchpriority="high" />
 
-		<link rel="canonical" href="https://soluvirtus.com/" />
-		<meta name="robots" content="index, follow" />
+		<!-- Canonical & Alternates -->
+		<link rel="canonical" href={canonicalURL.href} />
+		<link rel="alternate" hreflang="es" href="https://soluvirtus.com/" />
+		<link rel="alternate" hreflang="en" href="https://soluvirtus.com/en/" />
+		<link rel="alternate" hreflang="x-default" href="https://soluvirtus.com/" />
+
+		<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 		<meta name="author" content="Antonio Ávila" />
-		<meta name="keywords" content="Soluvirtus, automatización de negocios, agentes de IA, IA local, desarrollo de software a medida, Next.js, Supabase, scrapers de leads, consultora de tecnología" />
+		<meta name="keywords" content="Soluvirtus, automatización de negocios, agentes de IA, IA local, desarrollo de software a medida, Next.js, Supabase, scrapers de leads, consultora de tecnología, Antonio Ávila" />
 		
 		<!-- Open Graph / Facebook / LinkedIn -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://soluvirtus.com/" />
+		<meta property="og:url" content={canonicalURL.href} />
 		<meta property="og:site_name" content="Soluvirtus" />
-		<meta property="og:title" content="SOLUVIRTUS - Consultora de Tecnología y Automatización de Negocios" />
-		<meta property="og:description" content="Acelera, delega y simplifica tu trabajo. Automatización sólida con agentes de IA, desarrollo full-stack a la medida e infraestructura soberana." />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
 		<meta property="og:image" content="https://soluvirtus.com/images/hero_bg.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content="Soluvirtus - Consultora de Tecnología y Automatización con IA" />
+		<meta property="og:locale" content={lang === "en" ? "en_US" : "es_MX"} />
 
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://soluvirtus.com/" />
-		<meta property="twitter:title" content="SOLUVIRTUS - Consultora de Tecnología y Automatización de Negocios" />
-		<meta property="twitter:description" content="Acelera, delega y simplifica tu trabajo. Automatización sólida con agentes de IA, desarrollo full-stack a la medida e infraestructura soberana." />
-		<meta property="twitter:image" content="https://soluvirtus.com/images/hero_bg.png" />
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={canonicalURL.href} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content="https://soluvirtus.com/images/hero_bg.png" />
+		<meta name="twitter:image:alt" content="Soluvirtus - Consultora de Tecnología y Automatización con IA" />
 
 		<!-- JSON-LD Graph Completo (E-E-A-T, GEO y Motores de Búsqueda IA) -->
 		<script type="application/ld+json">
