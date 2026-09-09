@@ -102,240 +102,6 @@ import Layout from '../../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- Lead Magnet / Express Audit Tool (CRO & Lead Capture) -->
-	<section id="audit-tool" class="py-20 bg-slate-100/70 dark:bg-brand-bg-darkSecondary/30 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
-		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-			<div class="p-8 sm:p-12 bg-white dark:bg-brand-bg-darkSecondary/60 backdrop-blur-md rounded-3xl border border-slate-300 dark:border-white/10 shadow-xl relative overflow-hidden">
-				<div class="absolute -top-24 -right-24 w-72 h-72 bg-brand-accent-light/10 dark:bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
-				
-				<div class="text-center max-w-3xl mx-auto mb-10">
-					<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-accent-light/10 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
-						Free 60-Second Assessment
-					</span>
-					<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
-						Automation & Operational Savings Audit
-					</h2>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary text-base sm:text-lg">
-						Discover which business processes are wasting your team's valuable time and money. Get a custom roadmap with autonomous AI agents and workflow recommendations.
-					</p>
-				</div>
-
-				<form id="audit-form" class="space-y-6 max-w-3xl mx-auto">
-					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-						<div>
-							<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
-								Your Name / Company *
-							</label>
-							<input type="text" id="audit-name" required placeholder="e.g. Alex Morgan / Logistics Corp" class="w-full bg-slate-50 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 focus:outline-none focus:border-brand-accent transition-colors text-slate-900 dark:text-slate-100 text-sm" />
-						</div>
-						<div>
-							<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
-								Corporate Email *
-							</label>
-							<input type="email" id="audit-email" required placeholder="you@company.com" class="w-full bg-slate-50 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 focus:outline-none focus:border-brand-accent transition-colors text-slate-900 dark:text-slate-100 text-sm" />
-						</div>
-					</div>
-
-					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-						<div>
-							<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
-								WhatsApp / Phone Contact *
-							</label>
-							<input type="tel" id="audit-phone" required placeholder="+1 555 123 4567" class="w-full bg-slate-50 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 focus:outline-none focus:border-brand-accent transition-colors text-slate-900 dark:text-slate-100 text-sm" />
-						</div>
-						<div>
-							<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
-								Priority Area to Optimize *
-							</label>
-							<select id="audit-area" class="w-full bg-slate-50 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 focus:outline-none focus:border-brand-accent transition-colors text-slate-900 dark:text-slate-200 text-sm">
-								<option value="leads">Lead Scraping & CRM Pipeline Automation</option>
-								<option value="catalog">Massive Catalog & E-Commerce Automation</option>
-								<option value="ai_local">Data Sovereignty / Private Local AI (Zero API token bills)</option>
-								<option value="web_app">Replacing Slow Legacy WordPress / Custom Web App</option>
-								<option value="workflows">Eliminating Repetitive Manual Team Tasks</option>
-							</select>
-						</div>
-					</div>
-
-					<div>
-						<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
-							How many hours does your team lose weekly to manual tasks?
-						</label>
-						<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs font-semibold">
-							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-3 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
-								<input type="radio" name="audit-hours" value="1-5" class="sr-only" checked />
-								<span>1 to 5 hrs/wk</span>
-							</label>
-							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-3 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
-								<input type="radio" name="audit-hours" value="6-15" class="sr-only" />
-								<span>6 to 15 hrs/wk</span>
-							</label>
-							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-3 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
-								<input type="radio" name="audit-hours" value="16-30" class="sr-only" />
-								<span>16 to 30 hrs/wk</span>
-							</label>
-							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-3 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
-								<input type="radio" name="audit-hours" value="30+" class="sr-only" />
-								<span>+30 hrs/wk (Critical)</span>
-							</label>
-						</div>
-					</div>
-
-					<button type="submit" id="btn-submit-audit" class="w-full py-4 bg-brand-accent-light hover:bg-brand-accent-lightHover dark:bg-brand-accent dark:hover:bg-brand-accent-hover text-white dark:text-slate-900 font-bold rounded-xl transition-all duration-300 text-base shadow-lg shadow-sky-500/20 dark:shadow-brand-accent/20 flex items-center justify-center gap-3">
-						<span>Generate Roadmap & Send to WhatsApp / Email</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
-					</button>
-				</form>
-
-				<!-- Success Message Box -->
-				<div id="audit-success-box" class="hidden mt-8 p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-slate-800 dark:text-slate-200">
-					<div class="flex items-start gap-4">
-						<div class="w-10 h-10 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-bold text-xl flex-shrink-0">
-							✓
-						</div>
-						<div class="space-y-2 flex-grow">
-							<h4 class="font-bold text-lg text-emerald-600 dark:text-emerald-400">Diagnostic Saved Successfully!</h4>
-							<p class="text-sm text-slate-600 dark:text-slate-300" id="audit-result-text">
-								We have calculated your efficiency profile. Connect directly on WhatsApp or book a 20-minute strategic briefing:
-							</p>
-							<div class="pt-2 flex flex-wrap gap-3">
-								<a id="audit-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg text-sm transition-all inline-flex items-center gap-2 shadow-md">
-									Continue on WhatsApp &rarr;
-								</a>
-								<a href="https://calendar.app.google/f4zwVLC3juqPxj27A" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-lg text-sm transition-all inline-flex items-center gap-2 shadow-md hover:bg-slate-800 dark:hover:bg-slate-100">
-									<svg class="w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5z"/></svg>
-									Book on Google Meet (20 min)
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Interactive ROI Calculator (Suggestion 25) -->
-	<section id="roi-calculator" class="py-20 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
-		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-			<div class="text-center max-w-3xl mx-auto mb-12">
-				<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
-					Return on Investment Simulator
-				</span>
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
-					How Much Is Operational Friction Costing You?
-				</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">
-					Adjust the sliders to estimate monthly labor spent on repetitive manual tasks and potential savings with native automation and AI agents.
-				</p>
-			</div>
-
-			<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-				<!-- Controls -->
-				<div class="lg:col-span-7 p-8 bg-slate-50 dark:bg-brand-bg-darkSecondary/40 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-6">
-					<div>
-						<div class="flex justify-between items-center mb-2">
-							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
-								Staff members performing manual repetitive workflows:
-							</label>
-							<span id="roi-people-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">3 employees</span>
-						</div>
-						<input type="range" id="roi-people" min="1" max="25" value="3" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
-					</div>
-
-					<div>
-						<div class="flex justify-between items-center mb-2">
-							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
-								Daily hours dedicated to manual processes (per person):
-							</label>
-							<span id="roi-hours-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">2.5 hours/day</span>
-						</div>
-						<input type="range" id="roi-hours" min="0.5" max="8" step="0.5" value="2.5" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
-					</div>
-
-					<div>
-						<div class="flex justify-between items-center mb-2">
-							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
-								Average hourly labor cost (USD):
-							</label>
-							<span id="roi-cost-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">$18 USD/hr</span>
-						</div>
-						<input type="range" id="roi-cost" min="10" max="100" step="1" value="18" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
-					</div>
-
-					<div class="pt-2 text-xs text-slate-500">
-						* Based on 21 business days per month and a realistic 70% automation rate for repetitive digital tasks.
-					</div>
-				</div>
-
-				<!-- Results Display -->
-				<div class="lg:col-span-5 p-8 bg-gradient-to-br from-slate-900 to-slate-950 text-white rounded-3xl border border-slate-800 shadow-2xl flex flex-col justify-between">
-					<div>
-						<span class="text-xs uppercase tracking-widest text-slate-400 font-bold">Estimated Operational Impact</span>
-						
-						<div class="mt-6 mb-6 pb-6 border-b border-slate-800">
-							<div class="text-xs text-slate-400 mb-1">Current monthly waste on repetitive tasks:</div>
-							<div id="roi-waste-display" class="text-2xl sm:text-3xl font-extrabold text-red-400 font-mono">
-								$2,835 USD / mo
-							</div>
-							<div id="roi-hours-waste" class="text-xs text-slate-500 mt-1">157.5 monthly hours spent on mechanical tasks</div>
-						</div>
-
-						<div class="mb-6">
-							<div class="text-xs text-emerald-400 font-bold uppercase tracking-wider mb-1">Projected Savings with Soluvirtus (70%):</div>
-							<div id="roi-savings-display" class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono">
-								$1,985 USD / mo
-							</div>
-							<div id="roi-annual-savings" class="text-xs text-slate-300 mt-1 font-semibold">
-								Equivalent to <span class="text-brand-accent">$23,820 USD / year</span> recovered
-							</div>
-						</div>
-					</div>
-
-					<a href="#audit-tool" class="w-full py-3 bg-brand-accent hover:bg-brand-accent-hover text-slate-950 font-bold text-center rounded-xl transition-all text-sm">
-						Automate These Workflows &rarr;
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Interactive Console (Suggestion 26) -->
-	<section id="demo-console" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
-		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-			<div class="text-center max-w-3xl mx-auto mb-12">
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Agent Simulation Console</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Select a task to observe how our autonomous agents resolve and implement local workflows.</p>
-			</div>
-
-			<div class="flex flex-wrap justify-center gap-3 mb-8">
-				<button id="btn-demo-catalog" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
-					Simulate Catalog Advisor
-				</button>
-				<button id="btn-demo-leads" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
-					Simulate Lead Scraper
-				</button>
-				<button id="btn-demo-llm" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
-					Simulate Private Local LLM
-				</button>
-			</div>
-
-			<div class="rounded-xl overflow-hidden border border-slate-300 dark:border-slate-800 bg-slate-950 shadow-2xl text-left font-mono">
-				<div class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-850">
-					<div class="flex space-x-2">
-						<span class="w-3 h-3 rounded-full bg-red-500"></span>
-						<span class="w-3 h-3 rounded-full bg-yellow-500"></span>
-						<span class="w-3 h-3 rounded-full bg-green-500"></span>
-					</div>
-					<span class="text-xs text-slate-500 font-semibold select-none">terminal - soluvirtus-agent@local</span>
-					<div class="w-10"></div>
-				</div>
-				<div id="terminal-screen" class="p-6 h-80 overflow-y-auto text-sm text-slate-400 space-y-2 select-text scrollbar-thin scrollbar-thumb-slate-800">
-					<div class="text-slate-500">&gt; Console ready. Select a task to begin execution simulation...</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<!-- Specialties -->
 	<section id="services" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -473,10 +239,10 @@ import Layout from '../../layouts/Layout.astro';
 
 						<div class="flex items-center gap-3 mb-3">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
-							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Sovereign Infrastructure & Local AI</h3>
+							<h3 class="text-xl font-bold text-slate-900 dark:text-white">Hybrid AI Architecture & Data Sovereignty</h3>
 						</div>
 						<p class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed mb-6">
-							Firm commitment to data privacy, cost control, and technological sovereignty. We develop customized local environments, open-source LLMs, and mobile remote workflows via Termux, Tasker, and SSH.
+							We orchestrate local open-source LLMs (Llama 3, Mistral) on private hardware for sensitive data, confidential contracts, and zero token costs, alongside leading commercial APIs (OpenAI, Anthropic) for complex reasoning and elastic workloads, delivering privacy, performance, and cost predictability.
 						</p>
 					</div>
 					<a href="#contact" data-service="infraestructura" class="cotizar-btn inline-flex items-center justify-center w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 dark:bg-brand-bg-darkSecondary dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 dark:hover:border-brand-accent hover:border-brand-accent-light text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all duration-300">
@@ -539,24 +305,40 @@ import Layout from '../../layouts/Layout.astro';
 			<!-- Mobile View (Cards) -->
 			<div class="grid grid-cols-1 gap-6 md:hidden">
 				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Enterprise Catalog Automation</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-4 text-sm leading-relaxed">Automated management and integration of an AI advisor for massive retail inventories (over 2,400 products).</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-semibold rounded-full">AI Integration, Automation</span>
+					<div class="flex items-center justify-between mb-2">
+						<span class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full">-85% Search Time</span>
+						<span class="text-xs text-slate-400">Retail & Catalogs</span>
+					</div>
+					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Catalog RAG Pipeline & Semantic Retrieval</h4>
+					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Automated ingestion of 2,400+ technical PDF data sheets (PyMuPDF) and LanceDB vector indexing. Reduced customer inquiry response times from 12 minutes to under 45 seconds.</p>
+					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Python · PyMuPDF · LanceDB · Next.js</span>
 				</div>
 				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Premium E-Commerce Engines</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-4 text-sm leading-relaxed">End-to-end delivery of high-end boutique stores, including custom domain routing and optimized transactional logic.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-semibold rounded-full">Next.js, Supabase, Tailwind</span>
+					<div class="flex items-center justify-between mb-2">
+						<span class="text-xs font-mono font-bold text-sky-500 bg-sky-500/10 px-2.5 py-0.5 rounded-full">&lt;150ms Edge · 0 Checkout Errs</span>
+						<span class="text-xs text-slate-400">High-End E-Commerce</span>
+					</div>
+					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Headless High-Performance Architecture</h4>
+					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Migration from monolithic WordPress to Next.js static site generation with Supabase RLS. 0 checkout transaction errors across 12,000 monthly sessions.</p>
+					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Next.js · Supabase RLS · Tailwind</span>
 				</div>
 				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Real Estate Lead Generation</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-4 text-sm leading-relaxed">Specialized data extraction tools (scraping) and prompt engineering to capture, filter, and close property prospects.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-semibold rounded-full">Data Extraction, LLM Orchestration</span>
+					<div class="flex items-center justify-between mb-2">
+						<span class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full">+350 Qualified Leads/Mo</span>
+						<span class="text-xs text-slate-400">Real Estate</span>
+					</div>
+					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Automated Lead Scraping & CRM Enrichment</h4>
+					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Multi-portal scraping pipeline validated via Pytest & Selenium with automated CRM scoring. Eliminated 18 weekly hours of manual qualification.</p>
+					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Selenium · Pytest · Python · Webhooks</span>
 				</div>
 				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Sovereign IDE Development</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-4 text-sm leading-relaxed">Construction of a localized, open-source development environment with integrated local memory to maintain strict data autonomy.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-semibold rounded-full">Local LLMs, Dev Tools</span>
+					<div class="flex items-center justify-between mb-2">
+						<span class="text-xs font-mono font-bold text-purple-400 bg-purple-500/10 px-2.5 py-0.5 rounded-full">$0.00 Token · 100% On-Premise</span>
+						<span class="text-xs text-slate-400">Dev Tools & IP</span>
+					</div>
+					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Sovereign Local LLM In-House Setup</h4>
+					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Localized development environment with quantized Llama 3 models and persistent vector context. Zero proprietary code leaks and zero recurring token costs.</p>
+					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Llama 3 · Ollama · SSH / Termux</span>
 				</div>
 			</div>
 
@@ -572,27 +354,270 @@ import Layout from '../../layouts/Layout.astro';
 					</thead>
 					<tbody class="divide-y divide-slate-100 dark:divide-slate-800">
 						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
-							<td class="p-6 font-bold text-slate-900 dark:text-white">Enterprise Catalog Automation</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">Automated management and integration of an AI advisor for massive retail inventories (over 2,400 products).</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold">AI Integration, Automation</td>
+							<td class="p-6">
+								<div class="font-bold text-slate-900 dark:text-white">Catalog RAG Pipeline & Semantic Search</div>
+								<div class="text-xs text-slate-400 mt-1">Retail & Dense Inventories</div>
+							</td>
+							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
+								Vectorization of 2,400+ technical PDF sheets with PyMuPDF. Reduced inquiry lookup times by <strong class="text-emerald-500">85%</strong> (from 12 min to &lt;45s) across support teams.
+							</td>
+							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Python · PyMuPDF · LanceDB · Next.js</td>
 						</tr>
 						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
-							<td class="p-6 font-bold text-slate-900 dark:text-white">Premium E-Commerce Engines</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">End-to-end delivery of high-end boutique stores, including custom domain routing and optimized transactional logic.</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold">Next.js, Supabase, Tailwind</td>
+							<td class="p-6">
+								<div class="font-bold text-slate-900 dark:text-white">Headless High-Performance Architecture</div>
+								<div class="text-xs text-slate-400 mt-1">Boutique & B2B E-Commerce</div>
+							</td>
+							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
+								Complete migration from monolithic WordPress to Next.js with Supabase RLS: <strong class="text-sky-400">&lt;150ms Edge TTFB</strong> and zero checkout crashes across 12,000 monthly sessions.
+							</td>
+							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Next.js · Supabase RLS · Tailwind CSS</td>
 						</tr>
 						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
-							<td class="p-6 font-bold text-slate-900 dark:text-white">Real Estate Lead Generation</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">Specialized data extraction tools (scraping) and prompt engineering to capture, filter, and close property prospects.</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold">Data Extraction, LLM Orchestration</td>
+							<td class="p-6">
+								<div class="font-bold text-slate-900 dark:text-white">Automated Lead Scraping & CRM Enrichment</div>
+								<div class="text-xs text-slate-400 mt-1">Commercial Real Estate</div>
+							</td>
+							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
+								Autonomous multi-portal pipeline with QA regression tests: generated <strong class="text-emerald-500">+350 qualified prospects/mo</strong> and saved 18 weekly hours of manual administrative labor.
+							</td>
+							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Selenium · Pytest · Python · Webhooks</td>
 						</tr>
 						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
-							<td class="p-6 font-bold text-slate-900 dark:text-white">Sovereign IDE Development</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">Construction of a localized, open-source development environment with integrated local memory to maintain strict data autonomy.</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold">Local LLMs, Dev Tools</td>
+							<td class="p-6">
+								<div class="font-bold text-slate-900 dark:text-white">Sovereign Local LLM Development Setup</div>
+								<div class="text-xs text-slate-400 mt-1">Dev Tools & Intellectual Property</div>
+							</td>
+							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
+								Localized environment with persistent memory and quantized open models: <strong class="text-emerald-500">zero IP exposure</strong> and a recurring cost of $0.00 USD per token.
+							</td>
+							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Llama 3 · Ollama · SSH / Termux</td>
 						</tr>
 					</tbody>
 				</table>
+			</div>
+		</div>
+	</section>
+
+	<!-- Interactive Console (Suggestion 26) -->
+	<section id="demo-console" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+			<div class="text-center max-w-3xl mx-auto mb-12">
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Agent Simulation Console</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Select a task to observe how our autonomous agents resolve and implement local workflows.</p>
+			</div>
+
+			<div class="flex flex-wrap justify-center gap-3 mb-8">
+				<button id="btn-demo-catalog" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+					Simulate Catalog Advisor
+				</button>
+				<button id="btn-demo-leads" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+					Simulate Lead Scraper
+				</button>
+				<button id="btn-demo-llm" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+					Simulate Private Local LLM
+				</button>
+			</div>
+
+			<div class="rounded-xl overflow-hidden border border-slate-300 dark:border-slate-800 bg-slate-950 shadow-2xl text-left font-mono">
+				<div class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-850">
+					<div class="flex space-x-2">
+						<span class="w-3 h-3 rounded-full bg-red-500"></span>
+						<span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+						<span class="w-3 h-3 rounded-full bg-green-500"></span>
+					</div>
+					<span class="text-xs text-slate-500 font-semibold select-none">terminal - soluvirtus-agent@local</span>
+					<div class="w-10"></div>
+				</div>
+				<div id="terminal-screen" class="p-6 h-80 overflow-y-auto text-sm text-slate-400 space-y-2 select-text scrollbar-thin scrollbar-thumb-slate-800">
+					<div class="text-slate-500">&gt; Console ready. Select a task to begin execution simulation...</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Interactive ROI Calculator (Suggestion 25) -->
+	<section id="roi-calculator" class="py-20 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+			<div class="text-center max-w-3xl mx-auto mb-12">
+				<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
+					Return on Investment Simulator
+				</span>
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
+					How Much Is Operational Friction Costing You?
+				</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">
+					Adjust the sliders to estimate monthly labor spent on repetitive manual tasks and potential savings with native automation and AI agents.
+				</p>
+			</div>
+
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+				<!-- Controls -->
+				<div class="lg:col-span-7 p-8 bg-slate-50 dark:bg-brand-bg-darkSecondary/40 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-6">
+					<div>
+						<div class="flex justify-between items-center mb-2">
+							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
+								Staff members performing manual repetitive workflows:
+							</label>
+							<span id="roi-people-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">3 employees</span>
+						</div>
+						<input type="range" id="roi-people" min="1" max="25" value="3" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
+					</div>
+
+					<div>
+						<div class="flex justify-between items-center mb-2">
+							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
+								Daily hours dedicated to manual processes (per person):
+							</label>
+							<span id="roi-hours-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">2.5 hours/day</span>
+						</div>
+						<input type="range" id="roi-hours" min="0.5" max="8" step="0.5" value="2.5" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
+					</div>
+
+					<div>
+						<div class="flex justify-between items-center mb-2">
+							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
+								Average hourly labor cost (USD):
+							</label>
+							<span id="roi-cost-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">$18 USD/hr</span>
+						</div>
+						<input type="range" id="roi-cost" min="10" max="100" step="1" value="18" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
+					</div>
+
+					<div class="pt-2 text-xs text-slate-500">
+						* Based on 21 business days per month and a realistic 70% automation rate for repetitive digital tasks.
+					</div>
+				</div>
+
+				<!-- Results Display -->
+				<div class="lg:col-span-5 p-8 bg-gradient-to-br from-slate-900 to-slate-950 text-white rounded-3xl border border-slate-800 shadow-2xl flex flex-col justify-between">
+					<div>
+						<span class="text-xs uppercase tracking-widest text-slate-400 font-bold">Estimated Operational Impact</span>
+						
+						<div class="mt-6 mb-6 pb-6 border-b border-slate-800">
+							<div class="text-xs text-slate-400 mb-1">Current monthly waste on repetitive tasks:</div>
+							<div id="roi-waste-display" class="text-2xl sm:text-3xl font-extrabold text-red-400 font-mono">
+								$2,835 USD / mo
+							</div>
+							<div id="roi-hours-waste" class="text-xs text-slate-500 mt-1">157.5 monthly hours spent on mechanical tasks</div>
+						</div>
+
+						<div class="mb-6">
+							<div class="text-xs text-emerald-400 font-bold uppercase tracking-wider mb-1">Projected Savings with Soluvirtus (70%):</div>
+							<div id="roi-savings-display" class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono">
+								$1,985 USD / mo
+							</div>
+							<div id="roi-annual-savings" class="text-xs text-slate-300 mt-1 font-semibold">
+								Equivalent to <span class="text-brand-accent">$23,820 USD / year</span> recovered
+							</div>
+						</div>
+					</div>
+
+					<a href="#audit-tool" class="w-full py-3 bg-brand-accent hover:bg-brand-accent-hover text-slate-950 font-bold text-center rounded-xl transition-all text-sm">
+						Automate These Workflows &rarr;
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- QA-First & ICP Section (Why Soluvirtus) -->
+	<section id="why-soluvirtus" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+			<div class="text-center max-w-3xl mx-auto mb-16">
+				<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
+					High-Standard Software Engineering
+				</span>
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
+					Why Growing Businesses Choose Soluvirtus
+				</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">
+					We don't deliver fragile shortcuts. We build resilient systems under a strict <span class="text-slate-900 dark:text-white font-semibold">QA-First</span> philosophy with automated testing before production releases.
+				</p>
+			</div>
+
+			<!-- QA-First vs Traditional Agencies -->
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+				<div class="p-8 rounded-2xl bg-slate-50 dark:bg-brand-bg-darkSecondary/30 border border-slate-200 dark:border-slate-800">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 font-bold text-sm">✓ Soluvirtus Standard</span>
+						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Headless Architecture & QA-First</h3>
+					</div>
+					<ul class="space-y-3 text-sm text-slate-600 dark:text-brand-text-darkSecondary">
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>E2E & Integration Testing:</strong> Automated suites with Pytest and Selenium to validate APIs, payment pipelines, and leads before go-live.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>Ultra-Low Latency:</strong> Astro & Next.js static builds delivering sub-150ms TTFB across global Edge servers.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>Hybrid AI Architecture & Data Sovereignty:</strong> Local open-source models for sensitive records and confidential IP; commercial APIs (OpenAI/Anthropic) pragmatically orchestrated for non-confidential, complex reasoning with predictable costs.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-emerald-400 font-bold">✓</span>
+							<span><strong>Zero Technical Debt:</strong> Clean, modular, type-safe code that your internal engineers can easily audit and scale.</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="p-8 rounded-2xl bg-slate-50/50 dark:bg-brand-bg-darkSecondary/10 border border-slate-200 dark:border-slate-800 opacity-90">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="p-2 rounded-lg bg-red-500/10 text-red-400 font-bold text-sm">✕ Traditional Approach</span>
+						<h3 class="text-lg font-bold text-slate-700 dark:text-slate-300">CMS Monoliths & Generic Agencies</h3>
+					</div>
+					<ul class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>Bloated WordPress themes with high latency exceeding 900ms and constant downtime.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>Dozens of vulnerable plugins leading to security breaches and breakages upon core updates.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>Indiscriminate usage of public commercial APIs across entire workflows, exposing customer data and creating runaway per-token costs.</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<span class="text-red-400 font-bold">✕</span>
+							<span>No automated test coverage: the end customer is the one who discovers production bugs.</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- When to Hire Us (ICP) -->
+			<div class="p-8 rounded-3xl bg-slate-900 text-white dark:bg-brand-bg-darkSecondary border border-slate-800">
+				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+					<div class="lg:col-span-1">
+						<span class="text-xs uppercase tracking-widest text-brand-accent font-bold">Ideal Client Profile</span>
+						<h3 class="text-2xl font-extrabold mt-1 mb-3">Is Soluvirtus the Right Fit for Your Company?</h3>
+						<p class="text-xs text-slate-400 leading-relaxed">
+							We partner with growth-minded leaders who value technical resilience, data autonomy, and measurable ROI over cheap quick fixes.
+						</p>
+					</div>
+					<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">Retail & Dense Catalogs</div>
+							<p class="text-slate-300">Businesses with +2,000 SKUs needing PDF extraction pipelines (PyMuPDF) and semantic vector search.</p>
+						</div>
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">Operational Bottlenecks</div>
+							<p class="text-slate-300">Teams losing 10+ weekly hours on manual data entry, quoting, or repetitive property lead qualification.</p>
+						</div>
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">Data Sovereignty & Local AI</div>
+							<p class="text-slate-300">Organizations restricted from sharing records with third-party LLMs who require on-premise inference.</p>
+						</div>
+						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
+							<div class="font-bold text-brand-accent mb-1">CTOs Demanding QA Quality</div>
+							<p class="text-slate-300">Engineering leaders seeking nearshore talent with automated test suites, clean contracts, and zero hidden debt.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -653,211 +678,103 @@ import Layout from '../../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<!-- QA-First & ICP Section (Why Soluvirtus) -->
-	<section id="why-soluvirtus" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
-		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-			<div class="text-center max-w-3xl mx-auto mb-16">
-				<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
-					High-Standard Software Engineering
-				</span>
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
-					Why Growing Businesses Choose Soluvirtus
-				</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">
-					We don't deliver fragile shortcuts. We build resilient systems under a strict <span class="text-slate-900 dark:text-white font-semibold">QA-First</span> philosophy with automated testing before production releases.
-				</p>
-			</div>
-
-			<!-- QA-First vs Traditional Agencies -->
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-				<div class="p-8 rounded-2xl bg-slate-50 dark:bg-brand-bg-darkSecondary/30 border border-slate-200 dark:border-slate-800">
-					<div class="flex items-center gap-3 mb-4">
-						<span class="p-2 rounded-lg bg-emerald-500/10 text-emerald-500 font-bold text-sm">✓ Soluvirtus Standard</span>
-						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Headless Architecture & QA-First</h3>
-					</div>
-					<ul class="space-y-3 text-sm text-slate-600 dark:text-brand-text-darkSecondary">
-						<li class="flex items-start gap-2">
-							<span class="text-emerald-400 font-bold">✓</span>
-							<span><strong>E2E & Integration Testing:</strong> Automated suites with Pytest and Selenium to validate APIs, payment pipelines, and leads before go-live.</span>
-						</li>
-						<li class="flex items-start gap-2">
-							<span class="text-emerald-400 font-bold">✓</span>
-							<span><strong>Ultra-Low Latency:</strong> Astro & Next.js static builds delivering sub-150ms TTFB across global Edge servers.</span>
-						</li>
-						<li class="flex items-start gap-2">
-							<span class="text-emerald-400 font-bold">✓</span>
-							<span><strong>Data Sovereignty:</strong> Quantized local models and Supabase with RLS; your proprietary secrets never feed commercial LLM training sets.</span>
-						</li>
-						<li class="flex items-start gap-2">
-							<span class="text-emerald-400 font-bold">✓</span>
-							<span><strong>Zero Technical Debt:</strong> Clean, modular, type-safe code that your internal engineers can easily audit and scale.</span>
-						</li>
-					</ul>
-				</div>
-
-				<div class="p-8 rounded-2xl bg-slate-50/50 dark:bg-brand-bg-darkSecondary/10 border border-slate-200 dark:border-slate-800 opacity-90">
-					<div class="flex items-center gap-3 mb-4">
-						<span class="p-2 rounded-lg bg-red-500/10 text-red-400 font-bold text-sm">✕ Traditional Approach</span>
-						<h3 class="text-lg font-bold text-slate-700 dark:text-slate-300">CMS Monoliths & Generic Agencies</h3>
-					</div>
-					<ul class="space-y-3 text-sm text-slate-500 dark:text-slate-400">
-						<li class="flex items-start gap-2">
-							<span class="text-red-400 font-bold">✕</span>
-							<span>Bloated WordPress themes with high latency exceeding 900ms and constant downtime.</span>
-						</li>
-						<li class="flex items-start gap-2">
-							<span class="text-red-400 font-bold">✕</span>
-							<span>Dozens of vulnerable plugins leading to security breaches and breakages upon core updates.</span>
-						</li>
-						<li class="flex items-start gap-2">
-							<span class="text-red-400 font-bold">✕</span>
-							<span>Cosmetic chatbots that hallucinate and leak sensitive customer conversations to public clouds.</span>
-						</li>
-						<li class="flex items-start gap-2">
-							<span class="text-red-400 font-bold">✕</span>
-							<span>No automated test coverage: the end customer is the one who discovers production bugs.</span>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<!-- When to Hire Us (ICP) -->
-			<div class="p-8 rounded-3xl bg-slate-900 text-white dark:bg-brand-bg-darkSecondary border border-slate-800">
-				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
-					<div class="lg:col-span-1">
-						<span class="text-xs uppercase tracking-widest text-brand-accent font-bold">Ideal Client Profile</span>
-						<h3 class="text-2xl font-extrabold mt-1 mb-3">Is Soluvirtus the Right Fit for Your Company?</h3>
-						<p class="text-xs text-slate-400 leading-relaxed">
-							We partner with growth-minded leaders who value technical resilience, data autonomy, and measurable ROI over cheap quick fixes.
-						</p>
-					</div>
-					<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">Retail & Dense Catalogs</div>
-							<p class="text-slate-300">Businesses with +2,000 SKUs needing PDF extraction pipelines (PyMuPDF) and semantic vector search.</p>
-						</div>
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">Operational Bottlenecks</div>
-							<p class="text-slate-300">Teams losing 10+ weekly hours on manual data entry, quoting, or repetitive property lead qualification.</p>
-						</div>
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">Data Sovereignty & Local AI</div>
-							<p class="text-slate-300">Organizations restricted from sharing records with third-party LLMs who require on-premise inference.</p>
-						</div>
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">CTOs Demanding QA Quality</div>
-							<p class="text-slate-300">Engineering leaders seeking nearshore talent with automated test suites, clean contracts, and zero hidden debt.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Frequently Asked Questions (GEO Citations) -->
-	<section id="faq" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300" itemscope itemtype="https://schema.org/FAQPage">
+		<!-- Lead Magnet / Free Express Audit (CRO & Lead Capture) -->
+	<section id="audit-tool" class="py-20 bg-slate-100/70 dark:bg-brand-bg-darkSecondary/30 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Decision-Making FAQs</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Direct answers regarding architecture, data privacy, and ROI timelines.</p>
-			</div>
-
-			<div class="space-y-4">
-				<!-- FAQ 1 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">How does Soluvirtus deploy AI without compromising corporate data privacy?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							We deploy open-source models (Llama 3, Mistral) directly on on-premise hardware or client-controlled private clouds. Sensitive records, legal contracts, and intellectual property never exit your boundary, eliminating data leakage to third-party APIs and reducing recurring token costs to $0.00 USD.
-						</p>
-					</div>
+			<div class="p-8 sm:p-12 bg-white dark:bg-brand-bg-darkSecondary/60 backdrop-blur-md rounded-3xl border border-slate-300 dark:border-white/10 shadow-xl relative overflow-hidden">
+				<div class="absolute -top-24 -right-24 w-72 h-72 bg-brand-accent-light/10 dark:bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+				
+				<div class="text-center max-w-2xl mx-auto mb-8">
+					<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-accent-light/10 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
+						Free Express Evaluation
+					</span>
+					<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-3">
+						Evaluate Automation & Cost Savings for Your Business
+					</h2>
+					<p class="text-slate-600 dark:text-brand-text-darkSecondary text-sm sm:text-base">
+						Discover in 60 seconds which processes in your company are losing time and receive a technical viability assessment with recommended agent architecture.
+					</p>
 				</div>
 
-				<!-- FAQ 2 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">Why does Soluvirtus reject WordPress in favor of headless stacks like Astro and Next.js?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							WordPress monoliths suffer from technical debt, plugin vulnerabilities, and slow server response times over 900ms. Soluvirtus engineers decoupled web apps using Astro, Next.js, and Supabase (with Row-Level Security). This delivers sub-150ms Edge load speeds, bulletproof security, and native flexibility to orchestrate autonomous AI agents.
-						</p>
+				<form id="audit-form" class="space-y-5 max-w-2xl mx-auto">
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+						<div>
+							<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+								Direct Contact (Corporate Email or WhatsApp) *
+							</label>
+							<input type="text" id="audit-contact" required placeholder="carlos@company.com or +1 555..." class="w-full bg-slate-50 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 focus:outline-none focus:border-brand-accent transition-colors text-slate-900 dark:text-slate-100 text-sm" />
+						</div>
+						<div>
+							<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+								Critical Area to Optimize *
+							</label>
+							<select id="audit-area" class="w-full bg-slate-50 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-slate-300 dark:border-slate-700 focus:outline-none focus:border-brand-accent transition-colors text-slate-900 dark:text-slate-200 text-sm">
+								<option value="leads">Lead Scraping & Qualification (Scrapers & CRM)</option>
+								<option value="catalog">Dense Catalog & Technical PDF Ingestion</option>
+								<option value="ai_local">Data Privacy / Hybrid AI & Local Sovereignty</option>
+								<option value="web_app">Replacing Slow WordPress Monoliths (Astro / Next.js)</option>
+								<option value="workflows">Automating Repetitive Internal Team Tasks</option>
+							</select>
+						</div>
 					</div>
-				</div>
 
-				<!-- FAQ 3 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What does an "Agent-First" approach mean compared to legacy automations?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							Unlike rigid no-code workflows that break whenever web layouts or document formats change, an Agent-First system leverages AI models that can reason, interpret unstructured documents, make conditional decisions, and handle complex business logic autonomously.
-						</p>
+					<div>
+						<label class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2">
+							Approximate weekly hours lost to repetitive manual processes:
+						</label>
+						<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-center text-xs font-semibold">
+							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-2.5 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
+								<input type="radio" name="audit-hours" value="1-5" class="sr-only" checked />
+								<span>1 to 5 hrs/wk</span>
+							</label>
+							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-2.5 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
+								<input type="radio" name="audit-hours" value="6-15" class="sr-only" />
+								<span>6 to 15 hrs/wk</span>
+							</label>
+							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-2.5 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
+								<input type="radio" name="audit-hours" value="16-30" class="sr-only" />
+								<span>16 to 30 hrs/wk</span>
+							</label>
+							<label class="cursor-pointer border border-slate-300 dark:border-slate-700 p-2.5 rounded-xl hover:border-brand-accent bg-slate-50 dark:bg-brand-bg-dark has-[:checked]:border-brand-accent has-[:checked]:bg-sky-50 dark:has-[:checked]:bg-brand-accent/10 transition-all">
+								<input type="radio" name="audit-hours" value="30+" class="sr-only" />
+								<span>+30 hrs (Critical)</span>
+							</label>
+						</div>
 					</div>
-				</div>
 
-				<!-- FAQ 4 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What is "QA-First Development" and how does it protect my investment?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					<button type="submit" id="btn-submit-audit" class="w-full py-4 bg-brand-accent-light hover:bg-brand-accent-lightHover dark:bg-brand-accent dark:hover:bg-brand-accent-hover text-white dark:text-slate-900 font-bold rounded-xl transition-all duration-300 text-base shadow-lg shadow-sky-500/20 dark:shadow-brand-accent/20 flex items-center justify-center gap-3">
+						<span>Get Free Audit & Actionable Roadmap</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							It means features are not considered finished without automated verification. We write automated integration suites with Pytest to test API logic and E2E browser tests with Selenium for critical checkout and lead workflows. This ensures software releases are production-hardened without costly downtime.
-						</p>
-					</div>
-				</div>
+				</form>
 
-				<!-- FAQ 5 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What is the typical delivery timeline and ROI of a custom automation pipeline?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							An initial high-impact automation or scraper pipeline is typically deployed within 2 to 3 weeks. Most of our clients recoup 100% of their investment within 60 to 90 days by reclaiming up to 70% of the operational hours previously lost to manual processing.
-						</p>
-					</div>
-				</div>
-
-				<!-- FAQ 6 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What technologies compose your core development stack?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							We build with a modern, high-speed, secure stack: Astro and Next.js with React for lightning-fast UIs; Tailwind CSS for responsive styling; Python (PyMuPDF, Pytest, Selenium) for automation and data extraction; and Supabase (PostgreSQL) with Row-Level Security (RLS) for data governance.
-						</p>
-					</div>
-				</div>
-
-				<!-- FAQ 7 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">How are ongoing support and system maintenance managed?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
-					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							All deliverables are 100% documented and owned by you. We also provide monthly retainer options that include proactive agent performance monitoring, prompt engineering optimization, local model version upgrades, and scraper adaptations against external site layout changes.
-						</p>
+				<!-- Feedback de éxito interactivo -->
+				<div id="audit-success-box" class="hidden mt-6 p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-slate-800 dark:text-slate-200">
+					<div class="flex items-start gap-4">
+						<div class="w-10 h-10 rounded-full bg-emerald-500 text-slate-950 flex items-center justify-center font-bold text-xl flex-shrink-0">
+							✓
+						</div>
+						<div class="space-y-2 flex-grow">
+							<h4 class="font-bold text-lg text-emerald-600 dark:text-emerald-400">Audit Profile Successfully Recorded!</h4>
+							<p class="text-sm text-slate-600 dark:text-slate-300" id="audit-result-text">
+								We have calculated your efficiency profile. To receive your custom roadmap right away, connect directly on WhatsApp:
+							</p>
+							<div class="pt-2 flex flex-wrap gap-3">
+								<a id="audit-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-lg text-sm transition-all inline-flex items-center gap-2 shadow-md">
+									Continue to WhatsApp &rarr;
+								</a>
+								<a href="https://calendar.app.google/f4zwVLC3juqPxj27A" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-lg text-sm transition-all inline-flex items-center gap-2 shadow-md hover:bg-slate-800 dark:hover:bg-slate-100">
+									<svg class="w-4 h-4 text-emerald-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5z"/></svg>
+									Schedule on Google Meet (20 min)
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- Contact -->
+<!-- Contact -->
 	<section id="contact" class="py-24 bg-slate-900 text-white dark:bg-brand-bg-dark border-t border-slate-800 dark:border-brand-bg-darkSecondary transition-colors duration-300">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -955,6 +872,109 @@ import Layout from '../../layouts/Layout.astro';
 			Talk to an Engineer
 		</span>
 	</a>
+
+	<!-- Frequently Asked Questions (GEO Citations) -->
+	<section id="faq" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300" itemscope itemtype="https://schema.org/FAQPage">
+		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+			<div class="text-center max-w-3xl mx-auto mb-16">
+				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Decision-Making FAQs</h2>
+				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Direct answers regarding architecture, data privacy, and ROI timelines.</p>
+			</div>
+
+			<div class="space-y-4">
+				<!-- FAQ 1 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span itemprop="name">How does Soluvirtus balance data privacy with the advanced capabilities of commercial AI?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
+							We implement a pragmatic <strong class="text-slate-900 dark:text-white">hybrid AI architecture</strong>. For confidential customer data, internal contracts, and sensitive trade secrets, we deploy open-weight models (Llama 3, Mistral) on private client-controlled servers where data never leaves your perimeter and token costs remain $0.00 USD. When tasks require state-of-the-art complex reasoning, multimodal processing, or elastic throughput, we seamlessly orchestrate leading commercial APIs (such as OpenAI or Anthropic) using sanitization layers and zero-data-retention enterprise controls.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 2 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span itemprop="name">Why does Soluvirtus reject WordPress in favor of headless stacks like Astro and Next.js?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
+							WordPress monoliths suffer from technical debt, plugin vulnerabilities, and slow server response times over 900ms. Soluvirtus engineers decoupled web apps using Astro, Next.js, and Supabase (with Row-Level Security). This delivers sub-150ms Edge load speeds, bulletproof security, and native flexibility to orchestrate autonomous AI agents.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 3 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span itemprop="name">What does an "Agent-First" approach mean compared to legacy automations?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
+							Unlike rigid no-code workflows that break whenever web layouts or document formats change, an Agent-First system leverages AI models that can reason, interpret unstructured documents, make conditional decisions, and handle complex business logic autonomously.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 4 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span itemprop="name">What is "QA-First Development" and how does it protect my investment?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
+							It means features are not considered finished without automated verification. We write automated integration suites with Pytest to test API logic and E2E browser tests with Selenium for critical checkout and lead workflows. This ensures software releases are production-hardened without costly downtime.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 5 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span itemprop="name">What is the typical delivery timeline and ROI of a custom automation pipeline?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
+							An initial high-impact automation or scraper pipeline is typically deployed within 2 to 3 weeks. Most of our clients recoup 100% of their investment within 60 to 90 days by reclaiming up to 70% of the operational hours previously lost to manual processing.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 6 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span itemprop="name">What technologies compose your core development stack?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
+							We build with a modern, high-speed, secure stack: Astro and Next.js with React for lightning-fast UIs; Tailwind CSS for responsive styling; Python (PyMuPDF, Pytest, Selenium) for automation and data extraction; and Supabase (PostgreSQL) with Row-Level Security (RLS) for data governance.
+						</p>
+					</div>
+				</div>
+
+				<!-- FAQ 7 -->
+				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
+						<span itemprop="name">How are ongoing support and system maintenance managed?</span>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+					</button>
+					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
+							All deliverables are 100% documented and owned by you. We also provide monthly retainer options that include proactive agent performance monitoring, prompt engineering optimization, local model version upgrades, and scraper adaptations against external site layout changes.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<footer class="py-12 bg-slate-950 text-slate-500 text-center text-sm border-t border-slate-900 dark:border-brand-bg-darkSecondary transition-colors">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
@@ -1228,21 +1248,17 @@ import Layout from '../../layouts/Layout.astro';
 
 	auditForm?.addEventListener('submit', (e) => {
 		e.preventDefault();
-		const name = (document.getElementById('audit-name') as HTMLInputElement)?.value.trim();
-		const email = (document.getElementById('audit-email') as HTMLInputElement)?.value.trim();
-		const phone = (document.getElementById('audit-phone') as HTMLInputElement)?.value.trim();
+		const contactInput = (document.getElementById('audit-contact') as HTMLInputElement)?.value.trim();
 		const area = (document.getElementById('audit-area') as HTMLSelectElement)?.value;
 		const hoursEl = document.querySelector('input[name="audit-hours"]:checked') as HTMLInputElement | null;
 		const hours = hoursEl ? hoursEl.value : 'N/A';
 
 		const leadData = {
-			name,
-			email,
-			phone,
+			contact: contactInput,
 			area,
 			hoursLost: hours,
 			timestamp: new Date().toISOString(),
-			source: 'Express Audit Lead Magnet EN'
+			source: 'Express Audit Streamlined Lead Magnet EN'
 		};
 
 		try {
@@ -1255,14 +1271,14 @@ import Layout from '../../layouts/Layout.astro';
 
 		const areaLabels: Record<string, string> = {
 			leads: 'Lead Scraping & CRM Pipeline Automation',
-			catalog: 'Massive Catalog & E-Commerce Automation',
-			ai_local: 'Private Local AI (Data Sovereignty, Zero token cost)',
-			web_app: 'High-Performance Custom Web App (Astro / Next.js)',
+			catalog: 'Massive Catalog & Technical PDF Ingestion',
+			ai_local: 'Hybrid AI & Sovereign Local Privacy',
+			web_app: 'High-Performance Headless Web (Astro / Next.js)',
 			workflows: 'Eliminating Repetitive Manual Team Tasks'
 		};
 		const areaName = areaLabels[area] || area;
 
-		const waMessage = `Hello Antonio / Soluvirtus,%0A%0AI have submitted the Automation Audit on your website:%0A• *Name/Company:* ${encodeURIComponent(name)}%0A• *Email:* ${encodeURIComponent(email)}%0A• *Phone:* ${encodeURIComponent(phone)}%0A• *Priority Area:* ${encodeURIComponent(areaName)}%0A• *Weekly Hours in Manual Tasks:* ${encodeURIComponent(hours)} hrs/wk%0A%0AI would like to receive the roadmap and briefing to automate these workflows.`;
+		const waMessage = `Hello Antonio / Soluvirtus,%0A%0AI have submitted the Automation Audit on your website:%0A• *Contact:* ${encodeURIComponent(contactInput)}%0A• *Priority Area:* ${encodeURIComponent(areaName)}%0A• *Weekly Hours in Manual Tasks:* ${encodeURIComponent(hours)} hrs/wk%0A%0AI would like to receive the roadmap and briefing to automate these workflows.`;
 		const waUrl = `https://wa.me/5215570603839?text=${waMessage}`;
 
 		if (auditWhatsappLink) {
@@ -1270,7 +1286,7 @@ import Layout from '../../layouts/Layout.astro';
 		}
 
 		if (auditResultText) {
-			auditResultText.textContent = `Hello ${name}, we calculated your automation profile for ${areaName}. Your estimated loss exceeds ${hours} hours weekly. Click below to receive your action plan directly:`;
+			auditResultText.textContent = `We calculated your automation profile for ${areaName}. Your estimated loss is around ${hours} hours weekly. Click below to receive your action plan directly:`;
 		}
 
 		if (auditSuccessBox) {

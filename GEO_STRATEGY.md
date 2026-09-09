@@ -130,3 +130,30 @@ Implementación de un esquema enriquecido en formato `@graph` que valida la enti
 2. **Eliminación Total de Emoticones y Clichés:**
    - Se removieron los emoticones informales del footer y del cuerpo del sitio (rayos, candados, cohetes).
    - Sustituidos por indicadores y divisores sobrios de diseño de sistemas (puntos de estado de color con tokens de Tailwind CSS), transmitiendo rigor y seriedad corporativa frente a CTOs y comités de inversión técnica.
+
+---
+
+## 8. Reordenamiento de Jerarquía CRO, Casos Reales y Arquitectura Híbrida de IA (Septiembre 2026)
+
+1. **Reordenamiento Estratégico del Funnel de Conversión (Trust-First Flow):**
+   - **Hero:** Propuesta de valor, posicionamiento anti-CMS y accesos directos de alta intención.
+   - **Especialidades (`#services`):** Demostración inmediata de capacidades y artefactos técnicos interactivos.
+   - **Proyectos Clave (`#projects`):** Prueba social cuantitativa con micro-casos de estudio verificables antes de solicitar cualquier dato al usuario.
+   - **Simulador de Agentes (`#demo-console`):** Consola interactiva de ejecución autónoma.
+   - **Calculadora de ROI (`#roi-calculator`):** Herramienta de cuantificación de ahorro una vez que el prospecto confía en la pericia técnica.
+   - **Comparativa QA-First (`#why-soluvirtus`):** Superación de objeciones frente a monolitos y agencias tradicionales.
+   - **Filosofía (`#philosophie`):** Visión de largo plazo y soberanía tecnológica.
+   - **Diagnóstico Express Simplificado (`#audit-tool`):** Formulario optimizado de baja fricción (2 campos esenciales: contacto directo + área crítica) ubicado justo antes del contacto final.
+   - **Contacto Directo (`#contact`):** Canal de ingeniería con opciones de WhatsApp calificado y agendamiento en Google Meet.
+   - **Preguntas Frecuentes (`#faq`):** Bloque de soporte con marcado enriquecido.
+
+2. **Micro-Casos de Estudio con Métricas Verificables:**
+   - **Retail & Catálogos Masivos:** Pipeline RAG vectorial con PyMuPDF y LanceDB para +2,400 fichas técnicas en PDF, reduciendo el tiempo de búsqueda en **85%** (de 12 min a <45s).
+   - **E-Commerce de Alta Gama:** Arquitectura headless desacoplada con Next.js y Supabase RLS, logrando latencia **<150ms Edge TTFB** y **0 errores transaccionales** en 12,000 sesiones/mes.
+   - **Real Estate Comercial:** Scraper automatizado con Pytest y Selenium que genera **+350 prospectos calificados/mes** y ahorra **18 horas semanales** de trabajo manual.
+   - **Dev Tools & IP:** Entorno local con modelos cuantizados Llama 3 para desarrollo interno, con **cero fuga de propiedad intelectual** y costo recurrente de **$0.00 USD** por token.
+
+3. **Arquitectura Híbrida de IA & Soberanía de Datos Matizada:**
+   - Superación del dogmatismo "local-only": se articula claramente que Soluvirtus despliega modelos abiertos locales (Llama 3, Mistral) para salvaguardar datos confidenciales y eliminar costos fijos por token, mientras que orquesta de forma pragmática modelos comerciales de vanguardia (OpenAI, Anthropic) para razonamiento complejo no confidencial y flujos multimodales elásticos.
+   - Sincronización completa en Especialidad 3, tabla QA-First, FAQ #1 bilingüe y datos estructurados Schema.org JSON-LD.
+
