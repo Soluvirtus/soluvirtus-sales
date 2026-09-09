@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Dark developer terminal background -->
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f17"/>
+      <stop offset="100%" stop-color="#03070d"/>
+    </linearGradient>
+
+    <!-- Vibrant cyan prompt gradient -->
+    <linearGradient id="promptCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
+
+    <!-- Glowing emerald prompt cursor -->
+    <linearGradient id="cursorEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <!-- Subtle neon outer glow -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Terminal Window Base (Rounded Squircle) -->
+  <rect width="512" height="512" rx="120" fill="url(#termBg)"/>
+  <rect width="508" height="508" x="2" y="2" rx="118" stroke="rgba(255,255,255,0.09)" stroke-width="3"/>
+
+  <!-- Top Terminal Window Controls / Traffic Lights -->
+  <g transform="translate(68, 64)">
+    <circle cx="0" cy="0" r="14" fill="#ef4444"/>
+    <circle cx="42" cy="0" r="14" fill="#f59e0b"/>
+    <circle cx="84" cy="0" r="14" fill="#10b981"/>
+  </g>
+
+  <!-- Terminal Header subtle border -->
+  <line x1="48" y1="106" x2="464" y2="106" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+
+  <!-- Command Prompt Symbol: ">" (Chevron Prompt) -->
+  <path d="M 112 176 L 244 286 L 112 396" 
+        stroke="url(#promptCyan)" 
+        stroke-width="48" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#neonGlow)"/>
+
+  <!-- Blinking Terminal Cursor / Block Cursor: "_" -->
+  <rect x="272" y="352" width="128" height="44" rx="12" 
+        fill="url(#cursorEmerald)" 
+        filter="url(#neonGlow)"/>
+
+  <!-- Small Soluvirtus Core Accent Spark at the top right -->
+  <circle cx="432" cy="64" r="6" fill="#00f0ff" opacity="0.8"/>
+</svg>
