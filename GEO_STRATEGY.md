@@ -116,3 +116,17 @@ Implementación de un esquema enriquecido en formato `@graph` que valida la enti
 3. **Optimización de Core Web Vitals y Precarga de Fuentes:**
    - Directivas `dns-prefetch` y `preconnect` cruzadas con `crossorigin` para los dominios de Google Fonts (`fonts.googleapis.com` y `fonts.gstatic.com`).
    - Precarga prioritaria (`fetchpriority="high"`) del activo LCP principal (`/images/hero_bg.png`) para acelerar el First Contentful Paint a valores de alto rendimiento en el Edge.
+
+---
+
+## 7. Refactorización de Autoridad Técnica Visual y Sobriedad (Cero Stock & Cero Emojis)
+
+1. **Reemplazo de Imágenes de Stock por Artefactos de Ingeniería Reales:**
+   - **Automatización Inteligente:** Micro-diagrama interactivo de pipeline de datos en tiempo real mostrando el flujo técnico exacto (`PyMuPDF` &rarr; `Vector RAG en pgvector/Supabase` &rarr; `API Agent`, latencia `84ms`, 100% test pass).
+   - **Desarrollo Full-Stack:** Ventana de navegador técnica con métricas operativas verosímiles (`app.soluvirtus.com/ops-catalog`, latencia en el Edge de `42ms`, cobertura `98.4% Pytest`, `Supabase RLS`, `0 errores Selenium E2E`).
+   - **Infraestructura Soberana e IA Local:** Terminal SSH auténtica ejecutando telemetría local de hardware (`ollama ps` con modelo `llama3:8b-instruct`, `5.6 GB VRAM`, `100% GPU`, costo por token `$0.00 USD`, socket privado localhost `127.0.0.1:11434`).
+   - **Diseño UI/UX Premium:** Vista previa de componente técnico interactivo para catálogo denso de retail (`SKU-7842-IND`, tolerancia térmica, protocolos Modbus/MQTT, exportación de especificaciones técnicas a PDF en 1 clic).
+
+2. **Eliminación Total de Emoticones y Clichés:**
+   - Se removieron los emoticones informales del footer y del cuerpo del sitio (rayos, candados, cohetes).
+   - Sustituidos por indicadores y divisores sobrios de diseño de sistemas (puntos de estado de color con tokens de Tailwind CSS), transmitiendo rigor y seriedad corporativa frente a CTOs y comités de inversión técnica.
