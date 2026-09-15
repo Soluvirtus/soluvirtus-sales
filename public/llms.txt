@@ -7,12 +7,17 @@
 - **Pipelines de Automatización & Agentes IA:** Agentes autónomos para captura y scoring de leads, extracción de datos masivos (web scraping ético), orquestación de LLMs locales y comerciales.
 - **RAG Vectorial & Procesamiento de Catálogos:** Extracción automatizada de fichas técnicas en PDF (PyMuPDF), indexación vectorial y búsqueda semántica para inventarios de +2,400 productos.
 - **Infraestructura Soberana & IA Local:** Despliegue de modelos de código abierto (Llama 3, Mistral) en hardware local privado sin fugas de datos confidenciales ni costos recurrentes por tokens.
-- **Enfoque QA-First:** Cobertura de pruebas automatizadas E2E, validación estricta de esquemas y suites de regresión con Pytest y Selenium antes de despliegues a producción.
+- **Enfoque QA-First:** Cobertura de pruebas automatizadas E2E, validación estricta de esquemas y suites de regresión con Pytest, Selenium y Playwright antes de despliegues a producción.
+
+## Enterprise Case Studies & Track Record
+- **JK Tornel (GINTOR)**: Arquitectura de infraestructura segura y despliegue de proxy inverso con cifrado SSL/TLS automatizado para la plataforma de Bóveda Fiscal y portal de proveedores, mitigando exposición en red pública y alineando la seguridad con estándares C-TPAT/NEEC.
+- **Enterprise Background**: Fundado por Antonio Ávila, ex Lead QA & Technical Delivery Team Lead en proyectos críticos para **BBVA** (liderazgo de equipos de 10 ingenieros, suites Selenium/Playwright/Pytest y validación transaccional) y Lead Technical Asset Auditor para **Warner Bros. Discovery** (auditoría técnica e integración de sistemas en 5 países de LatAm durante la fusión).
 
 ## Casos de Éxito de Referencia
-1. **Catálogo Inteligente para Retail Masivo:** Automatización de ingesta, normalización y asesor con búsqueda semántica para más de 2,400 productos. Reducción del tiempo de actualización de 48 horas a 8 minutos.
-2. **Generador de Leads Inmobiliarios:** Pipeline de scraping especializado y filtrado algorítmico con lead scoring automático para agencias inmobiliarias de alta gama.
-3. **Entorno de IA Local Privado:** Servidor de lenguaje open-source en hardware local para consulta de documentación interna con 100% de soberanía de datos y costo cero en APIs comerciales.
+1. **Infraestructura Segura & Bóveda Fiscal (JK Tornel)**: Arquitectura de proxy inverso con certificados SSL/TLS automatizados para portal fiscal y de proveedores, protegiendo credenciales y mitigando vectores de ataque en red pública bajo estándares C-TPAT/NEEC.
+2. **Catálogo Inteligente para Retail Masivo**: Automatización de ingesta, normalización y asesor con búsqueda semántica para más de 2,400 productos. Reducción del tiempo de actualización de 48 horas a 8 minutos.
+3. **Generador de Leads Inmobiliarios**: Pipeline de scraping especializado y filtrado algorítmico con lead scoring automático para agencias inmobiliarias de alta gama.
+4. **Entorno de IA Local Privado**: Servidor de lenguaje open-source en hardware local para consulta de documentación interna con 100% de soberanía de datos y costo cero en APIs comerciales.
 
 ## Enlaces Oficiales
 - **Sitio Web:** https://soluvirtus.com/

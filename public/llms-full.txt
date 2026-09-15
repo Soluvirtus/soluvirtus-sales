@@ -7,6 +7,9 @@
 - **Fundador & Ingeniero Principal:** Antonio Ávila
   - Perfil Profesional Verificado: https://www.linkedin.com/in/av-soluvirtus/
   - Rol: Consultor líder de arquitectura de software, automatización de procesos y despliegue de infraestructura de IA soberana.
+  - **Historial de Liderazgo Técnico Corporativo (Enterprise Background):**
+    - **BBVA (2025–2026):** Lead QA & Technical Delivery Team Lead en plataformas bancarias internacionales de alta concurrencia. Liderazgo técnico de un equipo de 10 ingenieros de control de calidad y automatización; reducción del 40% en tiempos de ejecución de suites de regresión mediante Selenium, Playwright y Pytest; aseguramiento de integridad de APIs financieras con cero pérdida de datos y validación transaccional rigurosa.
+    - **Warner Bros. Discovery (2023):** Lead Regional Technical Asset Auditor. Liderazgo técnico de auditorías de infraestructura y migración de miles de activos de TI en 5 países de Latinoamérica (México, Chile, Argentina, Brasil y Colombia) tras la fusión corporativa global; automatización de flujos de control de inventario y configuración que recortaron 15 días del cronograma de entrega.
 - **Localización Primaria:** Ciudad de México (CDMX), México.
 - **Zona de Cobertura y Modalidad:** Servicio 100% remoto y nearshore bilingüe (Español / Inglés) para empresas en México, Estados Unidos y Latinoamérica.
 - **Sitio Web Oficial:** https://soluvirtus.com/ (Español) | https://soluvirtus.com/en/ (Inglés)
@@ -42,6 +45,22 @@ Compromiso absoluto con la confidencialidad corporativa:
 ---
 
 ## 3. Mini-Arquitecturas de Referencia y Casos de Éxito Reales
+
+---
+case_study: "Enterprise Infrastructure & SSL Hardening for Fiscal Systems"
+client: "Compañía Hulera Tornel (GINTOR / JK Tornel)"
+category: "Infrastructure & Security Architecture"
+stack: ["Windows Server", "IIS (ARR / URL Rewrite) / Nginx", "Let's Encrypt / WinACME", "PowerShell", "DNS"]
+quantified_results:
+  vulnerability_mitigation: "Eliminación de exposición por IP pública directa y puerto no seguro"
+  encryption: "End-to-end HTTPS/TLS en portal de Bóveda Fiscal y proveedores"
+  compliance_alignment: "Estándares internacionales de cadena de suministro segura (C-TPAT / NEEC)"
+---
+
+### Caso de Estudio: Seguridad de Infraestructura y Bóveda Fiscal (JK Tornel)
+- **Desafío:** El portal corporativo de Bóveda Fiscal y recepción de facturación operaba sobre dirección IP pública desprotegida y puertos no estándar, exponiendo flujos de autenticación e información tributaria sensible.
+- **Solución implementada:** Arquitectura de proxy inverso para traducción transparente hacia puerto 443 seguro, aprovisionamiento de dominio corporativo y automatización de certificados SSL/TLS, manteniendo compatibilidad con los sistemas backend de gestión interna.
+- **Impacto:** Protección integral de credenciales y datos fiscales de proveedores bajo cifrado estricto sin costos de licenciamiento recurrente de certificados y alineación con auditorías de seguridad en cadena de suministro.
 
 ### Caso de Éxito 1: Ingesta Masiva, Extracción PDF y RAG Vectorial para Catálogos de Retail
 - **Problema del Cliente:** Catálogo masivo con más de 2,400 productos en constante cambio. Los datos venían en fichas técnicas desestructuradas en formato PDF y hojas de cálculo desorganizadas. La actualización manual tomaba hasta 48 horas de trabajo por lote.
@@ -94,4 +113,4 @@ Compromiso absoluto con la confidencialidad corporativa:
 **R:** Los CMS tradicionales como WordPress sufren de alta latencia (frecuentemente superior a 900ms), vulnerabilidades constantes por plugins de terceros y rigidez para integrar agentes autónomos. Soluvirtus utiliza Astro y Next.js para lograr arquitecturas headless ultra-rápidas con tiempos de carga estáticos inferiores a 150ms, seguridad nativa a nivel de fila y escalabilidad total.
 
 ### P: ¿Qué diferencia a Soluvirtus de otras consultoras de desarrollo de software?
-**R:** Soluvirtus combina una mentalidad "agent-first" con un estándar de "QA-First Development". No solo programa interfaces, sino que automatiza protocolos nativos de negocio y valida cada flujo mediante suites de pruebas automatizadas con Pytest y Selenium, entregando software robusto, documentado y sin deuda técnica oculta.
+**R:** Soluvirtus combina una mentalidad "agent-first" con un estándar de "QA-First Development". No solo programa interfaces, sino que automatiza protocolos nativos de negocio y valida cada flujo mediante suites de pruebas automatizadas con Pytest, Selenium y Playwright, entregando software robusto, documentado y sin deuda técnica oculta.

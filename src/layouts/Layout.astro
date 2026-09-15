@@ -83,13 +83,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 						"telephone": "+525570603839",
 						"priceRange": "$$$",
 						"founder": {
-							"@type": "Person",
-							"@id": "https://soluvirtus.com/#founder",
-							"name": "Antonio Ávila",
-							"jobTitle": "Lead Software Engineer & Automation Architect",
-							"sameAs": [
-								"https://www.linkedin.com/in/av-soluvirtus/"
-							]
+							"@id": "https://soluvirtus.com/#founder"
 						},
 						"address": {
 							"@type": "PostalAddress",
@@ -112,7 +106,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 							"RAG & Vector Embeddings (PyMuPDF, pgvector)",
 							"Full-Stack Web Engineering (Next.js, Astro, React, Supabase)",
 							"Local LLM Deployment & Data Sovereignty",
-							"QA Automation (Pytest, Selenium E2E)",
+							"QA Automation (Pytest, Selenium & Playwright E2E)",
 							"Headless E-Commerce Architectures"
 						],
 						"hasOfferCatalog": {
@@ -155,6 +149,36 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 						}
 					},
 					{
+						"@type": "Person",
+						"@id": "https://soluvirtus.com/#founder",
+						"name": "Antonio Ávila",
+						"jobTitle": "Founder & Principal Automation Architect",
+						"worksFor": {
+							"@id": "https://soluvirtus.com/#organization"
+						},
+						"sameAs": [
+							"https://www.linkedin.com/in/av-soluvirtus/"
+						],
+						"knowsAbout": [
+							"https://www.wikidata.org/wiki/Q1143855",
+							"https://www.wikidata.org/wiki/Q124314986",
+							"Software Engineering",
+							"Autonomous AI Agents & Tool Calling",
+							"Enterprise Infrastructure Hardening",
+							"Automated Quality Assurance"
+						],
+						"hasCredential": [
+							{
+								"@type": "EducationalOccupationalCredential",
+								"name": "Senior QA Engineer & Delivery Lead en plataformas internacionales de BBVA"
+							},
+							{
+								"@type": "EducationalOccupationalCredential",
+								"name": "Lead Regional Technical Asset Auditor en Warner Bros. Discovery"
+							}
+						]
+					},
+					{
 						"@type": "FAQPage",
 						"@id": "https://soluvirtus.com/#faq",
 						"mainEntity": [
@@ -187,7 +211,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 								"name": "¿Qué es el enfoque QA-First de Soluvirtus y cómo protege a los clientes?",
 								"acceptedAnswer": {
 									"@type": "Answer",
-									"text": "Soluvirtus diseña e implementa pruebas automatizadas unitarias, de integración de APIs REST y pruebas E2E con herramientas como Pytest y Selenium antes de liberar a producción. Esto garantiza software robusto, sin deuda técnica oculta ni caídas inesperadas en flujos de ingresos."
+									"text": "Soluvirtus diseña e implementa pruebas automatizadas unitarias, de integración de APIs REST y pruebas E2E con herramientas como Pytest, Selenium y Playwright antes de liberar a producción. Esto garantiza software robusto, sin deuda técnica oculta ni caídas inesperadas en flujos de ingresos."
 								}
 							},
 							{
@@ -203,7 +227,7 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 								"name": "¿Qué tecnologías componen el stack de desarrollo full-stack de Soluvirtus?",
 								"acceptedAnswer": {
 									"@type": "Answer",
-									"text": "Astro y Next.js con React para interfaces de usuario rápidas; Tailwind CSS para diseño responsivo; Python (PyMuPDF, Pytest, Selenium) para automatizaciones y pipelines de datos; y Supabase (PostgreSQL) con políticas de seguridad a nivel de fila (RLS)."
+									"text": "Astro y Next.js con React para interfaces de usuario rápidas; Tailwind CSS para diseño responsivo; Python (PyMuPDF, Pytest, Selenium, Playwright) para automatizaciones y pipelines de datos; y Supabase (PostgreSQL) con políticas de seguridad a nivel de fila (RLS)."
 								}
 							},
 							{
