@@ -7,28 +7,33 @@ export default {
       colors: {
         brand: {
           bg: {
-            light: '#f8fafc',
+            light: '#fbfbfd',
             lightSecondary: '#ffffff',
             dark: '#0c1017',
             darkSecondary: '#0f141d',
           },
           text: {
-            light: '#1e293b',
-            lightSecondary: '#475569',
+            light: '#12233f',
+            lightSecondary: '#3a4d6b',
             dark: '#ffffff',
             darkSecondary: '#cbd5e1',
-            muted: '#718294',
+            muted: '#627d98',
           },
           accent: {
             DEFAULT: '#00f0ff',
             hover: '#38bdf8',
-            light: '#0284c7',
-            lightHover: '#0369a1',
+            light: '#162e56',
+            lightHover: '#0e1e38',
+            gold: '#b89758',
+            goldHover: '#9a7b41',
+            goldLight: '#f4ede0',
           }
         }
       },
       boxShadow: {
         'neon-glow': '0 0 15px rgba(0, 240, 255, 0.4), 0 0 30px rgba(0, 240, 255, 0.2)',
+        'gold-glow': '0 0 15px rgba(184, 151, 88, 0.35), 0 0 30px rgba(184, 151, 88, 0.15)',
+        'navy-subtle': '0 10px 30px -10px rgba(18, 35, 63, 0.12)',
       }
     },
   },
