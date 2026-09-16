@@ -1,14 +1,16 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout 
+<Layout
 	title="SOLUVIRTUS - Custom AI & Software Engineering Consultancy"
 	description="Accelerate, delegate, and automate your operations. Autonomous AI agents, sovereign local LLMs, and high-performance web engineering with sub-150ms Edge speed."
 	lang="en"
 >
 	<!-- Navigation -->
-	<nav class="fixed top-0 left-0 w-full z-50 bg-brand-bg-light/80 dark:bg-brand-bg-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+	<nav
+		class="fixed top-0 left-0 w-full z-50 bg-brand-bg-light/80 dark:bg-brand-bg-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex items-center justify-between h-20">
 				<div class="flex items-center">
@@ -17,7 +19,9 @@ import Layout from '../../layouts/Layout.astro';
 						class="flex items-center gap-2.5 md:gap-3 group transition-all duration-300"
 					>
 						<!-- Monograma e Isotipo SV Oficial (Vector SVG puro adaptativo) -->
-						<div class="relative w-8 h-8 md:w-9 md:h-9 flex-shrink-0 flex items-center justify-center">
+						<div
+							class="relative w-8 h-8 md:w-9 md:h-9 flex-shrink-0 flex items-center justify-center"
+						>
 							<svg
 								viewBox="0 0 640 800"
 								class="w-full h-full transform group-hover:scale-105 transition-transform duration-300"
@@ -29,27 +33,27 @@ import Layout from '../../layouts/Layout.astro';
 									<path
 										d="M4833 7394 c3 -11 17 -49 31 -86 65 -173 72 -365 18 -521 -39 -113 -91 -200 -215 -355 l-101 -127 -9 35 c-26 103 -59 200 -75 220 -18 22 -18 22 -35 -58 -13 -61 -40 -123 -108 -257 -105 -204 -137 -291 -146 -390 -18 -215 125 -492 329 -635 64 -45 214 -117 224 -107 2 2 -14 42 -36 89 -75 161 -90 301 -45 434 31 92 101 222 173 322 85 119 187 285 212 346 36 89 44 72 36 -76 -9 -170 -33 -288 -103 -501 -53 -163 -56 -177 -57 -277 -1 -82 4 -120 21 -176 22 -69 58 -134 79 -141 5 -2 18 21 27 51 10 30 37 83 60 118 41 61 341 378 358 378 15 0 10 -182 -6 -245 -17 -66 -70 -183 -116 -259 -17 -26 -28 -51 -25 -53 7 -8 81 23 145 60 70 40 192 156 244 231 93 137 138 281 140 440 1 219 -69 440 -198 622 -69 97 -70 97 -71 -19 -2 -188 -53 -317 -170 -434 -39 -40 -76 -73 -82 -73 -6 0 2 26 18 58 49 97 71 195 77 332 6 132 -3 219 -38 358 -66 268 -251 517 -503 677 -47 30 -58 34 -53 19z"
 										class="fill-[#b89758] dark:fill-brand-accent transition-colors duration-300"
-									/>
+									></path>
 									<!-- Path 2: S Letter (Deep Navy in Light, Pure Cyan in Dark) -->
 									<path
 										d="M2240 5763 c-423 -236 -745 -427 -895 -532 -344 -240 -518 -598 -476 -976 15 -135 33 -202 81 -300 118 -245 368 -423 860 -617 107 -43 305 -121 440 -174 297 -117 455 -195 532 -264 170 -152 182 -416 26 -586 -53 -58 -168 -136 -262 -179 -593 -270 -1211 -532 -1202 -509 5 14 300 923 318 983 8 25 13 30 20 20 5 -8 72 -139 148 -291 77 -153 144 -278 148 -278 9 0 247 102 292 125 l31 16 -188 369 -188 369 -60 27 c-33 14 -139 62 -236 105 -96 44 -180 79 -185 79 -5 0 -58 -159 -119 -353 -137 -441 -312 -980 -494 -1520 -78 -229 -141 -421 -141 -427 0 -5 21 12 48 38 183 183 417 316 962 547 516 219 1015 442 1240 556 424 213 638 433 736 755 26 82 28 102 28 269 1 159 -2 189 -22 259 -42 145 -111 264 -208 358 -156 151 -290 220 -907 467 -595 238 -630 254 -751 339 -139 98 -199 208 -200 367 -2 208 114 334 507 554 21 12 69 39 108 61 l69 39 132 -63 c73 -34 180 -85 238 -112 58 -26 188 -90 290 -140 l185 -92 89 -204 c133 -303 256 -572 268 -583 7 -7 9 55 4 204 -3 118 -6 338 -6 488 l0 274 -47 21 c-27 11 -295 139 -596 284 -301 145 -549 264 -550 264 -1 0 -31 -17 -67 -37z m-982 -985 c-6 -29 -8 -87 -5 -128 12 -152 73 -283 186 -397 154 -156 267 -215 876 -456 568 -225 682 -280 832 -399 117 -93 195 -207 228 -335 31 -118 12 -298 -43 -423 l-21 -45 0 61 c-3 242 -129 456 -355 602 -116 76 -210 115 -971 413 -371 146 -559 263 -680 423 -114 152 -166 360 -131 524 15 72 72 212 86 212 4 0 3 -24 -2 -52z"
 										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
-									/>
+									></path>
 									<!-- Path 3: Torch rim -->
 									<path
 										d="M4084 4979 c-7 -13 103 -154 145 -187 l43 -32 785 2 785 3 52 55 c28 31 64 79 79 108 l28 52 -718 3 c-1047 3 -1194 3 -1199 -4z"
 										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
-									/>
+									></path>
 									<!-- Path 4: Torch bowl -->
 									<path
 										d="M4330 4654 c0 -3 30 -34 66 -70 93 -92 119 -151 117 -269 -1 -69 -7 -107 -27 -164 -14 -41 -26 -76 -26 -79 0 -6 70 6 198 34 344 76 689 240 980 467 56 44 102 81 102 83 0 2 -317 4 -705 4 -388 0 -705 -3 -705 -6z"
 										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
-									/>
+									></path>
 									<!-- Path 5: V Letter & Stem (Deep Navy in Light, Cyan in Dark) -->
 									<path
 										d="M5635 4403 c-268 -207 -730 -407 -1060 -458 -149 -23 -155 -25 -165 -48 -5 -12 -64 -143 -131 -292 -258 -572 -357 -792 -511 -1135 -223 -496 -470 -1031 -474 -1027 -2 2 -49 100 -105 218 -55 118 -104 218 -108 222 -6 6 -298 -129 -319 -148 -3 -3 152 -330 429 -904 55 -112 99 -208 99 -212 0 -5 3 -9 8 -9 8 0 36 58 257 540 89 195 243 531 342 745 99 215 208 453 243 530 35 77 125 275 200 440 75 165 183 402 240 526 l103 227 106 28 c58 15 126 36 150 46 29 12 42 14 38 6 -3 -7 -57 -123 -120 -258 -108 -230 -196 -421 -550 -1190 -187 -407 -718 -1551 -748 -1612 l-23 -48 -223 0 -222 0 -221 448 c-122 246 -238 483 -258 527 -20 44 -37 82 -38 84 -3 3 -131 -51 -257 -108 -37 -17 -67 -35 -67 -41 0 -5 64 -139 143 -297 79 -158 217 -438 307 -620 l164 -333 454 -2 c446 -3 455 -3 462 17 4 11 103 225 220 475 117 250 262 563 322 695 97 211 276 599 695 1510 128 278 302 654 446 965 147 316 248 542 245 545 -2 1 -34 -22 -73 -52z"
 										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
-									/>
+									></path>
 								</g>
 							</svg>
 						</div>
@@ -62,27 +66,97 @@ import Layout from '../../layouts/Layout.astro';
 				</div>
 				<div class="hidden md:block">
 					<div class="ml-10 flex items-baseline space-x-6">
-						<a href="#services" class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">Specialties</a>
-						<a href="#projects" class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">Projects</a>
-						<a href="#philosophie" class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">Philosophy</a>
-						<a href="#contact" class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">Contact</a>
+						<a
+							href="#services"
+							class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+							>Specialties</a
+						>
+						<a
+							href="#projects"
+							class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+							>Projects</a
+						>
+						<a
+							href="#philosophie"
+							class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+							>Philosophy</a
+						>
+						<a
+							href="#contact"
+							class="text-sm font-medium hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+							>Contact</a
+						>
 					</div>
 				</div>
 				<div class="flex items-center space-x-4">
 					<!-- Language Switcher -->
-					<a href="/" class="text-xs font-bold px-2 py-1 bg-slate-200/80 dark:bg-brand-bg-darkSecondary rounded border border-slate-300 dark:border-slate-800 hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors" title="Ver en Español">
+					<a
+						href="/"
+						class="text-xs font-bold px-2 py-1 bg-slate-200/80 dark:bg-brand-bg-darkSecondary rounded border border-slate-300 dark:border-slate-800 hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+						title="Ver en Español"
+					>
 						ES
 					</a>
 					<!-- Theme Toggles -->
-					<div class="flex items-center bg-slate-200/50 dark:bg-brand-bg-darkSecondary p-1 rounded-full border border-slate-300 dark:border-slate-800 transition-colors">
-						<button id="theme-light" class="p-1.5 rounded-full text-slate-600 dark:text-slate-400 hover:text-brand-accent-light dark:hover:text-brand-accent hover:bg-white dark:hover:bg-slate-800 transition-all" title="Light Mode">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" /></svg>
+					<div
+						class="flex items-center bg-slate-200/50 dark:bg-brand-bg-darkSecondary p-1 rounded-full border border-slate-300 dark:border-slate-800 transition-colors"
+					>
+						<button
+							id="theme-light"
+							class="p-1.5 rounded-full text-slate-600 dark:text-slate-400 hover:text-brand-accent-light dark:hover:text-brand-accent hover:bg-white dark:hover:bg-slate-800 transition-all"
+							title="Light Mode"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-4 h-4"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+								></path></svg
+							>
 						</button>
-						<button id="theme-system" class="p-1.5 rounded-full text-slate-600 dark:text-slate-400 hover:text-brand-accent-light dark:hover:text-brand-accent hover:bg-white dark:hover:bg-slate-800 transition-all" title="System Preference">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" /></svg>
+						<button
+							id="theme-system"
+							class="p-1.5 rounded-full text-slate-600 dark:text-slate-400 hover:text-brand-accent-light dark:hover:text-brand-accent hover:bg-white dark:hover:bg-slate-800 transition-all"
+							title="System Preference"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-4 h-4"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+								></path></svg
+							>
 						</button>
-						<button id="theme-dark" class="p-1.5 rounded-full text-slate-600 dark:text-slate-400 hover:text-brand-accent-light dark:hover:text-brand-accent hover:bg-white dark:hover:bg-slate-800 transition-all" title="Dark Mode">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" /></svg>
+						<button
+							id="theme-dark"
+							class="p-1.5 rounded-full text-slate-600 dark:text-slate-400 hover:text-brand-accent-light dark:hover:text-brand-accent hover:bg-white dark:hover:bg-slate-800 transition-all"
+							title="Dark Mode"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-4 h-4"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+								></path></svg
+							>
 						</button>
 					</div>
 				</div>
@@ -91,14 +165,31 @@ import Layout from '../../layouts/Layout.astro';
 	</nav>
 
 	<!-- Hero Section -->
-	<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-gradient-to-b from-[#f5f6fa] via-[#fafafc] to-white dark:from-brand-bg-dark dark:to-brand-bg-darkSecondary transition-colors duration-300">
+	<section
+		class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-gradient-to-b from-[#f5f6fa] via-[#fafafc] to-white dark:from-brand-bg-dark dark:to-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<!-- Light mode background image -->
-		<div class="absolute inset-0 bg-cover bg-center opacity-30 dark:hidden transition-opacity pointer-events-none" style="background-image: url('/images/hero_bg_light.png'); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);"></div>
+		<div
+			class="absolute inset-0 bg-cover bg-center opacity-30 dark:hidden transition-opacity pointer-events-none"
+			style="background-image: url('/images/hero_bg_light.png'); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);"
+		>
+		</div>
 		<!-- Dark mode background image -->
-		<div class="hidden dark:block absolute inset-0 bg-cover bg-center opacity-20 transition-opacity pointer-events-none" style="background-image: url('/images/hero_bg.png'); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);"></div>
-		<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent dark:from-brand-accent/5 dark:via-transparent dark:to-transparent animate-gradient"></div>
-		<div class="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-			<h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#12233f] via-[#1a365d] to-[#2a4365] dark:from-white dark:via-slate-200 dark:to-brand-accent">
+		<div
+			class="hidden dark:block absolute inset-0 bg-cover bg-center opacity-20 transition-opacity pointer-events-none"
+			style="background-image: url('/images/hero_bg.png'); -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);"
+		>
+		</div>
+		<div
+			class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent dark:from-brand-accent/5 dark:via-transparent dark:to-transparent animate-gradient"
+		>
+		</div>
+		<div
+			class="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 text-center"
+		>
+			<h1
+				class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#12233f] via-[#1a365d] to-[#2a4365] dark:from-white dark:via-slate-200 dark:to-brand-accent"
+			>
 				Accelerate, Delegate, and Simplify your work
 			</h1>
 
@@ -107,7 +198,8 @@ import Layout from '../../layouts/Layout.astro';
 				<span
 					class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-[11px] font-mono font-medium tracking-wide bg-slate-200/60 dark:bg-white/[0.04] border border-slate-300/80 dark:border-white/[0.08] text-slate-700 dark:text-zinc-400 shadow-sm"
 				>
-					<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+					<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"
+					></span>
 					Bespoke Engineering · Astro · Next.js · Supabase · Sovereign AI
 				</span>
 			</div>
@@ -155,8 +247,8 @@ import Layout from '../../layouts/Layout.astro';
 					> under an <span
 						class="font-bold text-[#b89758] dark:text-brand-accent"
 						>"agent-first"</span
-					> paradigm, reserving its use exclusively for high-value
-					workflows where AI brings a <span
+					> paradigm, reserving its use exclusively for high-value workflows
+					where AI brings a <span
 						class="font-semibold text-slate-900 dark:text-white"
 						>true strategic advantage</span
 					>.
@@ -215,13 +307,17 @@ import Layout from '../../layouts/Layout.astro';
 			<p
 				class="text-[11px] uppercase tracking-widest text-slate-500 dark:text-zinc-400 font-mono mb-8"
 			>
-				Technical leadership on mission-critical projects for corporate and global leaders
+				Technical leadership on mission-critical projects for corporate
+				and global leaders
 			</p>
 			<div
 				class="flex flex-wrap items-center justify-center gap-10 md:gap-16 opacity-75 dark:opacity-60 grayscale hover:grayscale-0 dark:hover:opacity-100 transition-all duration-300"
 			>
 				<!-- BBVA Official Logo -->
-				<div class="flex items-center transition-transform hover:scale-105" title="BBVA">
+				<div
+					class="flex items-center transition-transform hover:scale-105"
+					title="BBVA"
+				>
 					<img
 						src="/images/logos/bbva.svg"
 						alt="BBVA"
@@ -233,7 +329,10 @@ import Layout from '../../layouts/Layout.astro';
 				</div>
 
 				<!-- Warner Bros. Discovery Official Logo -->
-				<div class="flex items-center transition-transform hover:scale-105" title="Warner Bros. Discovery">
+				<div
+					class="flex items-center transition-transform hover:scale-105"
+					title="Warner Bros. Discovery"
+				>
 					<img
 						src="/images/logos/wbd.svg"
 						alt="Warner Bros. Discovery"
@@ -245,7 +344,10 @@ import Layout from '../../layouts/Layout.astro';
 				</div>
 
 				<!-- JK Tornel Official Logo -->
-				<div class="flex items-center transition-transform hover:scale-105" title="JK Tornel (Compañía Hulera Tornel)">
+				<div
+					class="flex items-center transition-transform hover:scale-105"
+					title="JK Tornel (Compañía Hulera Tornel)"
+				>
 					<img
 						src="/images/logos/tornel.png"
 						alt="JK Tornel"
@@ -274,7 +376,8 @@ import Layout from '../../layouts/Layout.astro';
 				<p
 					class="text-lg text-slate-600 dark:text-brand-text-darkSecondary"
 				>
-					We help companies scale by replacing legacy tools with modern, autonomous digital ecosystems.
+					We help companies scale by replacing legacy tools with
+					modern, autonomous digital ecosystems.
 				</p>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -291,10 +394,17 @@ import Layout from '../../layouts/Layout.astro';
 								class="flex items-center justify-between border-b border-white/[0.08] pb-2"
 							>
 								<div class="flex items-center gap-1.5">
-									<span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-									<span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-									<span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
-									<span class="text-slate-400 text-[11px] ml-2"
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-red-500/80"
+									></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"
+									></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-green-500/80"
+									></span>
+									<span
+										class="text-slate-400 text-[11px] ml-2"
 										>pipeline: catalog-rag-v2</span
 									>
 								</div>
@@ -379,22 +489,44 @@ import Layout from '../../layouts/Layout.astro';
 						<p
 							class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm mb-4 line-clamp-2"
 						>
-							Deployment of native AI pipelines, resilient scrapers, and autonomous agents that eliminate repetitive tasks and bottlenecks.
+							Deployment of native AI pipelines, resilient
+							scrapers, and autonomous agents that eliminate
+							repetitive tasks and bottlenecks.
 						</p>
 
 						<!-- Viñetas de Capacidades para Escaneo Rápido -->
-						<ul class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono">
+						<ul
+							class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono"
+						>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>ETL pipelines &amp; vector RAG (PyMuPDF + pgvector)</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>ETL pipelines &amp; vector RAG (PyMuPDF +
+									pgvector)</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Autonomous lead extraction, scoring, and deduplication</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Autonomous lead extraction, scoring, and
+									deduplication</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Direct integration with Webhooks, CRMs, and relational databases</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Direct integration with Webhooks, CRMs, and
+									relational databases</span
+								>
 							</li>
 						</ul>
 					</div>
@@ -420,9 +552,15 @@ import Layout from '../../layouts/Layout.astro';
 								class="flex items-center justify-between border-b border-white/[0.08] pb-2"
 							>
 								<div class="flex items-center gap-1.5">
-									<span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-									<span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-									<span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-red-500/80"
+									></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"
+									></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-green-500/80"
+									></span>
 								</div>
 								<span
 									class="text-[11px] text-slate-400 px-3 py-0.5 rounded bg-slate-900 border border-slate-800"
@@ -477,7 +615,8 @@ import Layout from '../../layouts/Layout.astro';
 								class="p-2 rounded bg-slate-900/60 border border-slate-850 text-[10px] flex items-center justify-between text-slate-400"
 							>
 								<span
-									>Stack: Astro · Next.js · Tailwind · TypeScript</span
+									>Stack: Astro · Next.js · Tailwind ·
+									TypeScript</span
 								>
 								<span class="text-emerald-400 font-semibold"
 									>Clean Architecture</span
@@ -508,22 +647,44 @@ import Layout from '../../layouts/Layout.astro';
 						<p
 							class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm mb-4 line-clamp-2"
 						>
-							Engineering decoupled web apps and high-performance transactional platforms adhering to strict banking QA standards.
+							Engineering decoupled web apps and high-performance
+							transactional platforms adhering to strict banking
+							QA standards.
 						</p>
 
 						<!-- Viñetas de Capacidades para Escaneo Rápido -->
-						<ul class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono">
+						<ul
+							class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono"
+						>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Headless architectures in Astro and Next.js (&lt;150ms Edge TTFB)</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Headless architectures in Astro and Next.js
+									(&lt;150ms Edge TTFB)</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Strict Row-Level Security (RLS in Supabase / PostgreSQL)</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Strict Row-Level Security (RLS in Supabase
+									/ PostgreSQL)</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Automated continuous regression and E2E validation suites</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Automated continuous regression and E2E
+									validation suites</span
+								>
 							</li>
 						</ul>
 					</div>
@@ -549,9 +710,15 @@ import Layout from '../../layouts/Layout.astro';
 								class="flex items-center justify-between border-b border-white/[0.08] pb-1.5 text-[11px]"
 							>
 								<div class="flex items-center gap-1.5">
-									<span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-									<span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-									<span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-red-500/80"
+									></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"
+									></span>
+									<span
+										class="w-2.5 h-2.5 rounded-full bg-green-500/80"
+									></span>
 									<span class="text-slate-400 ml-2"
 										>root@soluvirtus-host:~# ollama ps</span
 									>
@@ -585,12 +752,14 @@ import Layout from '../../layouts/Layout.astro';
 								</div>
 								<div class="pt-1 text-slate-400 text-[10px]">
 									<span
-										>VRAM: 5.6 GB / 16.0 GB · Context: 8,192 tk</span
+										>VRAM: 5.6 GB / 16.0 GB · Context: 8,192
+										tk</span
 									>
 								</div>
 								<div class="text-[10px] text-sky-400">
 									<span
-										>Inference API: http://127.0.0.1:11434 (Socket)</span
+										>Inference API: http://127.0.0.1:11434
+										(Socket)</span
 									>
 								</div>
 							</div>
@@ -629,22 +798,44 @@ import Layout from '../../layouts/Layout.astro';
 						<p
 							class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm mb-4 line-clamp-2"
 						>
-							Local on-premise models for confidential data combined pragmatically with commercial APIs for elastic high-reasoning workloads.
+							Local on-premise models for confidential data
+							combined pragmatically with commercial APIs for
+							elastic high-reasoning workloads.
 						</p>
 
 						<!-- Viñetas de Capacidades para Escaneo Rápido -->
-						<ul class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono">
+						<ul
+							class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono"
+						>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Quantized models (Llama 3 / Mistral) deployed on local private hardware</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Quantized models (Llama 3 / Mistral)
+									deployed on local private hardware</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Zero intellectual property leaks and marginal token cost of $0.00/token</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Zero intellectual property leaks and
+									marginal token cost of $0.00/token</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Encrypted mobile access through secure SSH / Termux tunnels</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Encrypted mobile access through secure SSH
+									/ Termux tunnels</span
+								>
 							</li>
 						</ul>
 					</div>
@@ -672,9 +863,15 @@ import Layout from '../../layouts/Layout.astro';
 							>
 								<div class="flex items-center gap-2">
 									<div class="flex items-center gap-1.5">
-										<span class="w-2.5 h-2.5 rounded-full bg-red-500/80"></span>
-										<span class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></span>
-										<span class="w-2.5 h-2.5 rounded-full bg-green-500/80"></span>
+										<span
+											class="w-2.5 h-2.5 rounded-full bg-red-500/80"
+										></span>
+										<span
+											class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"
+										></span>
+										<span
+											class="w-2.5 h-2.5 rounded-full bg-green-500/80"
+										></span>
 									</div>
 									<span
 										class="font-semibold text-slate-200 tracking-tight text-[11px] ml-1.5"
@@ -721,11 +918,8 @@ import Layout from '../../layouts/Layout.astro';
 									<div
 										class="flex items-center gap-3 text-[10px] text-slate-400 font-mono pt-0.5"
 									>
-										<span
-											>Inter / Editorial Serif</span
-										>
-										<span
-											class="text-emerald-400"
+										<span>Inter / Editorial Serif</span>
+										<span class="text-emerald-400"
 											>cubic-bezier(0.16, 1, 0.3, 1)</span
 										>
 									</div>
@@ -782,22 +976,44 @@ import Layout from '../../layouts/Layout.astro';
 						<p
 							class="text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm mb-4 line-clamp-2"
 						>
-							High-end digital experiences featuring curated typography, refined color contrast ratios, and seamless 60fps micro-interactions.
+							High-end digital experiences featuring curated
+							typography, refined color contrast ratios, and
+							seamless 60fps micro-interactions.
 						</p>
 
 						<!-- Viñetas de Capacidades para Escaneo Rápido -->
-						<ul class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono">
+						<ul
+							class="space-y-2 mb-6 text-xs text-slate-600 dark:text-zinc-300 font-mono"
+						>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Typed design systems and predictable CSS design tokens</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Typed design systems and predictable CSS
+									design tokens</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Strict WCAG AAA accessibility compliance standards</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Strict WCAG AAA accessibility compliance
+									standards</span
+								>
 							</li>
 							<li class="flex items-center gap-2">
-								<span class="text-brand-accent-light dark:text-brand-accent font-bold">›</span>
-								<span>Hardware-accelerated micro-animations at 60 FPS</span>
+								<span
+									class="text-brand-accent-light dark:text-brand-accent font-bold"
+									>›</span
+								>
+								<span
+									>Hardware-accelerated micro-animations at 60
+									FPS</span
+								>
 							</li>
 						</ul>
 					</div>
@@ -814,122 +1030,337 @@ import Layout from '../../layouts/Layout.astro';
 	</section>
 
 	<!-- Projects -->
-	<section id="projects" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+	<section
+		id="projects"
+		class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Key Projects and Impact</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">We deliver end-to-end technological solutions with measurable impact across various sectors.</p>
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4"
+				>
+					Key Projects and Impact
+				</h2>
+				<p
+					class="text-lg text-slate-600 dark:text-brand-text-darkSecondary"
+				>
+					We deliver end-to-end technological solutions with
+					measurable impact across various sectors.
+				</p>
 			</div>
 
 			<!-- Mobile View (Cards) -->
 			<div class="grid grid-cols-1 gap-6 md:hidden">
-				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
+				<div
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+				>
 					<div class="flex items-center justify-between mb-2">
-						<span class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full">C-TPAT / NEEC</span>
-						<span class="text-xs text-slate-400">JK Tornel (GINTOR)</span>
+						<span
+							class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full"
+							>C-TPAT / NEEC</span
+						>
+						<span class="text-xs text-slate-400"
+							>JK Tornel (GINTOR)</span
+						>
 					</div>
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Fiscal Vault &amp; Supply Chain Infrastructure Security</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Reverse proxy architecture with automated SSL/TLS encryption for fiscal ledger and supplier portal. Eliminated exposed public IPs and credential theft risks under strict supply-chain security standards.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Reverse Proxy · SSL/TLS · IIS/Nginx · DNS</span>
+					<h4
+						class="font-bold text-slate-900 dark:text-white mb-2 text-base"
+					>
+						Fiscal Vault &amp; Supply Chain Infrastructure Security
+					</h4>
+					<p
+						class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed"
+					>
+						Reverse proxy architecture with automated SSL/TLS
+						encryption for fiscal ledger and supplier portal.
+						Eliminated exposed public IPs and credential theft risks
+						under strict supply-chain security standards.
+					</p>
+					<span
+						class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full"
+						>Reverse Proxy · SSL/TLS · IIS/Nginx · DNS</span
+					>
 				</div>
-				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
+				<div
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+				>
 					<div class="flex items-center justify-between mb-2">
-						<span class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full">-85% Search Time</span>
-						<span class="text-xs text-slate-400">Retail & Catalogs</span>
+						<span
+							class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full"
+							>-85% Search Time</span
+						>
+						<span class="text-xs text-slate-400"
+							>Retail & Catalogs</span
+						>
 					</div>
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Catalog RAG Pipeline & Semantic Retrieval</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Automated ingestion of 2,400+ technical PDF data sheets (PyMuPDF) and LanceDB vector indexing. Reduced customer inquiry response times from 12 minutes to under 45 seconds.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Python · PyMuPDF · LanceDB · Next.js</span>
+					<h4
+						class="font-bold text-slate-900 dark:text-white mb-2 text-base"
+					>
+						Catalog RAG Pipeline & Semantic Retrieval
+					</h4>
+					<p
+						class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed"
+					>
+						Automated ingestion of 2,400+ technical PDF data sheets
+						(PyMuPDF) and LanceDB vector indexing. Reduced customer
+						inquiry response times from 12 minutes to under 45
+						seconds.
+					</p>
+					<span
+						class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full"
+						>Python · PyMuPDF · LanceDB · Next.js</span
+					>
 				</div>
-				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
+				<div
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+				>
 					<div class="flex items-center justify-between mb-2">
-						<span class="text-xs font-mono font-bold text-sky-500 bg-sky-500/10 px-2.5 py-0.5 rounded-full">&lt;150ms Edge · 0 Checkout Errs</span>
-						<span class="text-xs text-slate-400">High-End E-Commerce</span>
+						<span
+							class="text-xs font-mono font-bold text-sky-500 bg-sky-500/10 px-2.5 py-0.5 rounded-full"
+							>&lt;150ms Edge · 0 Checkout Errs</span
+						>
+						<span class="text-xs text-slate-400"
+							>High-End E-Commerce</span
+						>
 					</div>
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Headless High-Performance Architecture</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Migration from monolithic WordPress to Next.js static site generation with Supabase RLS. 0 checkout transaction errors across 12,000 monthly sessions.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Next.js · Supabase RLS · Tailwind</span>
+					<h4
+						class="font-bold text-slate-900 dark:text-white mb-2 text-base"
+					>
+						Headless High-Performance Architecture
+					</h4>
+					<p
+						class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed"
+					>
+						Migration from monolithic WordPress to Next.js static
+						site generation with Supabase RLS. 0 checkout
+						transaction errors across 12,000 monthly sessions.
+					</p>
+					<span
+						class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full"
+						>Next.js · Supabase RLS · Tailwind</span
+					>
 				</div>
-				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
+				<div
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+				>
 					<div class="flex items-center justify-between mb-2">
-						<span class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full">+350 Qualified Leads/Mo</span>
+						<span
+							class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full"
+							>+350 Qualified Leads/Mo</span
+						>
 						<span class="text-xs text-slate-400">Real Estate</span>
 					</div>
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Automated Lead Scraping & CRM Enrichment</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Multi-portal scraping pipeline validated via Pytest & Selenium with automated CRM scoring. Eliminated 18 weekly hours of manual qualification.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Selenium · Pytest · Python · Webhooks</span>
+					<h4
+						class="font-bold text-slate-900 dark:text-white mb-2 text-base"
+					>
+						Automated Lead Scraping & CRM Enrichment
+					</h4>
+					<p
+						class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed"
+					>
+						Multi-portal scraping pipeline validated via Pytest &
+						Selenium with automated CRM scoring. Eliminated 18
+						weekly hours of manual qualification.
+					</p>
+					<span
+						class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full"
+						>Selenium · Pytest · Python · Webhooks</span
+					>
 				</div>
-				<div class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800">
+				<div
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+				>
 					<div class="flex items-center justify-between mb-2">
-						<span class="text-xs font-mono font-bold text-purple-400 bg-purple-500/10 px-2.5 py-0.5 rounded-full">$0.00 Token · 100% On-Premise</span>
-						<span class="text-xs text-slate-400">Dev Tools & IP</span>
+						<span
+							class="text-xs font-mono font-bold text-purple-400 bg-purple-500/10 px-2.5 py-0.5 rounded-full"
+							>$0.00 Token · 100% On-Premise</span
+						>
+						<span class="text-xs text-slate-400"
+							>Dev Tools & IP</span
+						>
 					</div>
-					<h4 class="font-bold text-slate-900 dark:text-white mb-2 text-base">Sovereign Local LLM In-House Setup</h4>
-					<p class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed">Localized development environment with quantized Llama 3 models and persistent vector context. Zero proprietary code leaks and zero recurring token costs.</p>
-					<span class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full">Llama 3 · Ollama · SSH / Termux</span>
+					<h4
+						class="font-bold text-slate-900 dark:text-white mb-2 text-base"
+					>
+						Sovereign Local LLM In-House Setup
+					</h4>
+					<p
+						class="text-slate-600 dark:text-brand-text-darkSecondary mb-3 text-sm leading-relaxed"
+					>
+						Localized development environment with quantized Llama 3
+						models and persistent vector context. Zero proprietary
+						code leaks and zero recurring token costs.
+					</p>
+					<span
+						class="inline-block px-3 py-1 bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent text-xs font-mono font-semibold rounded-full"
+						>Llama 3 · Ollama · SSH / Termux</span
+					>
 				</div>
 			</div>
 
 			<!-- Desktop View (Table) -->
-			<div class="hidden md:block overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-bg-dark shadow-sm">
+			<div
+				class="hidden md:block overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-bg-dark shadow-sm"
+			>
 				<table class="w-full text-left border-collapse">
 					<thead>
-						<tr class="bg-slate-100/80 dark:bg-brand-bg-darkSecondary border-b border-slate-200 dark:border-slate-850">
-							<th class="p-6 text-sm font-bold tracking-wider text-slate-900 dark:text-white">Project / Initiative</th>
-							<th class="p-6 text-sm font-bold tracking-wider text-slate-900 dark:text-white">Scope & Impact</th>
-							<th class="p-6 text-sm font-bold tracking-wider text-slate-900 dark:text-white">Tech Approach</th>
+						<tr
+							class="bg-slate-100/80 dark:bg-brand-bg-darkSecondary border-b border-slate-200 dark:border-slate-850"
+						>
+							<th
+								class="p-6 text-sm font-bold tracking-wider text-slate-900 dark:text-white"
+								>Project / Initiative</th
+							>
+							<th
+								class="p-6 text-sm font-bold tracking-wider text-slate-900 dark:text-white"
+								>Scope & Impact</th
+							>
+							<th
+								class="p-6 text-sm font-bold tracking-wider text-slate-900 dark:text-white"
+								>Tech Approach</th
+							>
 						</tr>
 					</thead>
-					<tbody class="divide-y divide-slate-100 dark:divide-slate-800">
-						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+					<tbody
+						class="divide-y divide-slate-100 dark:divide-slate-800"
+					>
+						<tr
+							class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+						>
 							<td class="p-6">
-								<div class="font-bold text-slate-900 dark:text-white">JK Tornel (GINTOR)</div>
-								<div class="text-xs text-slate-400 mt-1">Infrastructure &amp; Security (Fiscal Vault)</div>
+								<div
+									class="font-bold text-slate-900 dark:text-white"
+								>
+									JK Tornel (GINTOR)
+								</div>
+								<div class="text-xs text-slate-400 mt-1">
+									Infrastructure &amp; Security (Fiscal Vault)
+								</div>
 							</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
-								Transitioned fiscal ledger &amp; supplier portal from raw public IP to reverse proxy with <strong class="text-emerald-500">automated SSL/TLS encryption and zero credential leaks</strong>, fully aligned with international C-TPAT/NEEC supply-chain security standards.
+							<td
+								class="p-6 text-slate-600 dark:text-brand-text-darkSecondary"
+							>
+								Transitioned fiscal ledger &amp; supplier portal
+								from raw public IP to reverse proxy with <strong
+									class="text-emerald-500"
+									>automated SSL/TLS encryption and zero
+									credential leaks</strong
+								>, fully aligned with international C-TPAT/NEEC
+								supply-chain security standards.
 							</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Reverse Proxy · SSL/TLS · IIS/Nginx · DNS</td>
+							<td
+								class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono"
+								>Reverse Proxy · SSL/TLS · IIS/Nginx · DNS</td
+							>
 						</tr>
-						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+						<tr
+							class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+						>
 							<td class="p-6">
-								<div class="font-bold text-slate-900 dark:text-white">Catalog RAG Pipeline & Semantic Search</div>
-								<div class="text-xs text-slate-400 mt-1">Retail & Dense Inventories</div>
+								<div
+									class="font-bold text-slate-900 dark:text-white"
+								>
+									Catalog RAG Pipeline & Semantic Search
+								</div>
+								<div class="text-xs text-slate-400 mt-1">
+									Retail & Dense Inventories
+								</div>
 							</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
-								Vectorization of 2,400+ technical PDF sheets with PyMuPDF. Reduced inquiry lookup times by <strong class="text-emerald-500">85%</strong> (from 12 min to &lt;45s) across support teams.
+							<td
+								class="p-6 text-slate-600 dark:text-brand-text-darkSecondary"
+							>
+								Vectorization of 2,400+ technical PDF sheets
+								with PyMuPDF. Reduced inquiry lookup times by <strong
+									class="text-emerald-500">85%</strong
+								> (from 12 min to &lt;45s) across support teams.
 							</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Python · PyMuPDF · LanceDB · Next.js</td>
+							<td
+								class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono"
+								>Python · PyMuPDF · LanceDB · Next.js</td
+							>
 						</tr>
-						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+						<tr
+							class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+						>
 							<td class="p-6">
-								<div class="font-bold text-slate-900 dark:text-white">Headless High-Performance Architecture</div>
-								<div class="text-xs text-slate-400 mt-1">Boutique & B2B E-Commerce</div>
+								<div
+									class="font-bold text-slate-900 dark:text-white"
+								>
+									Headless High-Performance Architecture
+								</div>
+								<div class="text-xs text-slate-400 mt-1">
+									Boutique & B2B E-Commerce
+								</div>
 							</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
-								Complete migration from monolithic WordPress to Next.js with Supabase RLS: <strong class="text-sky-400">&lt;150ms Edge TTFB</strong> and zero checkout crashes across 12,000 monthly sessions.
+							<td
+								class="p-6 text-slate-600 dark:text-brand-text-darkSecondary"
+							>
+								Complete migration from monolithic WordPress to
+								Next.js with Supabase RLS: <strong
+									class="text-sky-400"
+									>&lt;150ms Edge TTFB</strong
+								> and zero checkout crashes across 12,000 monthly
+								sessions.
 							</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Next.js · Supabase RLS · Tailwind CSS</td>
+							<td
+								class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono"
+								>Next.js · Supabase RLS · Tailwind CSS</td
+							>
 						</tr>
-						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+						<tr
+							class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+						>
 							<td class="p-6">
-								<div class="font-bold text-slate-900 dark:text-white">Automated Lead Scraping & CRM Enrichment</div>
-								<div class="text-xs text-slate-400 mt-1">Commercial Real Estate</div>
+								<div
+									class="font-bold text-slate-900 dark:text-white"
+								>
+									Automated Lead Scraping & CRM Enrichment
+								</div>
+								<div class="text-xs text-slate-400 mt-1">
+									Commercial Real Estate
+								</div>
 							</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
-								Autonomous multi-portal pipeline with QA regression tests: generated <strong class="text-emerald-500">+350 qualified prospects/mo</strong> and saved 18 weekly hours of manual administrative labor.
+							<td
+								class="p-6 text-slate-600 dark:text-brand-text-darkSecondary"
+							>
+								Autonomous multi-portal pipeline with QA
+								regression tests: generated <strong
+									class="text-emerald-500"
+									>+350 qualified prospects/mo</strong
+								> and saved 18 weekly hours of manual administrative
+								labor.
 							</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Selenium · Pytest · Python · Webhooks</td>
+							<td
+								class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono"
+								>Selenium · Pytest · Python · Webhooks</td
+							>
 						</tr>
-						<tr class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors">
+						<tr
+							class="hover:bg-slate-50 dark:hover:bg-white/5 transition-colors"
+						>
 							<td class="p-6">
-								<div class="font-bold text-slate-900 dark:text-white">Sovereign Local LLM Development Setup</div>
-								<div class="text-xs text-slate-400 mt-1">Dev Tools & Intellectual Property</div>
+								<div
+									class="font-bold text-slate-900 dark:text-white"
+								>
+									Sovereign Local LLM Development Setup
+								</div>
+								<div class="text-xs text-slate-400 mt-1">
+									Dev Tools & Intellectual Property
+								</div>
 							</td>
-							<td class="p-6 text-slate-600 dark:text-brand-text-darkSecondary">
-								Localized environment with persistent memory and quantized open models: <strong class="text-emerald-500">zero IP exposure</strong> and a recurring cost of $0.00 USD per token.
+							<td
+								class="p-6 text-slate-600 dark:text-brand-text-darkSecondary"
+							>
+								Localized environment with persistent memory and
+								quantized open models: <strong
+									class="text-emerald-500"
+									>zero IP exposure</strong
+								> and a recurring cost of $0.00 USD per token.
 							</td>
-							<td class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono">Llama 3 · Ollama · SSH / Termux</td>
+							<td
+								class="p-6 text-brand-accent-light dark:text-brand-accent font-semibold text-xs font-mono"
+								>Llama 3 · Ollama · SSH / Termux</td
+							>
 						</tr>
 					</tbody>
 				</table>
@@ -938,106 +1369,212 @@ import Layout from '../../layouts/Layout.astro';
 	</section>
 
 	<!-- Interactive Console (Suggestion 26) -->
-	<section id="demo-console" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+	<section
+		id="demo-console"
+		class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="text-center max-w-3xl mx-auto mb-12">
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Agent Simulation Console</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Select a task to observe how our autonomous agents resolve and implement local workflows.</p>
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4"
+				>
+					Agent Simulation Console
+				</h2>
+				<p
+					class="text-lg text-slate-600 dark:text-brand-text-darkSecondary"
+				>
+					Select a task to observe how our autonomous agents resolve
+					and implement local workflows.
+				</p>
 			</div>
 
 			<div class="flex flex-wrap justify-center gap-3 mb-8">
-				<button id="btn-demo-catalog" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+				<button
+					id="btn-demo-catalog"
+					class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm"
+				>
 					Simulate Catalog Advisor
 				</button>
-				<button id="btn-demo-leads" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+				<button
+					id="btn-demo-leads"
+					class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm"
+				>
 					Simulate Lead Scraper
 				</button>
-				<button id="btn-demo-llm" class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm">
+				<button
+					id="btn-demo-llm"
+					class="px-5 py-2.5 bg-white dark:bg-brand-bg-dark border border-slate-200 dark:border-slate-800 hover:border-brand-accent-light dark:hover:border-brand-accent text-slate-800 dark:text-slate-200 hover:text-brand-accent-light dark:hover:text-brand-accent font-bold rounded-lg text-sm transition-all shadow-sm"
+				>
 					Simulate Private Local LLM
 				</button>
 			</div>
 
-			<div class="rounded-xl overflow-hidden border border-slate-300 dark:border-slate-800 bg-slate-950 shadow-2xl text-left font-mono">
-				<div class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-850">
+			<div
+				class="rounded-xl overflow-hidden border border-slate-300 dark:border-slate-800 bg-slate-950 shadow-2xl text-left font-mono"
+			>
+				<div
+					class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-850"
+				>
 					<div class="flex space-x-2">
 						<span class="w-3 h-3 rounded-full bg-red-500"></span>
 						<span class="w-3 h-3 rounded-full bg-yellow-500"></span>
 						<span class="w-3 h-3 rounded-full bg-green-500"></span>
 					</div>
-					<span class="text-xs text-slate-500 font-semibold select-none">terminal - soluvirtus-agent@local</span>
+					<span
+						class="text-xs text-slate-500 font-semibold select-none"
+						>terminal - soluvirtus-agent@local</span
+					>
 					<div class="w-10"></div>
 				</div>
-				<div id="terminal-screen" class="p-6 h-80 overflow-y-auto text-sm text-slate-400 space-y-2 select-text scrollbar-thin scrollbar-thumb-slate-800">
-					<div class="text-slate-500">&gt; Console ready. Select a task to begin execution simulation...</div>
+				<div
+					id="terminal-screen"
+					class="p-6 h-80 overflow-y-auto text-sm text-slate-400 space-y-2 select-text scrollbar-thin scrollbar-thumb-slate-800"
+				>
+					<div class="text-slate-500">
+						&gt; Console ready. Select a task to begin execution
+						simulation...
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Interactive ROI Calculator (Suggestion 25) -->
-	<section id="roi-calculator" class="py-20 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+	<section
+		id="roi-calculator"
+		class="py-20 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="text-center max-w-3xl mx-auto mb-12">
-				<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
+				<span
+					class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3"
+				>
 					Return on Investment Simulator
 				</span>
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4"
+				>
 					How Much Is Operational Friction Costing You?
 				</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">
-					Adjust the sliders to estimate monthly labor spent on repetitive manual tasks and potential savings with native automation and AI agents.
+				<p
+					class="text-lg text-slate-600 dark:text-brand-text-darkSecondary"
+				>
+					Adjust the sliders to estimate monthly labor spent on
+					repetitive manual tasks and potential savings with native
+					automation and AI agents.
 				</p>
 			</div>
 
 			<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 				<!-- Controls -->
-				<div class="lg:col-span-7 p-8 bg-slate-50 dark:bg-brand-bg-darkSecondary/40 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-6">
+				<div
+					class="lg:col-span-7 p-8 bg-slate-50 dark:bg-brand-bg-darkSecondary/40 rounded-3xl border border-slate-200 dark:border-slate-800 space-y-6"
+				>
 					<div>
 						<div class="flex justify-between items-center mb-2">
-							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
-								Staff members performing manual repetitive workflows:
+							<label
+								class="text-sm font-bold text-slate-800 dark:text-slate-200"
+							>
+								Staff members performing manual repetitive
+								workflows:
 							</label>
-							<span id="roi-people-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">3 employees</span>
+							<span
+								id="roi-people-val"
+								class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent"
+								>3 employees</span
+							>
 						</div>
-						<input type="range" id="roi-people" min="1" max="25" value="3" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
+						<input
+							type="range"
+							id="roi-people"
+							min="1"
+							max="25"
+							value="3"
+							class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent"
+						/>
 					</div>
 
 					<div>
 						<div class="flex justify-between items-center mb-2">
-							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
-								Daily hours dedicated to manual processes (per person):
+							<label
+								class="text-sm font-bold text-slate-800 dark:text-slate-200"
+							>
+								Daily hours dedicated to manual processes (per
+								person):
 							</label>
-							<span id="roi-hours-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">2.5 hours/day</span>
+							<span
+								id="roi-hours-val"
+								class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent"
+								>2.5 hours/day</span
+							>
 						</div>
-						<input type="range" id="roi-hours" min="0.5" max="8" step="0.5" value="2.5" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
+						<input
+							type="range"
+							id="roi-hours"
+							min="0.5"
+							max="8"
+							step="0.5"
+							value="2.5"
+							class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent"
+						/>
 					</div>
 
 					<div>
 						<div class="flex justify-between items-center mb-2">
-							<label class="text-sm font-bold text-slate-800 dark:text-slate-200">
+							<label
+								class="text-sm font-bold text-slate-800 dark:text-slate-200"
+							>
 								Average hourly labor cost (USD):
 							</label>
-							<span id="roi-cost-val" class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent">$18 USD/hr</span>
+							<span
+								id="roi-cost-val"
+								class="font-mono text-lg font-bold text-brand-accent-light dark:text-brand-accent"
+								>$18 USD/hr</span
+							>
 						</div>
-						<input type="range" id="roi-cost" min="10" max="100" step="1" value="18" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent" />
+						<input
+							type="range"
+							id="roi-cost"
+							min="10"
+							max="100"
+							step="1"
+							value="18"
+							class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-600 dark:accent-brand-accent"
+						/>
 					</div>
 
 					<div class="pt-2 text-xs text-slate-500">
-						* Based on 21 business days per month and a realistic 70% automation rate for repetitive digital tasks.
+						* Based on 21 business days per month and a realistic
+						70% automation rate for repetitive digital tasks.
 					</div>
 				</div>
 
 				<!-- Results Display -->
-				<div class="lg:col-span-5 p-8 bg-gradient-to-br from-slate-900 to-slate-950 text-white rounded-3xl border border-slate-800 shadow-2xl flex flex-col justify-between">
+				<div
+					class="lg:col-span-5 p-8 bg-gradient-to-br from-slate-900 to-slate-950 text-white rounded-3xl border border-slate-800 shadow-2xl flex flex-col justify-between"
+				>
 					<div>
-						<span class="text-xs uppercase tracking-widest text-slate-400 font-bold">Estimated Operational Impact</span>
-						
+						<span
+							class="text-xs uppercase tracking-widest text-slate-400 font-bold"
+							>Estimated Operational Impact</span
+						>
+
 						<div class="mt-6 mb-6 pb-6 border-b border-slate-800">
-							<div class="text-xs text-slate-400 mb-1">Current monthly waste on repetitive tasks:</div>
-							<div id="roi-waste-display" class="text-2xl sm:text-3xl font-extrabold text-red-400 font-mono">
+							<div class="text-xs text-slate-400 mb-1">
+								Current monthly waste on repetitive tasks:
+							</div>
+							<div
+								id="roi-waste-display"
+								class="text-2xl sm:text-3xl font-extrabold text-red-400 font-mono"
+							>
 								$2,835 USD / mo
 							</div>
-							<div id="roi-hours-waste" class="text-xs text-slate-500 mt-1">157.5 monthly hours spent on mechanical tasks</div>
+							<div
+								id="roi-hours-waste"
+								class="text-xs text-slate-500 mt-1"
+							>
+								157.5 monthly hours spent on mechanical tasks
+							</div>
 						</div>
 
 						<div class="mb-6">
@@ -1056,7 +1593,8 @@ import Layout from '../../layouts/Layout.astro';
 								id="roi-annual-savings"
 								class="text-xs sm:text-sm text-slate-300 mt-2 font-medium"
 							>
-								Equivalent to <span class="text-brand-accent font-mono font-bold"
+								Equivalent to <span
+									class="text-brand-accent font-mono font-bold"
 									>$23,820 USD / year</span
 								> recovered
 							</div>
@@ -1086,7 +1624,9 @@ import Layout from '../../layouts/Layout.astro';
 							type="button"
 							class="w-full py-2.5 bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 rounded-xl text-xs text-zinc-300 font-mono transition-all flex items-center justify-center gap-1.5"
 						>
-							<span>View breakdown &amp; personalized roadmap</span>
+							<span
+								>View breakdown &amp; personalized roadmap</span
+							>
 							<span>&rarr;</span>
 						</button>
 					</div>
@@ -1096,89 +1636,173 @@ import Layout from '../../layouts/Layout.astro';
 	</section>
 
 	<!-- QA-First & ICP Section (Why Soluvirtus) -->
-	<section id="why-soluvirtus" class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+	<section
+		id="why-soluvirtus"
+		class="py-24 bg-white dark:bg-brand-bg-dark border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3">
+				<span
+					class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-sky-100 dark:bg-brand-accent/10 text-brand-accent-light dark:text-brand-accent mb-3"
+				>
 					High-Standard Software Engineering
 				</span>
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4"
+				>
 					Why Growing Businesses Choose Soluvirtus
 				</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">
-					We don't deliver fragile shortcuts. We build resilient systems under a strict <span class="text-slate-900 dark:text-white font-semibold">QA-First</span> philosophy with automated testing before production releases.
+				<p
+					class="text-lg text-slate-600 dark:text-brand-text-darkSecondary"
+				>
+					We don't deliver fragile shortcuts. We build resilient
+					systems under a strict <span
+						class="text-slate-900 dark:text-white font-semibold"
+						>QA-First</span
+					> philosophy with automated testing before production releases.
 				</p>
 			</div>
 
 			<!-- QA-First vs Traditional Agencies: Synthetic Scannable Table -->
-			<div class="mb-16 overflow-hidden rounded-2xl border border-slate-200/80 dark:border-white/[0.08] bg-slate-50/70 dark:bg-zinc-950/40 shadow-sm">
-				<div class="grid grid-cols-1 md:grid-cols-12 border-b border-slate-200/80 dark:border-white/[0.08] bg-slate-100/80 dark:bg-white/[0.02] text-xs font-mono font-bold uppercase tracking-wider py-4 px-6 text-slate-500 dark:text-zinc-400">
+			<div
+				class="mb-16 overflow-hidden rounded-2xl border border-slate-200/80 dark:border-white/[0.08] bg-slate-50/70 dark:bg-zinc-950/40 shadow-sm"
+			>
+				<div
+					class="grid grid-cols-1 md:grid-cols-12 border-b border-slate-200/80 dark:border-white/[0.08] bg-slate-100/80 dark:bg-white/[0.02] text-xs font-mono font-bold uppercase tracking-wider py-4 px-6 text-slate-500 dark:text-zinc-400"
+				>
 					<div class="md:col-span-4">Engineering Criteria</div>
-					<div class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+					<div
+						class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5"
+					>
 						<span>✓</span> Soluvirtus Standard
 					</div>
-					<div class="md:col-span-4 text-slate-400 dark:text-zinc-500 flex items-center gap-1.5">
+					<div
+						class="md:col-span-4 text-slate-400 dark:text-zinc-500 flex items-center gap-1.5"
+					>
 						<span>✕</span> Generic Agencies / CMS
 					</div>
 				</div>
 
-				<div class="divide-y divide-slate-200/60 dark:divide-white/[0.05] text-xs sm:text-sm">
+				<div
+					class="divide-y divide-slate-200/60 dark:divide-white/[0.05] text-xs sm:text-sm"
+				>
 					<!-- Row 1: Quality Validation -->
-					<div class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center">
-						<div class="md:col-span-4 font-bold text-slate-900 dark:text-white">
+					<div
+						class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center"
+					>
+						<div
+							class="md:col-span-4 font-bold text-slate-900 dark:text-white"
+						>
 							Quality &amp; QA Validation
 						</div>
-						<div class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono">
-							<span class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0">✓</span>
-							<span>E2E Suites (Pytest, Selenium, Playwright)</span>
+						<div
+							class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0"
+								>✓</span
+							>
+							<span
+								>E2E Suites (Pytest, Selenium, Playwright)</span
+							>
 						</div>
-						<div class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2">
-							<span class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0">✕</span>
-							<span>Manual or zero testing (production bugs)</span>
+						<div
+							class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0"
+								>✕</span
+							>
+							<span>Manual or zero testing (production bugs)</span
+							>
 						</div>
 					</div>
 
 					<!-- Row 2: Latency & Performance -->
-					<div class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center bg-slate-100/30 dark:bg-white/[0.01]">
-						<div class="md:col-span-4 font-bold text-slate-900 dark:text-white">
+					<div
+						class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center bg-slate-100/30 dark:bg-white/[0.01]"
+					>
+						<div
+							class="md:col-span-4 font-bold text-slate-900 dark:text-white"
+						>
 							Speed &amp; Latency
 						</div>
-						<div class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono">
-							<span class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0">✓</span>
+						<div
+							class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0"
+								>✓</span
+							>
 							<span>&lt; 150 ms (Edge TTFB / Headless)</span>
 						</div>
-						<div class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2">
-							<span class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0">✕</span>
+						<div
+							class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0"
+								>✕</span
+							>
 							<span>&gt; 900 ms (WordPress Monoliths / CMS)</span>
 						</div>
 					</div>
 
 					<!-- Row 3: Data Privacy -->
-					<div class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center">
-						<div class="md:col-span-4 font-bold text-slate-900 dark:text-white">
+					<div
+						class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center"
+					>
+						<div
+							class="md:col-span-4 font-bold text-slate-900 dark:text-white"
+						>
 							Data Privacy &amp; Local AI
 						</div>
-						<div class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono">
-							<span class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0">✓</span>
+						<div
+							class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0"
+								>✓</span
+							>
 							<span>Sovereign Local Inference ($0.00/token)</span>
 						</div>
-						<div class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2">
-							<span class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0">✕</span>
+						<div
+							class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0"
+								>✕</span
+							>
 							<span>Unanonymized data sent to public APIs</span>
 						</div>
 					</div>
 
 					<!-- Row 4: Architecture & Maintenance -->
-					<div class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center bg-slate-100/30 dark:bg-white/[0.01]">
-						<div class="md:col-span-4 font-bold text-slate-900 dark:text-white">
+					<div
+						class="grid grid-cols-1 md:grid-cols-12 p-6 gap-3 md:gap-4 items-center bg-slate-100/30 dark:bg-white/[0.01]"
+					>
+						<div
+							class="md:col-span-4 font-bold text-slate-900 dark:text-white"
+						>
 							Maintenance &amp; Scalability
 						</div>
-						<div class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono">
-							<span class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0">✓</span>
-							<span>Modular typed codebase without technical debt</span>
+						<div
+							class="md:col-span-4 text-emerald-600 dark:text-emerald-400 flex items-center gap-2 font-mono"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center font-bold text-xs flex-shrink-0"
+								>✓</span
+							>
+							<span
+								>Modular typed codebase without technical debt</span
+							>
 						</div>
-						<div class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2">
-							<span class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0">✕</span>
+						<div
+							class="md:col-span-4 text-slate-500 dark:text-zinc-500 flex items-center gap-2"
+						>
+							<span
+								class="w-5 h-5 rounded-full bg-slate-200 dark:bg-white/5 flex items-center justify-center text-xs flex-shrink-0"
+								>✕</span
+							>
 							<span>Fragile reliance on vulnerable plugins</span>
 						</div>
 					</div>
@@ -1186,31 +1810,74 @@ import Layout from '../../layouts/Layout.astro';
 			</div>
 
 			<!-- When to Hire Us (ICP) -->
-			<div class="p-8 rounded-3xl bg-slate-900 text-white dark:bg-brand-bg-darkSecondary border border-slate-800">
+			<div
+				class="p-8 rounded-3xl bg-slate-900 text-white dark:bg-brand-bg-darkSecondary border border-slate-800"
+			>
 				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
 					<div class="lg:col-span-1">
-						<span class="text-xs uppercase tracking-widest text-brand-accent font-bold">Ideal Client Profile</span>
-						<h3 class="text-2xl font-extrabold mt-1 mb-3">Is Soluvirtus the Right Fit for Your Company?</h3>
+						<span
+							class="text-xs uppercase tracking-widest text-brand-accent font-bold"
+							>Ideal Client Profile</span
+						>
+						<h3 class="text-2xl font-extrabold mt-1 mb-3">
+							Is Soluvirtus the Right Fit for Your Company?
+						</h3>
 						<p class="text-xs text-slate-400 leading-relaxed">
-							We partner with growth-minded leaders who value technical resilience, data autonomy, and measurable ROI over cheap quick fixes.
+							We partner with growth-minded leaders who value
+							technical resilience, data autonomy, and measurable
+							ROI over cheap quick fixes.
 						</p>
 					</div>
-					<div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">Retail & Dense Catalogs</div>
-							<p class="text-slate-300">Businesses with +2,000 SKUs needing PDF extraction pipelines (PyMuPDF) and semantic vector search.</p>
+					<div
+						class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs"
+					>
+						<div
+							class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700"
+						>
+							<div class="font-bold text-brand-accent mb-1">
+								Retail & Dense Catalogs
+							</div>
+							<p class="text-slate-300">
+								Businesses with +2,000 SKUs needing PDF
+								extraction pipelines (PyMuPDF) and semantic
+								vector search.
+							</p>
 						</div>
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">Operational Bottlenecks</div>
-							<p class="text-slate-300">Teams losing 10+ weekly hours on manual data entry, quoting, or repetitive property lead qualification.</p>
+						<div
+							class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700"
+						>
+							<div class="font-bold text-brand-accent mb-1">
+								Operational Bottlenecks
+							</div>
+							<p class="text-slate-300">
+								Teams losing 10+ weekly hours on manual data
+								entry, quoting, or repetitive property lead
+								qualification.
+							</p>
 						</div>
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">Data Sovereignty & Local AI</div>
-							<p class="text-slate-300">Organizations restricted from sharing records with third-party LLMs who require on-premise inference.</p>
+						<div
+							class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700"
+						>
+							<div class="font-bold text-brand-accent mb-1">
+								Data Sovereignty & Local AI
+							</div>
+							<p class="text-slate-300">
+								Organizations restricted from sharing records
+								with third-party LLMs who require on-premise
+								inference.
+							</p>
 						</div>
-						<div class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700">
-							<div class="font-bold text-brand-accent mb-1">CTOs Demanding QA Quality</div>
-							<p class="text-slate-300">Engineering leaders seeking nearshore talent with automated test suites, clean contracts, and zero hidden debt.</p>
+						<div
+							class="p-4 rounded-xl bg-slate-800/80 dark:bg-brand-bg-dark/80 border border-slate-700"
+						>
+							<div class="font-bold text-brand-accent mb-1">
+								CTOs Demanding QA Quality
+							</div>
+							<p class="text-slate-300">
+								Engineering leaders seeking nearshore talent
+								with automated test suites, clean contracts, and
+								zero hidden debt.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -1219,59 +1886,287 @@ import Layout from '../../layouts/Layout.astro';
 	</section>
 
 	<!-- Philosophy -->
-	<section id="philosophie" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/30 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300">
+	<section
+		id="philosophie"
+		class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/30 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">The Philosophy of Soluvirtus</h2>
-				<p class="text-lg font-bold text-brand-accent-light dark:text-brand-accent tracking-wider uppercase">
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4"
+				>
+					The Philosophy of Soluvirtus
+				</h2>
+				<p
+					class="text-lg font-bold text-brand-accent-light dark:text-brand-accent tracking-wider uppercase"
+				>
 					Motto: "Finding solutions, Prompting virtues"
 				</p>
 			</div>
 
 			<div class="max-w-4xl mx-auto mb-16 space-y-4">
-				<p class="text-lg sm:text-xl text-slate-700 dark:text-brand-text-darkSecondary leading-relaxed text-center font-light">
-					We believe technology should be a sovereign, functional, and high-performance asset. Our philosophy is based on finding precise solutions through protocol optimization and robust process automation, to then prompt the virtues of each business using advanced technological resources and high-value AI. By combining a robust full-stack architecture with strategic, efficient execution, we maximize return on investment while maintaining absolute ownership of data and infrastructure.
+				<p
+					class="text-lg sm:text-xl text-slate-700 dark:text-brand-text-darkSecondary leading-relaxed text-center font-light"
+				>
+					We believe technology should be a sovereign, functional, and
+					high-performance asset. Our philosophy is based on finding
+					precise solutions through protocol optimization and robust
+					process automation, to then prompt the virtues of each
+					business using advanced technological resources and
+					high-value AI. By combining a robust full-stack architecture
+					with strategic, efficient execution, we maximize return on
+					investment while maintaining absolute ownership of data and
+					infrastructure.
 				</p>
-				<p class="text-base sm:text-lg text-brand-accent-light dark:text-brand-accent leading-relaxed text-center font-medium font-mono">
-					"Soluvirtus brings the quality assurance standards of international banking and the technical audit rigor of global media conglomerates to business automation and artificial intelligence."
+				<p
+					class="text-base sm:text-lg text-brand-accent-light dark:text-brand-accent leading-relaxed text-center font-medium font-mono"
+				>
+					"Soluvirtus brings the quality assurance standards of
+					international banking and the technical audit rigor of
+					global media conglomerates to business automation and
+					artificial intelligence."
 				</p>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<!-- Pillar 1 -->
-				<div class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group">
+				<div
+					class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group"
+				>
 					<div class="flex items-center gap-3 mb-4">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg>
-						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Finding Solutions</h3>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+							></path></svg
+						>
+						<h3
+							class="text-lg font-bold text-slate-900 dark:text-white"
+						>
+							Finding Solutions
+						</h3>
 					</div>
-					<p class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2">Efficiency and Structure</p>
-					<p class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
-						Diagnosing, debugging, and automating the native workflows of the business with predictable and efficient logic. The foundation that resolves day-to-day operational issues.
+					<p
+						class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2"
+					>
+						Efficiency and Structure
+					</p>
+					<p
+						class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed"
+					>
+						Diagnosing, debugging, and automating the native
+						workflows of the business with predictable and efficient
+						logic. The foundation that resolves day-to-day
+						operational issues.
 					</p>
 				</div>
 
 				<!-- Pillar 2 -->
-				<div class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group">
+				<div
+					class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group"
+				>
 					<div class="flex items-center gap-3 mb-4">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
-						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Prompting Virtues</h3>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"
+							></path></svg
+						>
+						<h3
+							class="text-lg font-bold text-slate-900 dark:text-white"
+						>
+							Prompting Virtues
+						</h3>
 					</div>
-					<p class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2">Acceleration and Scalability</p>
-					<p class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
-						Empowering human talent and business strengths by utilizing advanced technological resources (such as advanced AI and autonomous agents) where they bring a true strategic and competitive advantage.
+					<p
+						class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2"
+					>
+						Acceleration and Scalability
+					</p>
+					<p
+						class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed"
+					>
+						Empowering human talent and business strengths by
+						utilizing advanced technological resources (such as
+						advanced AI and autonomous agents) where they bring a
+						true strategic and competitive advantage.
 					</p>
 				</div>
 
 				<!-- Pillar 3 -->
-				<div class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group">
+				<div
+					class="p-8 bg-white dark:bg-brand-bg-darkSecondary/40 backdrop-blur-md rounded-2xl border border-slate-200 dark:border-white/10 hover:border-brand-accent-light dark:hover:border-brand-accent/50 shadow-sm transition-all duration-300 group"
+				>
 					<div class="flex items-center gap-3 mb-4">
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" /></svg>
-						<h3 class="text-lg font-bold text-slate-900 dark:text-white">Technological Sovereignty</h3>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 text-slate-500 group-hover:text-brand-accent-light dark:group-hover:text-brand-accent transition-colors"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+							></path></svg
+						>
+						<h3
+							class="text-lg font-bold text-slate-900 dark:text-white"
+						>
+							Technological Sovereignty
+						</h3>
 					</div>
-					<p class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2">Absolute Control</p>
-					<p class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed">
-						Keeping the focus on infrastructure and data remaining a proprietary, secure asset under the absolute control of the company.
+					<p
+						class="text-xs font-semibold text-brand-accent-light dark:text-brand-accent/80 uppercase tracking-wider mb-2"
+					>
+						Absolute Control
 					</p>
+					<p
+						class="text-sm text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed"
+					>
+						Keeping the focus on infrastructure and data remaining a
+						proprietary, secure asset under the absolute control of
+						the company.
+					</p>
+				</div>
+			</div>
+
+			<!-- Monumental Sola Virtus Vincit Card -->
+			<div
+				class="mt-16 relative overflow-hidden rounded-3xl border border-slate-300 dark:border-white/10 bg-gradient-to-br from-white via-slate-50/80 to-slate-100 dark:from-zinc-950 dark:via-brand-bg-darkSecondary/80 dark:to-zinc-900 p-8 sm:p-12 shadow-xl"
+			>
+				<div
+					class="absolute -top-24 -right-24 w-80 h-80 bg-[#b89758]/10 dark:bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"
+				>
+				</div>
+				<div
+					class="relative z-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12"
+				>
+					<!-- Latin Emblem Badge -->
+					<div
+						class="flex-shrink-0 flex flex-col items-center text-center"
+					>
+						<div
+							class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-slate-100 dark:bg-white/[0.04] border border-slate-200 dark:border-white/10 flex items-center justify-center p-3 shadow-inner"
+						>
+							<svg
+								viewBox="0 0 640 800"
+								class="w-full h-full transform hover:scale-105 transition-transform duration-300"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g transform="translate(0,800) scale(0.1,-0.1)">
+									<path
+										d="M4833 7394 c3 -11 17 -49 31 -86 65 -173 72 -365 18 -521 -39 -113 -91 -200 -215 -355 l-101 -127 -9 35 c-26 103 -59 200 -75 220 -18 22 -18 22 -35 -58 -13 -61 -40 -123 -108 -257 -105 -204 -137 -291 -146 -390 -18 -215 125 -492 329 -635 64 -45 214 -117 224 -107 2 2 -14 42 -36 89 -75 161 -90 301 -45 434 31 92 101 222 173 322 85 119 187 285 212 346 36 89 44 72 36 -76 -9 -170 -33 -288 -103 -501 -53 -163 -56 -177 -57 -277 -1 -82 4 -120 21 -176 22 -69 58 -134 79 -141 5 -2 18 21 27 51 10 30 37 83 60 118 41 61 341 378 358 378 15 0 10 -182 -6 -245 -17 -66 -70 -183 -116 -259 -17 -26 -28 -51 -25 -53 7 -8 81 23 145 60 70 40 192 156 244 231 93 137 138 281 140 440 1 219 -69 440 -198 622 -69 97 -70 97 -71 -19 -2 -188 -53 -317 -170 -434 -39 -40 -76 -73 -82 -73 -6 0 2 26 18 58 49 97 71 195 77 332 6 132 -3 219 -38 358 -66 268 -251 517 -503 677 -47 30 -58 34 -53 19z"
+										class="fill-[#b89758] dark:fill-brand-accent transition-colors duration-300"
+									></path>
+									<path
+										d="M2240 5763 c-423 -236 -745 -427 -895 -532 -344 -240 -518 -598 -476 -976 15 -135 33 -202 81 -300 118 -245 368 -423 860 -617 107 -43 305 -121 440 -174 297 -117 455 -195 532 -264 170 -152 182 -416 26 -586 -53 -58 -168 -136 -262 -179 -593 -270 -1211 -532 -1202 -509 5 14 300 923 318 983 8 25 13 30 20 20 5 -8 72 -139 148 -291 77 -153 144 -278 148 -278 9 0 247 102 292 125 l31 16 -188 369 -188 369 -60 27 c-33 14 -139 62 -236 105 -96 44 -180 79 -185 79 -5 0 -58 -159 -119 -353 -137 -441 -312 -980 -494 -1520 -78 -229 -141 -421 -141 -427 0 -5 21 12 48 38 183 183 417 316 962 547 516 219 1015 442 1240 556 424 213 638 433 736 755 26 82 28 102 28 269 1 159 -2 189 -22 259 -42 145 -111 264 -208 358 -156 151 -290 220 -907 467 -595 238 -630 254 -751 339 -139 98 -199 208 -200 367 -2 208 114 334 507 554 21 12 69 39 108 61 l69 39 132 -63 c73 -34 180 -85 238 -112 58 -26 188 -90 290 -140 l185 -92 89 -204 c133 -303 256 -572 268 -583 7 -7 9 55 4 204 -3 118 -6 338 -6 488 l0 274 -47 21 c-27 11 -295 139 -596 284 -301 145 -549 264 -550 264 -1 0 -31 -17 -67 -37z m-982 -985 c-6 -29 -8 -87 -5 -128 12 -152 73 -283 186 -397 154 -156 267 -215 876 -456 568 -225 682 -280 832 -399 117 -93 195 -207 228 -335 31 -118 12 -298 -43 -423 l-21 -45 0 61 c-3 242 -129 456 -355 602 -116 76 -210 115 -971 413 -371 146 -559 263 -680 423 -114 152 -166 360 -131 524 15 72 72 212 86 212 4 0 3 -24 -2 -52z"
+										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
+									></path>
+									<path
+										d="M4084 4979 c-7 -13 103 -154 145 -187 l43 -32 785 2 785 3 52 55 c28 31 64 79 79 108 l28 52 -718 3 c-1047 3 -1194 3 -1199 -4z"
+										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
+									></path>
+									<path
+										d="M4330 4654 c0 -3 30 -34 66 -70 93 -92 119 -151 117 -269 -1 -69 -7 -107 -27 -164 -14 -41 -26 -76 -26 -79 0 -6 70 6 198 34 344 76 689 240 980 467 56 44 102 81 102 83 0 2 -317 4 -705 4 -388 0 -705 -3 -705 -6z"
+										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
+									></path>
+									<path
+										d="M5635 4403 c-268 -207 -730 -407 -1060 -458 -149 -23 -155 -25 -165 -48 -5 -12 -64 -143 -131 -292 -258 -572 -357 -792 -511 -1135 -223 -496 -470 -1031 -474 -1027 -2 2 -49 100 -105 218 -55 118 -104 218 -108 222 -6 6 -298 -129 -319 -148 -3 -3 152 -330 429 -904 55 -112 99 -208 99 -212 0 -5 3 -9 8 -9 8 0 36 58 257 540 89 195 243 531 342 745 99 215 208 453 243 530 35 77 125 275 200 440 75 165 183 402 240 526 l103 227 106 28 c58 15 126 36 150 46 29 12 42 14 38 6 -3 -7 -57 -123 -120 -258 -108 -230 -196 -421 -550 -1190 -187 -407 -718 -1551 -748 -1612 l-23 -48 -223 0 -222 0 -221 448 c-122 246 -238 483 -258 527 -20 44 -37 82 -38 84 -3 3 -131 -51 -257 -108 -37 -17 -67 -35 -67 -41 0 -5 64 -139 143 -297 79 -158 217 -438 307 -620 l164 -333 454 -2 c446 -3 455 -3 462 17 4 11 103 225 220 475 117 250 262 563 322 695 97 211 276 599 695 1510 128 278 302 654 446 965 147 316 248 542 245 545 -2 1 -34 -22 -73 -52z"
+										class="fill-[#12233f] dark:fill-brand-accent transition-colors duration-300"
+									></path>
+								</g>
+							</svg>
+						</div>
+						<span
+							class="mt-3 text-[11px] font-mono tracking-widest text-[#b89758] dark:text-brand-accent font-semibold uppercase"
+							>Official Heraldry</span
+						>
+					</div>
+
+					<!-- Content -->
+					<div class="flex-1 text-center lg:text-left space-y-4">
+						<h3
+							class="text-2xl sm:text-3xl lg:text-4xl font-serif italic text-slate-900 dark:text-white tracking-wide"
+						>
+							Sola virtus vincit
+						</h3>
+						<p
+							class="text-sm sm:text-base font-medium text-[#b89758] dark:text-brand-accent"
+						>
+							Only virtue conquers
+						</p>
+
+						<p
+							class="text-sm sm:text-base text-slate-600 dark:text-zinc-300 leading-relaxed font-light"
+						>
+							The underlying message is that neither material
+							power, cunning, nor brute force secure lasting
+							victory: <strong
+								>what truly prevails against all adversity is
+								moral excellence, technical rigor, and character
+								integrity</strong
+							>.
+						</p>
+
+						<!-- Etymological Triad -->
+						<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+							<div
+								class="p-3 rounded-xl bg-white/70 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-left"
+							>
+								<span
+									class="block text-xs font-mono font-bold text-[#12233f] dark:text-brand-accent"
+									>Sola</span
+								>
+								<span
+									class="text-[12px] text-slate-600 dark:text-zinc-400 leading-snug"
+									>Sole, only. Merely / solely.</span
+								>
+							</div>
+							<div
+								class="p-3 rounded-xl bg-white/70 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-left"
+							>
+								<span
+									class="block text-xs font-mono font-bold text-[#12233f] dark:text-brand-accent"
+									>Virtus</span
+								>
+								<span
+									class="text-[12px] text-slate-600 dark:text-zinc-400 leading-snug"
+									>Excellence, courage, rectitude, and moral
+									fortitude.</span
+								>
+							</div>
+							<div
+								class="p-3 rounded-xl bg-white/70 dark:bg-white/[0.03] border border-slate-200 dark:border-white/5 text-left"
+							>
+								<span
+									class="block text-xs font-mono font-bold text-[#12233f] dark:text-brand-accent"
+									>Vincit</span
+								>
+								<span
+									class="text-[12px] text-slate-600 dark:text-zinc-400 leading-snug"
+									>From verb vincere: to conquer, triumph, and
+									prevail.</span
+								>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -1289,7 +2184,8 @@ import Layout from '../../layouts/Layout.astro';
 		<div
 			id="audit-modal-backdrop"
 			class="fixed inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity duration-300"
-		></div>
+		>
+		</div>
 
 		<!-- Modal Container -->
 		<div
@@ -1297,7 +2193,8 @@ import Layout from '../../layouts/Layout.astro';
 		>
 			<div
 				class="absolute -top-24 -right-24 w-72 h-72 bg-brand-accent-light/10 dark:bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"
-			></div>
+			>
+			</div>
 
 			<!-- Close Button -->
 			<button
@@ -1306,8 +2203,17 @@ import Layout from '../../layouts/Layout.astro';
 				class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-white/[0.06] dark:hover:bg-white/[0.12] text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white flex items-center justify-center transition-all z-20"
 				aria-label="Close evaluation modal"
 			>
-				<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				<svg
+					class="w-4 h-4"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2.5"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M6 18L18 6M6 6l12 12"></path>
 				</svg>
 			</button>
 
@@ -1327,7 +2233,9 @@ import Layout from '../../layouts/Layout.astro';
 					<p
 						class="text-slate-600 dark:text-zinc-400 text-xs sm:text-sm"
 					>
-						Discover in 60 seconds which processes consume unnecessary time and receive a technical viability assessment with recommended agent architecture.
+						Discover in 60 seconds which processes consume
+						unnecessary time and receive a technical viability
+						assessment with recommended agent architecture.
 					</p>
 				</div>
 
@@ -1358,16 +2266,19 @@ import Layout from '../../layouts/Layout.astro';
 								class="w-full bg-slate-50 dark:bg-zinc-900 p-3 rounded-xl border border-slate-300 dark:border-white/10 focus:outline-none focus:border-brand-accent transition-colors text-slate-900 dark:text-slate-200 text-sm"
 							>
 								<option value="leads"
-									>Lead Scraping &amp; Qualification (Scrapers &amp; CRM)</option
+									>Lead Scraping &amp; Qualification (Scrapers
+									&amp; CRM)</option
 								>
 								<option value="catalog"
 									>Dense Catalog &amp; Technical PDF Ingestion</option
 								>
 								<option value="ai_local"
-									>Data Privacy / Hybrid AI &amp; Local Sovereignty</option
+									>Data Privacy / Hybrid AI &amp; Local
+									Sovereignty</option
 								>
 								<option value="web_app"
-									>Replacing Slow WordPress Monoliths (Astro / Next.js)</option
+									>Replacing Slow WordPress Monoliths (Astro /
+									Next.js)</option
 								>
 								<option value="workflows"
 									>Automating Repetitive Internal Team Tasks</option
@@ -1380,7 +2291,8 @@ import Layout from '../../layouts/Layout.astro';
 						<label
 							class="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-2"
 						>
-							Approximate weekly hours lost to repetitive manual processes:
+							Approximate weekly hours lost to repetitive manual
+							processes:
 						</label>
 						<div
 							class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs font-semibold"
@@ -1450,8 +2362,7 @@ import Layout from '../../layouts/Layout.astro';
 							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-							></path>
+								d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"></path>
 						</svg>
 					</button>
 				</form>
@@ -1477,7 +2388,9 @@ import Layout from '../../layouts/Layout.astro';
 								class="text-slate-600 dark:text-slate-300"
 								id="audit-result-text"
 							>
-								We have calculated your efficiency profile. To receive your custom roadmap right away, connect directly:
+								We have calculated your efficiency profile. To
+								receive your custom roadmap right away, connect
+								directly:
 							</p>
 							<div class="pt-1 flex flex-wrap gap-2.5">
 								<a
@@ -1504,91 +2417,260 @@ import Layout from '../../layouts/Layout.astro';
 			</div>
 		</div>
 	</div>
-<!-- Contact -->
-	<section id="contact" class="py-24 bg-[#12233f] text-white dark:bg-brand-bg-dark border-t border-[#1a365d] dark:border-brand-bg-darkSecondary transition-colors duration-300">
+	<!-- Contact -->
+	<section
+		id="contact"
+		class="py-24 bg-[#12233f] text-white dark:bg-brand-bg-dark border-t border-[#1a365d] dark:border-brand-bg-darkSecondary transition-colors duration-300"
+	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 				<div>
-					<span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-400/10 text-[#d4af37] border border-amber-500/20 mb-3">
+					<span
+						class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-400/10 text-[#d4af37] border border-amber-500/20 mb-3"
+					>
 						Direct Engineering Channel
 					</span>
-					<h2 class="text-3xl sm:text-4xl font-extrabold mb-4 text-white">Let's Build Your Project</h2>
-					<p class="text-slate-300 dark:text-brand-text-muted mb-8 leading-relaxed">
-						Ready to deploy robust, agent-first automation into your business or migrate away from legacy bottlenecks? We respond within 4 business hours.
+					<h2
+						class="text-3xl sm:text-4xl font-extrabold mb-4 text-white"
+					>
+						Let's Build Your Project
+					</h2>
+					<p
+						class="text-slate-300 dark:text-brand-text-muted mb-8 leading-relaxed"
+					>
+						Ready to deploy robust, agent-first automation into your
+						business or migrate away from legacy bottlenecks? We
+						respond within 4 business hours.
 					</p>
 
 					<div class="space-y-4 mb-8">
 						<div class="flex items-center text-slate-200">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3 text-[#b89758] dark:text-brand-accent flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
-							<span>Antonio Ávila | Lead Consultant & Full-Stack Engineer</span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-5 h-5 mr-3 text-[#b89758] dark:text-brand-accent flex-shrink-0"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+								></path></svg
+							>
+							<span
+								>Antonio Ávila | Lead Consultant & Full-Stack
+								Engineer</span
+							>
 						</div>
 						<div class="flex items-center text-slate-200">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3 text-[#b89758] dark:text-brand-accent flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
-							<a href="mailto:antonio.avila@soluvirtus.com" class="hover:text-[#b89758] dark:hover:text-brand-accent transition-colors font-mono text-sm">antonio.avila@soluvirtus.com</a>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-5 h-5 mr-3 text-[#b89758] dark:text-brand-accent flex-shrink-0"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+								></path></svg
+							>
+							<a
+								href="mailto:antonio.avila@soluvirtus.com"
+								class="hover:text-[#b89758] dark:hover:text-brand-accent transition-colors font-mono text-sm"
+								>antonio.avila@soluvirtus.com</a
+							>
 						</div>
 						<div class="flex items-center text-slate-200">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-3 text-[#b89758] dark:text-brand-accent flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a.598.598 0 0 1-.655-.705 5.26 5.26 0 0 1 2.247-3.931C5.171 14.856 3 11.772 3 8.25 3 3.694 7.03 0 12 0s9 3.694 9 8.25Z" /></svg>
-							<a href="https://wa.me/5215570603839?text=Hello%20Soluvirtus,%20I%20would%20like%20to%20quote%20a%20software%20and%20automation%20project" target="_blank" rel="noopener noreferrer" class="hover:text-[#b89758] dark:hover:text-brand-accent transition-colors font-mono text-sm">Direct WhatsApp: +52 55 7060 3839</a>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-5 h-5 mr-3 text-[#b89758] dark:text-brand-accent flex-shrink-0"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a.598.598 0 0 1-.655-.705 5.26 5.26 0 0 1 2.247-3.931C5.171 14.856 3 11.772 3 8.25 3 3.694 7.03 0 12 0s9 3.694 9 8.25Z"
+								></path></svg
+							>
+							<a
+								href="https://wa.me/5215570603839?text=Hello%20Soluvirtus,%20I%20would%20like%20to%20quote%20a%20software%20and%20automation%20project"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="hover:text-[#b89758] dark:hover:text-brand-accent transition-colors font-mono text-sm"
+								>Direct WhatsApp: +52 55 7060 3839</a
+							>
 						</div>
 					</div>
 
 					<!-- Professional Profile & Scheduling -->
 					<div class="pt-4 border-t border-slate-700/80 space-y-4">
-						<div class="text-xs uppercase tracking-wider text-slate-300 font-bold">Professional Profile & Scheduling</div>
+						<div
+							class="text-xs uppercase tracking-wider text-slate-300 font-bold"
+						>
+							Professional Profile & Scheduling
+						</div>
 						<div class="flex flex-wrap gap-3">
-							<a href="https://www.linkedin.com/in/av-soluvirtus/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg transition-colors border border-slate-700">
-								<svg class="w-4 h-4 text-sky-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+							<a
+								href="https://www.linkedin.com/in/av-soluvirtus/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-2 px-3.5 py-2 bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg transition-colors border border-slate-700"
+							>
+								<svg
+									class="w-4 h-4 text-sky-400"
+									fill="currentColor"
+									viewBox="0 0 24 24"
+									><path
+										d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+									></path></svg
+								>
 								LinkedIn (Antonio Ávila)
 							</a>
-							<a href="https://calendar.app.google/f4zwVLC3juqPxj27A" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-3.5 py-2 bg-[#b89758]/20 hover:bg-[#b89758]/30 text-[#e9d8a6] text-xs font-bold rounded-lg transition-colors border border-[#b89758]/40 shadow-sm">
-								<svg class="w-4 h-4 text-[#e9d8a6]" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM11 11h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+							<a
+								href="https://calendar.app.google/f4zwVLC3juqPxj27A"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-2 px-3.5 py-2 bg-[#b89758]/20 hover:bg-[#b89758]/30 text-[#e9d8a6] text-xs font-bold rounded-lg transition-colors border border-[#b89758]/40 shadow-sm"
+							>
+								<svg
+									class="w-4 h-4 text-[#e9d8a6]"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+									><path
+										d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM11 11h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"
+									></path></svg
+								>
 								Schedule on Google Meet
 							</a>
 						</div>
 					</div>
 				</div>
 
-				<div class="bg-[#0b172a] dark:bg-brand-bg-darkSecondary p-8 rounded-3xl border border-[#1e3a63] dark:border-slate-800 shadow-2xl relative">
-					<h3 class="text-xl font-bold mb-2 text-white">Send us a Qualified Inquiry</h3>
-					<p class="text-xs text-slate-300 mb-6">Your technical requirements are routed directly to our lead engineering team.</p>
+				<div
+					class="bg-[#0b172a] dark:bg-brand-bg-darkSecondary p-8 rounded-3xl border border-[#1e3a63] dark:border-slate-800 shadow-2xl relative"
+				>
+					<h3 class="text-xl font-bold mb-2 text-white">
+						Send us a Qualified Inquiry
+					</h3>
+					<p class="text-xs text-slate-300 mb-6">
+						Your technical requirements are routed directly to our
+						lead engineering team.
+					</p>
 
 					<form id="main-contact-form" class="space-y-4">
 						<div>
-							<label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
-							<input type="text" id="contact-name" required class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-100 text-sm" placeholder="Your name or company" />
+							<label
+								class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2"
+								>Full Name *</label
+							>
+							<input
+								type="text"
+								id="contact-name"
+								required
+								class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-100 text-sm"
+								placeholder="Your name or company"
+							/>
 						</div>
 						<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 							<div>
-								<label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Corporate Email *</label>
-								<input type="email" id="contact-email" required class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-100 text-sm" placeholder="you@company.com" />
+								<label
+									class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2"
+									>Corporate Email *</label
+								>
+								<input
+									type="email"
+									id="contact-email"
+									required
+									class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-100 text-sm"
+									placeholder="you@company.com"
+								/>
 							</div>
 							<div>
-								<label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone / WhatsApp *</label>
-								<input type="tel" id="contact-phone" required class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-100 text-sm" placeholder="+1 555 ..." />
+								<label
+									class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2"
+									>Phone / WhatsApp *</label
+								>
+								<input
+									type="tel"
+									id="contact-phone"
+									required
+									class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-100 text-sm"
+									placeholder="+1 555 ..."
+								/>
 							</div>
 						</div>
 						<div>
-							<label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service of Interest</label>
-							<select id="contact-service" class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-200 text-sm">
-								<option value="general">General Inquiry / Other</option>
-								<option value="automatizacion">Intelligent Automation (Bots & Scrapers)</option>
-								<option value="fullstack">Custom Full-Stack Development (Astro / Next.js)</option>
-								<option value="infraestructura">Sovereign Infrastructure & Private Local AI</option>
-								<option value="design">Premium UI/UX Design</option>
+							<label
+								class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2"
+								>Service of Interest</label
+							>
+							<select
+								id="contact-service"
+								class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors text-slate-200 text-sm"
+							>
+								<option value="general"
+									>General Inquiry / Other</option
+								>
+								<option value="automatizacion"
+									>Intelligent Automation (Bots & Scrapers)</option
+								>
+								<option value="fullstack"
+									>Custom Full-Stack Development (Astro /
+									Next.js)</option
+								>
+								<option value="infraestructura"
+									>Sovereign Infrastructure & Private Local AI</option
+								>
+								<option value="design"
+									>Premium UI/UX Design</option
+								>
 							</select>
 						</div>
 						<div>
-							<label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Details or Bottlenecks</label>
-							<textarea id="contact-message" class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors h-28 text-slate-100 text-sm" placeholder="Briefly describe your requirements or current operational friction..."></textarea>
+							<label
+								class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2"
+								>Project Details or Bottlenecks</label
+							>
+							<textarea
+								id="contact-message"
+								class="w-full bg-[#12233f]/70 dark:bg-brand-bg-dark p-3.5 rounded-xl border border-[#1e3a63] dark:border-slate-800 focus:outline-none focus:border-[#b89758] dark:focus:border-brand-accent transition-colors h-28 text-slate-100 text-sm"
+								placeholder="Briefly describe your requirements or current operational friction..."
+							></textarea>
 						</div>
-						<button type="submit" id="btn-submit-contact" class="w-full py-4 bg-[#b89758] hover:bg-[#a68648] text-[#0b172a] font-extrabold rounded-xl transition-all shadow-lg shadow-[#b89758]/20 flex items-center justify-center gap-2 border border-amber-300/30">
+						<button
+							type="submit"
+							id="btn-submit-contact"
+							class="w-full py-4 bg-[#b89758] hover:bg-[#a68648] text-[#0b172a] font-extrabold rounded-xl transition-all shadow-lg shadow-[#b89758]/20 flex items-center justify-center gap-2 border border-amber-300/30"
+						>
 							<span>Submit & Open Direct Channel</span>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 text-[#0b172a]"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" /></svg>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2.5"
+								stroke="currentColor"
+								class="w-5 h-5 text-[#0b172a]"
+								><path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+								></path></svg
+							>
 						</button>
 					</form>
 
-					<div id="contact-success-box" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs">
-						✓ Requirements successfully received. Direct conversation has been initialized to preserve all your project context.
+					<div
+						id="contact-success-box"
+						class="hidden mt-4 p-4 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs"
+					>
+						✓ Requirements successfully received. Direct
+						conversation has been initialized to preserve all your
+						project context.
 					</div>
 				</div>
 			</div>
@@ -1598,145 +2680,480 @@ import Layout from '../../layouts/Layout.astro';
 	<!-- Floating Qualified Contact Widget (Schedule Session or Direct Message) -->
 	<div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
 		<!-- Contact Dropdown Menu -->
-		<div id="floating-contact-menu" class="hidden mb-3 w-72 p-3 bg-white dark:bg-brand-bg-darkSecondary rounded-2xl border border-slate-300 dark:border-slate-700 shadow-2xl backdrop-blur-xl transition-all duration-300 transform origin-bottom-right animate-in fade-in slide-in-from-bottom-3 space-y-2">
-			<div class="px-3 py-2 border-b border-slate-100 dark:border-slate-800">
-				<span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400">Direct Channels</span>
-				<p class="text-xs font-semibold text-slate-800 dark:text-slate-100">How would you like to connect?</p>
+		<div
+			id="floating-contact-menu"
+			class="hidden mb-3 w-72 p-3 bg-white dark:bg-brand-bg-darkSecondary rounded-2xl border border-slate-300 dark:border-slate-700 shadow-2xl backdrop-blur-xl transition-all duration-300 transform origin-bottom-right animate-in fade-in slide-in-from-bottom-3 space-y-2"
+		>
+			<div
+				class="px-3 py-2 border-b border-slate-100 dark:border-slate-800"
+			>
+				<span
+					class="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-400"
+					>Direct Channels</span
+				>
+				<p
+					class="text-xs font-semibold text-slate-800 dark:text-slate-100"
+				>
+					How would you like to connect?
+				</p>
 			</div>
 
 			<!-- Option 1: Schedule on Google Meet -->
-			<a href="https://calendar.app.google/f4zwVLC3juqPxj27A" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all group/item">
-				<div class="w-9 h-9 rounded-lg bg-sky-500/10 text-sky-600 dark:text-brand-accent flex items-center justify-center flex-shrink-0 group-hover/item:scale-105 transition-transform">
-					<svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM11 11h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>
+			<a
+				href="https://calendar.app.google/f4zwVLC3juqPxj27A"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all group/item"
+			>
+				<div
+					class="w-9 h-9 rounded-lg bg-sky-500/10 text-sky-600 dark:text-brand-accent flex items-center justify-center flex-shrink-0 group-hover/item:scale-105 transition-transform"
+				>
+					<svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"
+						><path
+							d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM11 11h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"
+						></path></svg
+					>
 				</div>
 				<div class="flex-grow">
-					<div class="text-xs font-bold text-slate-900 dark:text-white group-hover/item:text-sky-600 dark:group-hover/item:text-brand-accent transition-colors">Schedule Technical Call</div>
-					<div class="text-[10px] text-slate-500 dark:text-slate-400">Google Meet (20 min complimentary)</div>
+					<div
+						class="text-xs font-bold text-slate-900 dark:text-white group-hover/item:text-sky-600 dark:group-hover/item:text-brand-accent transition-colors"
+					>
+						Schedule Technical Call
+					</div>
+					<div class="text-[10px] text-slate-500 dark:text-slate-400">
+						Google Meet (20 min complimentary)
+					</div>
 				</div>
 				<span class="text-slate-400 text-xs">&rarr;</span>
 			</a>
 
 			<!-- Option 2: Direct WhatsApp -->
-			<a href="https://wa.me/5215570603839?text=Hello%20Soluvirtus,%20I%20would%20like%20to%20inquire%20about%20your%20automation%20and%20engineering%20services" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-all group/item">
-				<div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center flex-shrink-0 group-hover/item:scale-105 transition-transform">
-					<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.483.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+			<a
+				href="https://wa.me/5215570603839?text=Hello%20Soluvirtus,%20I%20would%20like%20to%20inquire%20about%20your%20automation%20and%20engineering%20services"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-all group/item"
+			>
+				<div
+					class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center flex-shrink-0 group-hover/item:scale-105 transition-transform"
+				>
+					<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"
+						><path
+							d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.483.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+						></path></svg
+					>
 				</div>
 				<div class="flex-grow">
-					<div class="text-xs font-bold text-slate-900 dark:text-white group-hover/item:text-emerald-500 transition-colors">Direct Message</div>
-					<div class="text-[10px] text-slate-500 dark:text-slate-400">Official WhatsApp (+52 55)</div>
+					<div
+						class="text-xs font-bold text-slate-900 dark:text-white group-hover/item:text-emerald-500 transition-colors"
+					>
+						Direct Message
+					</div>
+					<div class="text-[10px] text-slate-500 dark:text-slate-400">
+						Official WhatsApp (+52 55)
+					</div>
 				</div>
 				<span class="text-slate-400 text-xs">&rarr;</span>
 			</a>
 		</div>
 
 		<!-- Trigger Button -->
-		<button id="btn-floating-contact" class="bg-brand-accent-light hover:bg-brand-accent-lightHover dark:bg-brand-accent dark:hover:bg-brand-accent-hover text-white dark:text-slate-950 p-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2.5 border border-sky-400/30 dark:border-brand-accent/40 shadow-sky-500/20 dark:shadow-brand-accent/30" title="Contact Soluvirtus" aria-label="Open contact options">
-			<svg id="icon-floating-chat" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+		<button
+			id="btn-floating-contact"
+			class="bg-brand-accent-light hover:bg-brand-accent-lightHover dark:bg-brand-accent dark:hover:bg-brand-accent-hover text-white dark:text-slate-950 p-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-2.5 border border-sky-400/30 dark:border-brand-accent/40 shadow-sky-500/20 dark:shadow-brand-accent/30"
+			title="Contact Soluvirtus"
+			aria-label="Open contact options"
+		>
+			<svg
+				id="icon-floating-chat"
+				class="w-5 h-5"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="2"
+				stroke="currentColor"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+				></path>
 			</svg>
-			<svg id="icon-floating-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+			<svg
+				id="icon-floating-close"
+				class="w-6 h-6 hidden"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="2"
+				stroke="currentColor"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M6 18 18 6M6 6l12 12"></path>
 			</svg>
 			<span class="text-xs font-bold pr-1 select-none">Book a Call</span>
 		</button>
 	</div>
 
 	<!-- Frequently Asked Questions (GEO Citations) -->
-	<section id="faq" class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300" itemscope itemtype="https://schema.org/FAQPage">
+	<section
+		id="faq"
+		class="py-24 bg-slate-50 dark:bg-brand-bg-darkSecondary/20 border-t border-slate-200 dark:border-brand-bg-darkSecondary transition-colors duration-300"
+		itemscope
+		itemtype="https://schema.org/FAQPage"
+	>
 		<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
 			<div class="text-center max-w-3xl mx-auto mb-16">
-				<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4">Decision-Making FAQs</h2>
-				<p class="text-lg text-slate-600 dark:text-brand-text-darkSecondary">Direct answers regarding architecture, data privacy, and ROI timelines.</p>
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mb-4"
+				>
+					Decision-Making FAQs
+				</h2>
+				<p
+					class="text-lg text-slate-600 dark:text-brand-text-darkSecondary"
+				>
+					Direct answers regarding architecture, data privacy, and ROI
+					timelines.
+				</p>
 			</div>
 
 			<div class="space-y-4">
 				<!-- FAQ 1 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">How does Soluvirtus balance data privacy with the advanced capabilities of commercial AI?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+				<div
+					class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark"
+					itemscope
+					itemprop="mainEntity"
+					itemtype="https://schema.org/Question"
+				>
+					<button
+						class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+					>
+						<span itemprop="name"
+							>How does Soluvirtus balance data privacy with the
+							advanced capabilities of commercial AI?</span
+						>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5 transform transition-transform duration-300"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg
+						>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							We implement a pragmatic <strong class="text-slate-900 dark:text-white">hybrid AI architecture</strong>. For confidential customer data, internal contracts, and sensitive trade secrets, we deploy open-weight models (Llama 3, Mistral) on private client-controlled servers where data never leaves your perimeter and token costs remain $0.00 USD. When tasks require state-of-the-art complex reasoning, multimodal processing, or elastic throughput, we seamlessly orchestrate leading commercial APIs (such as OpenAI or Anthropic) using sanitization layers and zero-data-retention enterprise controls.
+					<div
+						class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+						itemscope
+						itemprop="acceptedAnswer"
+						itemtype="https://schema.org/Answer"
+					>
+						<p
+							class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850"
+							itemprop="text"
+						>
+							We implement a pragmatic <strong
+								class="text-slate-900 dark:text-white"
+								>hybrid AI architecture</strong
+							>. For confidential customer data, internal
+							contracts, and sensitive trade secrets, we deploy
+							open-weight models (Llama 3, Mistral) on private
+							client-controlled servers where data never leaves
+							your perimeter and token costs remain $0.00 USD.
+							When tasks require state-of-the-art complex
+							reasoning, multimodal processing, or elastic
+							throughput, we seamlessly orchestrate leading
+							commercial APIs (such as OpenAI or Anthropic) using
+							sanitization layers and zero-data-retention
+							enterprise controls.
 						</p>
 					</div>
 				</div>
 
 				<!-- FAQ 2 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">Why does Soluvirtus reject WordPress in favor of headless stacks like Astro and Next.js?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+				<div
+					class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark"
+					itemscope
+					itemprop="mainEntity"
+					itemtype="https://schema.org/Question"
+				>
+					<button
+						class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+					>
+						<span itemprop="name"
+							>Why does Soluvirtus reject WordPress in favor of
+							headless stacks like Astro and Next.js?</span
+						>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5 transform transition-transform duration-300"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg
+						>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							WordPress monoliths suffer from technical debt, plugin vulnerabilities, and slow server response times over 900ms. Soluvirtus engineers decoupled web apps using Astro, Next.js, and Supabase (with Row-Level Security). This delivers sub-150ms Edge load speeds, bulletproof security, and native flexibility to orchestrate autonomous AI agents.
+					<div
+						class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+						itemscope
+						itemprop="acceptedAnswer"
+						itemtype="https://schema.org/Answer"
+					>
+						<p
+							class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850"
+							itemprop="text"
+						>
+							WordPress monoliths suffer from technical debt,
+							plugin vulnerabilities, and slow server response
+							times over 900ms. Soluvirtus engineers decoupled web
+							apps using Astro, Next.js, and Supabase (with
+							Row-Level Security). This delivers sub-150ms Edge
+							load speeds, bulletproof security, and native
+							flexibility to orchestrate autonomous AI agents.
 						</p>
 					</div>
 				</div>
 
 				<!-- FAQ 3 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What does an "Agent-First" approach mean compared to legacy automations?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+				<div
+					class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark"
+					itemscope
+					itemprop="mainEntity"
+					itemtype="https://schema.org/Question"
+				>
+					<button
+						class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+					>
+						<span itemprop="name"
+							>What does an "Agent-First" approach mean compared
+							to legacy automations?</span
+						>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5 transform transition-transform duration-300"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg
+						>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							Unlike rigid no-code workflows that break whenever web layouts or document formats change, an Agent-First system leverages AI models that can reason, interpret unstructured documents, make conditional decisions, and handle complex business logic autonomously.
+					<div
+						class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+						itemscope
+						itemprop="acceptedAnswer"
+						itemtype="https://schema.org/Answer"
+					>
+						<p
+							class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850"
+							itemprop="text"
+						>
+							Unlike rigid no-code workflows that break whenever
+							web layouts or document formats change, an
+							Agent-First system leverages AI models that can
+							reason, interpret unstructured documents, make
+							conditional decisions, and handle complex business
+							logic autonomously.
 						</p>
 					</div>
 				</div>
 
 				<!-- FAQ 4 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What is "QA-First Development" and how does it protect my investment?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+				<div
+					class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark"
+					itemscope
+					itemprop="mainEntity"
+					itemtype="https://schema.org/Question"
+				>
+					<button
+						class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+					>
+						<span itemprop="name"
+							>What is "QA-First Development" and how does it
+							protect my investment?</span
+						>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5 transform transition-transform duration-300"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg
+						>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							It means features are not considered finished without automated verification. We write automated integration suites with Pytest to test API logic and E2E browser tests with Selenium and Playwright for critical checkout and lead workflows. This ensures software releases are production-hardened without costly downtime.
+					<div
+						class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+						itemscope
+						itemprop="acceptedAnswer"
+						itemtype="https://schema.org/Answer"
+					>
+						<p
+							class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850"
+							itemprop="text"
+						>
+							It means features are not considered finished
+							without automated verification. We write automated
+							integration suites with Pytest to test API logic and
+							E2E browser tests with Selenium and Playwright for
+							critical checkout and lead workflows. This ensures
+							software releases are production-hardened without
+							costly downtime.
 						</p>
 					</div>
 				</div>
 
 				<!-- FAQ 5 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What is the typical delivery timeline and ROI of a custom automation pipeline?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+				<div
+					class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark"
+					itemscope
+					itemprop="mainEntity"
+					itemtype="https://schema.org/Question"
+				>
+					<button
+						class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+					>
+						<span itemprop="name"
+							>What is the typical delivery timeline and ROI of a
+							custom automation pipeline?</span
+						>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5 transform transition-transform duration-300"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg
+						>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							An initial high-impact automation or scraper pipeline is typically deployed within 2 to 3 weeks. Most of our clients recoup 100% of their investment within 60 to 90 days by reclaiming up to 70% of the operational hours previously lost to manual processing.
+					<div
+						class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+						itemscope
+						itemprop="acceptedAnswer"
+						itemtype="https://schema.org/Answer"
+					>
+						<p
+							class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850"
+							itemprop="text"
+						>
+							An initial high-impact automation or scraper
+							pipeline is typically deployed within 2 to 3 weeks.
+							Most of our clients recoup 100% of their investment
+							within 60 to 90 days by reclaiming up to 70% of the
+							operational hours previously lost to manual
+							processing.
 						</p>
 					</div>
 				</div>
 
 				<!-- FAQ 6 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">What technologies compose your core development stack?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+				<div
+					class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark"
+					itemscope
+					itemprop="mainEntity"
+					itemtype="https://schema.org/Question"
+				>
+					<button
+						class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+					>
+						<span itemprop="name"
+							>What technologies compose your core development
+							stack?</span
+						>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5 transform transition-transform duration-300"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg
+						>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							We build with a modern, high-speed, secure stack: Astro and Next.js with React for lightning-fast UIs; Tailwind CSS for responsive styling; Python (PyMuPDF, Pytest, Selenium, Playwright) for automation and data extraction; and Supabase (PostgreSQL) with Row-Level Security (RLS) for data governance.
+					<div
+						class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+						itemscope
+						itemprop="acceptedAnswer"
+						itemtype="https://schema.org/Answer"
+					>
+						<p
+							class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850"
+							itemprop="text"
+						>
+							We build with a modern, high-speed, secure stack:
+							Astro and Next.js with React for lightning-fast UIs;
+							Tailwind CSS for responsive styling; Python
+							(PyMuPDF, Pytest, Selenium, Playwright) for
+							automation and data extraction; and Supabase
+							(PostgreSQL) with Row-Level Security (RLS) for data
+							governance.
 						</p>
 					</div>
 				</div>
 
 				<!-- FAQ 7 -->
-				<div class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-					<button class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors">
-						<span itemprop="name">How are ongoing support and system maintenance managed?</span>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 transform transition-transform duration-300"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+				<div
+					class="faq-item border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white dark:bg-brand-bg-dark"
+					itemscope
+					itemprop="mainEntity"
+					itemtype="https://schema.org/Question"
+				>
+					<button
+						class="faq-toggle flex items-center justify-between w-full p-6 text-left font-bold text-slate-900 dark:text-white hover:text-brand-accent-light dark:hover:text-brand-accent transition-colors"
+					>
+						<span itemprop="name"
+							>How are ongoing support and system maintenance
+							managed?</span
+						>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-5 h-5 transform transition-transform duration-300"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path></svg
+						>
 					</button>
-					<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-						<p class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850" itemprop="text">
-							All deliverables are 100% documented and owned by you. We also provide monthly retainer options that include proactive agent performance monitoring, prompt engineering optimization, local model version upgrades, and scraper adaptations against external site layout changes.
+					<div
+						class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+						itemscope
+						itemprop="acceptedAnswer"
+						itemtype="https://schema.org/Answer"
+					>
+						<p
+							class="p-6 pt-0 text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed text-sm sm:text-base border-t border-slate-100 dark:border-slate-850"
+							itemprop="text"
+						>
+							All deliverables are 100% documented and owned by
+							you. We also provide monthly retainer options that
+							include proactive agent performance monitoring,
+							prompt engineering optimization, local model version
+							upgrades, and scraper adaptations against external
+							site layout changes.
 						</p>
 					</div>
 				</div>
@@ -1744,12 +3161,25 @@ import Layout from '../../layouts/Layout.astro';
 		</div>
 	</section>
 
-	<footer class="py-12 bg-slate-950 text-slate-500 text-center text-sm border-t border-slate-900 dark:border-brand-bg-darkSecondary transition-colors">
+	<footer
+		class="py-12 bg-slate-950 text-slate-500 text-center text-sm border-t border-slate-900 dark:border-brand-bg-darkSecondary transition-colors"
+	>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-			<div class="flex flex-wrap justify-center items-center gap-6 text-xs text-slate-400 font-mono">
-				<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>Stack: Astro 4 · Tailwind CSS · Supabase</span>
-				<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Guaranteed Data Sovereignty</span>
-				<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-sky-400"></span>Static Edge Performance</span>
+			<div
+				class="flex flex-wrap justify-center items-center gap-6 text-xs text-slate-400 font-mono"
+			>
+				<span class="flex items-center gap-1.5"
+					><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"
+					></span>Stack: Astro 4 · Tailwind CSS · Supabase</span
+				>
+				<span class="flex items-center gap-1.5"
+					><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"
+					></span>Guaranteed Data Sovereignty</span
+				>
+				<span class="flex items-center gap-1.5"
+					><span class="w-1.5 h-1.5 rounded-full bg-sky-400"
+					></span>Static Edge Performance</span
+				>
 			</div>
 			<div class="flex justify-center items-center gap-2 pt-2">
 				<div class="w-6 h-6 flex-shrink-0">
@@ -1762,33 +3192,46 @@ import Layout from '../../layouts/Layout.astro';
 						<g transform="translate(0,800) scale(0.1,-0.1)">
 							<path
 								d="M4833 7394 c3 -11 17 -49 31 -86 65 -173 72 -365 18 -521 -39 -113 -91 -200 -215 -355 l-101 -127 -9 35 c-26 103 -59 200 -75 220 -18 22 -18 22 -35 -58 -13 -61 -40 -123 -108 -257 -105 -204 -137 -291 -146 -390 -18 -215 125 -492 329 -635 64 -45 214 -117 224 -107 2 2 -14 42 -36 89 -75 161 -90 301 -45 434 31 92 101 222 173 322 85 119 187 285 212 346 36 89 44 72 36 -76 -9 -170 -33 -288 -103 -501 -53 -163 -56 -177 -57 -277 -1 -82 4 -120 21 -176 22 -69 58 -134 79 -141 5 -2 18 21 27 51 10 30 37 83 60 118 41 61 341 378 358 378 15 0 10 -182 -6 -245 -17 -66 -70 -183 -116 -259 -17 -26 -28 -51 -25 -53 7 -8 81 23 145 60 70 40 192 156 244 231 93 137 138 281 140 440 1 219 -69 440 -198 622 -69 97 -70 97 -71 -19 -2 -188 -53 -317 -170 -434 -39 -40 -76 -73 -82 -73 -6 0 2 26 18 58 49 97 71 195 77 332 6 132 -3 219 -38 358 -66 268 -251 517 -503 677 -47 30 -58 34 -53 19z"
-								class="fill-brand-accent"
-							/>
+								class="fill-brand-accent"></path>
 							<path
 								d="M2240 5763 c-423 -236 -745 -427 -895 -532 -344 -240 -518 -598 -476 -976 15 -135 33 -202 81 -300 118 -245 368 -423 860 -617 107 -43 305 -121 440 -174 297 -117 455 -195 532 -264 170 -152 182 -416 26 -586 -53 -58 -168 -136 -262 -179 -593 -270 -1211 -532 -1202 -509 5 14 300 923 318 983 8 25 13 30 20 20 5 -8 72 -139 148 -291 77 -153 144 -278 148 -278 9 0 247 102 292 125 l31 16 -188 369 -188 369 -60 27 c-33 14 -139 62 -236 105 -96 44 -180 79 -185 79 -5 0 -58 -159 -119 -353 -137 -441 -312 -980 -494 -1520 -78 -229 -141 -421 -141 -427 0 -5 21 12 48 38 183 183 417 316 962 547 516 219 1015 442 1240 556 424 213 638 433 736 755 26 82 28 102 28 269 1 159 -2 189 -22 259 -42 145 -111 264 -208 358 -156 151 -290 220 -907 467 -595 238 -630 254 -751 339 -139 98 -199 208 -200 367 -2 208 114 334 507 554 21 12 69 39 108 61 l69 39 132 -63 c73 -34 180 -85 238 -112 58 -26 188 -90 290 -140 l185 -92 89 -204 c133 -303 256 -572 268 -583 7 -7 9 55 4 204 -3 118 -6 338 -6 488 l0 274 -47 21 c-27 11 -295 139 -596 284 -301 145 -549 264 -550 264 -1 0 -31 -17 -67 -37z m-982 -985 c-6 -29 -8 -87 -5 -128 12 -152 73 -283 186 -397 154 -156 267 -215 876 -456 568 -225 682 -280 832 -399 117 -93 195 -207 228 -335 31 -118 12 -298 -43 -423 l-21 -45 0 61 c-3 242 -129 456 -355 602 -116 76 -210 115 -971 413 -371 146 -559 263 -680 423 -114 152 -166 360 -131 524 15 72 72 212 86 212 4 0 3 -24 -2 -52z"
-								class="fill-slate-400"
-							/>
+								class="fill-slate-400"></path>
 							<path
 								d="M4084 4979 c-7 -13 103 -154 145 -187 l43 -32 785 2 785 3 52 55 c28 31 64 79 79 108 l28 52 -718 3 c-1047 3 -1194 3 -1199 -4z"
-								class="fill-slate-400"
-							/>
+								class="fill-slate-400"></path>
 							<path
 								d="M4330 4654 c0 -3 30 -34 66 -70 93 -92 119 -151 117 -269 -1 -69 -7 -107 -27 -164 -14 -41 -26 -76 -26 -79 0 -6 70 6 198 34 344 76 689 240 980 467 56 44 102 81 102 83 0 2 -317 4 -705 4 -388 0 -705 -3 -705 -6z"
-								class="fill-slate-400"
-							/>
+								class="fill-slate-400"></path>
 							<path
 								d="M5635 4403 c-268 -207 -730 -407 -1060 -458 -149 -23 -155 -25 -165 -48 -5 -12 -64 -143 -131 -292 -258 -572 -357 -792 -511 -1135 -223 -496 -470 -1031 -474 -1027 -2 2 -49 100 -105 218 -55 118 -104 218 -108 222 -6 6 -298 -129 -319 -148 -3 -3 152 -330 429 -904 55 -112 99 -208 99 -212 0 -5 3 -9 8 -9 8 0 36 58 257 540 89 195 243 531 342 745 99 215 208 453 243 530 35 77 125 275 200 440 75 165 183 402 240 526 l103 227 106 28 c58 15 126 36 150 46 29 12 42 14 38 6 -3 -7 -57 -123 -120 -258 -108 -230 -196 -421 -550 -1190 -187 -407 -718 -1551 -748 -1612 l-23 -48 -223 0 -222 0 -221 448 c-122 246 -238 483 -258 527 -20 44 -37 82 -38 84 -3 3 -131 -51 -257 -108 -37 -17 -67 -35 -67 -41 0 -5 64 -139 143 -297 79 -158 217 -438 307 -620 l164 -333 454 -2 c446 -3 455 -3 462 17 4 11 103 225 220 475 117 250 262 563 322 695 97 211 276 599 695 1510 128 278 302 654 446 965 147 316 248 542 245 545 -2 1 -34 -22 -73 -52z"
-								class="fill-slate-400"
-							/>
+								class="fill-slate-400"></path>
 						</g>
 					</svg>
 				</div>
-				<span class="font-bold tracking-widest text-slate-400 text-xs">SOLUVIRTUS</span>
+				<div class="flex items-center gap-2">
+					<span
+						class="font-bold tracking-widest text-slate-300 text-xs"
+						>SOLUVIRTUS</span
+					>
+					<span class="text-slate-600 font-mono text-xs">·</span>
+					<span
+						class="font-serif italic text-xs text-[#b89758] dark:text-brand-accent tracking-wider"
+						>Sola Virtus Vincit</span
+					>
+				</div>
 			</div>
-			<p class="text-slate-400">© 2026 Soluvirtus. Finding solutions, Prompting virtues.</p>
+			<p class="text-slate-400">
+				© 2026 Soluvirtus. Finding solutions, Prompting virtues.
+			</p>
 			<p class="text-xs">
-				Independently developed and maintained by 
-				<a href="https://www.linkedin.com/in/av-soluvirtus/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors underline decoration-brand-accent/50 underline-offset-4 font-semibold">Antonio Ávila</a>
+				Independently developed and maintained by
+				<a
+					href="https://www.linkedin.com/in/av-soluvirtus/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:text-white transition-colors underline decoration-brand-accent/50 underline-offset-4 font-semibold"
+					>Antonio Ávila</a
+				>
 			</p>
 		</div>
 	</footer>
@@ -1796,24 +3239,26 @@ import Layout from '../../layouts/Layout.astro';
 
 <script>
 	// Theme script
-	const themeLight = document.getElementById('theme-light');
-	const themeDark = document.getElementById('theme-dark');
-	const themeSystem = document.getElementById('theme-system');
+	const themeLight = document.getElementById("theme-light");
+	const themeDark = document.getElementById("theme-dark");
+	const themeSystem = document.getElementById("theme-system");
 
-	const setTheme = (theme: 'light' | 'dark' | 'system') => {
-		if (theme === 'system') {
-			localStorage.removeItem('theme');
-			const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-			document.documentElement.classList.toggle('dark', isDark);
+	const setTheme = (theme: "light" | "dark" | "system") => {
+		if (theme === "system") {
+			localStorage.removeItem("theme");
+			const isDark = window.matchMedia(
+				"(prefers-color-scheme: dark)",
+			).matches;
+			document.documentElement.classList.toggle("dark", isDark);
 		} else {
-			localStorage.setItem('theme', theme);
-			document.documentElement.classList.toggle('dark', theme === 'dark');
+			localStorage.setItem("theme", theme);
+			document.documentElement.classList.toggle("dark", theme === "dark");
 		}
 	};
 
-	themeLight?.addEventListener('click', () => setTheme('light'));
-	themeDark?.addEventListener('click', () => setTheme('dark'));
-	themeSystem?.addEventListener('click', () => setTheme('system'));
+	themeLight?.addEventListener("click", () => setTheme("light"));
+	themeDark?.addEventListener("click", () => setTheme("dark"));
+	themeSystem?.addEventListener("click", () => setTheme("system"));
 
 	// Typewriter effect
 	const words = [
@@ -1822,17 +3267,17 @@ import Layout from '../../layouts/Layout.astro';
 		"Automating Processes",
 		"Increasing Sales Speed",
 		"Storing and Delivering Information",
-		"Service Inquiries"
+		"Service Inquiries",
 	];
 	let wordIndex = 0;
 	let charIndex = 0;
 	let isDeleting = false;
-	const dynamicWordEl = document.getElementById('dynamic-word');
+	const dynamicWordEl = document.getElementById("dynamic-word");
 
 	const typeEffect = () => {
 		if (!dynamicWordEl) return;
 		const currentWord = words[wordIndex];
-		
+
 		if (isDeleting) {
 			dynamicWordEl.textContent = currentWord.substring(0, charIndex - 1);
 			charIndex--;
@@ -1858,48 +3303,114 @@ import Layout from '../../layouts/Layout.astro';
 	setTimeout(typeEffect, 1000);
 
 	// Terminal simulation logic (Suggestion 26)
-	const termScreen = document.getElementById('terminal-screen');
-	const btnCatalog = document.getElementById('btn-demo-catalog');
-	const btnLeads = document.getElementById('btn-demo-leads');
-	const btnLlm = document.getElementById('btn-demo-llm');
+	const termScreen = document.getElementById("terminal-screen");
+	const btnCatalog = document.getElementById("btn-demo-catalog");
+	const btnLeads = document.getElementById("btn-demo-leads");
+	const btnLlm = document.getElementById("btn-demo-llm");
 
 	const simulations = {
 		catalog: [
-			{ text: "> soluvirtus run catalog-ai", color: "text-slate-300 font-bold" },
-			{ text: "[system] Initializing catalog-ai-agent...", color: "text-slate-500" },
-			{ text: "[system] Loading local inventory database (2,400 products)...", color: "text-slate-500" },
-			{ text: '[agent] Analyzing customer query: "Looking for a tablet with a screen over 10 inches..."', color: "text-brand-accent-light dark:text-brand-accent" },
-			{ text: "[agent] Scanning product catalog and specifications...", color: "text-slate-400" },
-			{ text: "[agent] Product found: Samsung Galaxy Tab A7 (10.4\", 32GB, Gray) - Price: 4,500 MXN", color: "text-emerald-400 font-semibold" },
-			{ text: "[agent] Generating custom response with Stripe payment link...", color: "text-slate-400" },
-			{ text: "[system] Response successfully sent via local API channel. Task completed.", color: "text-sky-400" }
+			{
+				text: "> soluvirtus run catalog-ai",
+				color: "text-slate-300 font-bold",
+			},
+			{
+				text: "[system] Initializing catalog-ai-agent...",
+				color: "text-slate-500",
+			},
+			{
+				text: "[system] Loading local inventory database (2,400 products)...",
+				color: "text-slate-500",
+			},
+			{
+				text: '[agent] Analyzing customer query: "Looking for a tablet with a screen over 10 inches..."',
+				color: "text-brand-accent-light dark:text-brand-accent",
+			},
+			{
+				text: "[agent] Scanning product catalog and specifications...",
+				color: "text-slate-400",
+			},
+			{
+				text: '[agent] Product found: Samsung Galaxy Tab A7 (10.4", 32GB, Gray) - Price: 4,500 MXN',
+				color: "text-emerald-400 font-semibold",
+			},
+			{
+				text: "[agent] Generating custom response with Stripe payment link...",
+				color: "text-slate-400",
+			},
+			{
+				text: "[system] Response successfully sent via local API channel. Task completed.",
+				color: "text-sky-400",
+			},
 		],
 		leads: [
-			{ text: "> soluvirtus run lead-scraper", color: "text-slate-300 font-bold" },
-			{ text: "[system] Initializing lead-scraper-agent...", color: "text-slate-500" },
-			{ text: "[system] Connecting to real estate data sources and public listings...", color: "text-slate-500" },
-			{ text: "[agent] Analyzing property listings in metropolitan area...", color: "text-slate-400" },
-			{ text: "[agent] Lead detected: Owner selling in Roma neighborhood. Price below average value.", color: "text-brand-accent-light dark:text-brand-accent" },
-			{ text: "[agent] Extracting contact details and applying lead scoring filters...", color: "text-slate-400" },
-			{ text: "[system] Lead saved to Supabase database (Score: 94/100). Notification sent.", color: "text-emerald-400 font-semibold" }
+			{
+				text: "> soluvirtus run lead-scraper",
+				color: "text-slate-300 font-bold",
+			},
+			{
+				text: "[system] Initializing lead-scraper-agent...",
+				color: "text-slate-500",
+			},
+			{
+				text: "[system] Connecting to real estate data sources and public listings...",
+				color: "text-slate-500",
+			},
+			{
+				text: "[agent] Analyzing property listings in metropolitan area...",
+				color: "text-slate-400",
+			},
+			{
+				text: "[agent] Lead detected: Owner selling in Roma neighborhood. Price below average value.",
+				color: "text-brand-accent-light dark:text-brand-accent",
+			},
+			{
+				text: "[agent] Extracting contact details and applying lead scoring filters...",
+				color: "text-slate-400",
+			},
+			{
+				text: "[system] Lead saved to Supabase database (Score: 94/100). Notification sent.",
+				color: "text-emerald-400 font-semibold",
+			},
 		],
 		llm: [
-			{ text: "> soluvirtus run local-llm --model llama3-8b", color: "text-slate-300 font-bold" },
-			{ text: "[system] Connecting to local open-source LLM (Llama-3-8B-Instruct)...", color: "text-slate-500" },
-			{ text: "[system] Loading secure corporate context (Data Sovereignty)...", color: "text-slate-500" },
-			{ text: '[user] Query: "What is the internal data retention policy?"', color: "text-slate-300" },
-			{ text: "[agent] Processing tokens locally (No external calls to commercial APIs)...", color: "text-slate-400" },
-			{ text: '[agent] Response: "All information is stored locally using robust RLS security."', color: "text-emerald-400 font-semibold" },
-			{ text: "[system] Execution completed. External API cost: 0.00 USD.", color: "text-sky-400" }
-		]
+			{
+				text: "> soluvirtus run local-llm --model llama3-8b",
+				color: "text-slate-300 font-bold",
+			},
+			{
+				text: "[system] Connecting to local open-source LLM (Llama-3-8B-Instruct)...",
+				color: "text-slate-500",
+			},
+			{
+				text: "[system] Loading secure corporate context (Data Sovereignty)...",
+				color: "text-slate-500",
+			},
+			{
+				text: '[user] Query: "What is the internal data retention policy?"',
+				color: "text-slate-300",
+			},
+			{
+				text: "[agent] Processing tokens locally (No external calls to commercial APIs)...",
+				color: "text-slate-400",
+			},
+			{
+				text: '[agent] Response: "All information is stored locally using robust RLS security."',
+				color: "text-emerald-400 font-semibold",
+			},
+			{
+				text: "[system] Execution completed. External API cost: 0.00 USD.",
+				color: "text-sky-400",
+			},
+		],
 	};
 
 	let running = false;
-	const runSimulation = (key: 'catalog' | 'leads' | 'llm') => {
+	const runSimulation = (key: "catalog" | "leads" | "llm") => {
 		if (running || !termScreen) return;
 		running = true;
-		termScreen.innerHTML = '';
-		
+		termScreen.innerHTML = "";
+
 		const lines = simulations[key];
 		let currentLine = 0;
 
@@ -1909,7 +3420,7 @@ import Layout from '../../layouts/Layout.astro';
 				return;
 			}
 			const line = lines[currentLine];
-			const div = document.createElement('div');
+			const div = document.createElement("div");
 			div.className = `${line.color} animate-fade-in`;
 			div.textContent = line.text;
 			termScreen.appendChild(div);
@@ -1921,47 +3432,52 @@ import Layout from '../../layouts/Layout.astro';
 		printLine();
 	};
 
-	btnCatalog?.addEventListener('click', () => runSimulation('catalog'));
-	btnLeads?.addEventListener('click', () => runSimulation('leads'));
-	btnLlm?.addEventListener('click', () => runSimulation('llm'));
+	btnCatalog?.addEventListener("click", () => runSimulation("catalog"));
+	btnLeads?.addEventListener("click", () => runSimulation("leads"));
+	btnLlm?.addEventListener("click", () => runSimulation("llm"));
 
 	// FAQ accordion logic (Suggestion 20)
-	const faqToggles = document.querySelectorAll('.faq-toggle');
-	faqToggles.forEach(toggle => {
-		toggle.addEventListener('click', () => {
+	const faqToggles = document.querySelectorAll(".faq-toggle");
+	faqToggles.forEach((toggle) => {
+		toggle.addEventListener("click", () => {
 			const answer = toggle.nextElementSibling as HTMLElement;
-			const icon = toggle.querySelector('svg');
-			
+			const icon = toggle.querySelector("svg");
+
 			if (answer && icon) {
-				const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
-				
+				const isOpen =
+					answer.style.maxHeight && answer.style.maxHeight !== "0px";
+
 				// Close all other FAQs
-				document.querySelectorAll('.faq-answer').forEach(el => {
-					(el as HTMLElement).style.maxHeight = '0px';
+				document.querySelectorAll(".faq-answer").forEach((el) => {
+					(el as HTMLElement).style.maxHeight = "0px";
 				});
-				document.querySelectorAll('.faq-toggle svg').forEach(svg => {
-					(svg as HTMLElement).classList.remove('rotate-180');
+				document.querySelectorAll(".faq-toggle svg").forEach((svg) => {
+					(svg as HTMLElement).classList.remove("rotate-180");
 				});
-				
+
 				if (!isOpen) {
 					answer.style.maxHeight = `${answer.scrollHeight}px`;
-					icon.classList.add('rotate-180');
+					icon.classList.add("rotate-180");
 				} else {
-					answer.style.maxHeight = '0px';
-					icon.classList.remove('rotate-180');
+					answer.style.maxHeight = "0px";
+					icon.classList.remove("rotate-180");
 				}
 			}
 		});
 	});
 
 	// Contact form service pre-selection (Suggestion 22)
-	const cotizarBtns = document.querySelectorAll('.cotizar-btn');
-	const serviceSelect = document.getElementById('contact-service') as HTMLSelectElement | null;
-	const messageTextarea = document.getElementById('contact-message') as HTMLTextAreaElement | null;
+	const cotizarBtns = document.querySelectorAll(".cotizar-btn");
+	const serviceSelect = document.getElementById(
+		"contact-service",
+	) as HTMLSelectElement | null;
+	const messageTextarea = document.getElementById(
+		"contact-message",
+	) as HTMLTextAreaElement | null;
 
-	cotizarBtns.forEach(btn => {
-		btn.addEventListener('click', () => {
-			const service = btn.getAttribute('data-service');
+	cotizarBtns.forEach((btn) => {
+		btn.addEventListener("click", () => {
+			const service = btn.getAttribute("data-service");
 			if (serviceSelect && service) {
 				serviceSelect.value = service;
 			}
@@ -1974,37 +3490,48 @@ import Layout from '../../layouts/Layout.astro';
 	});
 
 	// Scroll Reveal Animations (Suggestion 1)
-	const revealElements = document.querySelectorAll('.reveal');
-	const revealObserver = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add('reveal-active');
-				revealObserver.unobserve(entry.target);
-			}
-		});
-	}, {
-		threshold: 0.1,
-		rootMargin: '0px 0px -50px 0px'
-	});
+	const revealElements = document.querySelectorAll(".reveal");
+	const revealObserver = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("reveal-active");
+					revealObserver.unobserve(entry.target);
+				}
+			});
+		},
+		{
+			threshold: 0.1,
+			rootMargin: "0px 0px -50px 0px",
+		},
+	);
 
-	revealElements.forEach(el => revealObserver.observe(el));
+	revealElements.forEach((el) => revealObserver.observe(el));
 
 	// -------------------------------------------------------------
 	// ROI Calculator Logic (English)
 	// -------------------------------------------------------------
-	const roiPeople = document.getElementById('roi-people') as HTMLInputElement | null;
-	const roiHours = document.getElementById('roi-hours') as HTMLInputElement | null;
-	const roiCost = document.getElementById('roi-cost') as HTMLInputElement | null;
+	const roiPeople = document.getElementById(
+		"roi-people",
+	) as HTMLInputElement | null;
+	const roiHours = document.getElementById(
+		"roi-hours",
+	) as HTMLInputElement | null;
+	const roiCost = document.getElementById(
+		"roi-cost",
+	) as HTMLInputElement | null;
 
-	const roiPeopleVal = document.getElementById('roi-people-val');
-	const roiHoursVal = document.getElementById('roi-hours-val');
-	const roiCostVal = document.getElementById('roi-cost-val');
+	const roiPeopleVal = document.getElementById("roi-people-val");
+	const roiHoursVal = document.getElementById("roi-hours-val");
+	const roiCostVal = document.getElementById("roi-cost-val");
 
-	const roiWasteDisplay = document.getElementById('roi-waste-display');
-	const roiHoursWaste = document.getElementById('roi-hours-waste');
-	const roiSavingsDisplay = document.getElementById('roi-savings-display');
-	const roiAnnualSavings = document.getElementById('roi-annual-savings');
-	const btnRoiWhatsapp = document.getElementById('btn-roi-whatsapp') as HTMLAnchorElement | null;
+	const roiWasteDisplay = document.getElementById("roi-waste-display");
+	const roiHoursWaste = document.getElementById("roi-hours-waste");
+	const roiSavingsDisplay = document.getElementById("roi-savings-display");
+	const roiAnnualSavings = document.getElementById("roi-annual-savings");
+	const btnRoiWhatsapp = document.getElementById(
+		"btn-roi-whatsapp",
+	) as HTMLAnchorElement | null;
 
 	const updateROI = () => {
 		if (!roiPeople || !roiHours || !roiCost) return;
@@ -2012,117 +3539,139 @@ import Layout from '../../layouts/Layout.astro';
 		const hoursPerDay = parseFloat(roiHours.value);
 		const hourlyCost = parseFloat(roiCost.value);
 
-		if (roiPeopleVal) roiPeopleVal.textContent = `${people} ${people === 1 ? 'employee' : 'employees'}`;
+		if (roiPeopleVal)
+			roiPeopleVal.textContent = `${people} ${people === 1 ? "employee" : "employees"}`;
 		if (roiHoursVal) roiHoursVal.textContent = `${hoursPerDay} hrs/day`;
 		if (roiCostVal) roiCostVal.textContent = `$${hourlyCost} USD/hr`;
 
 		// 21 business days per month
 		const totalHoursMonth = people * hoursPerDay * 21;
 		const monthlyCost = totalHoursMonth * hourlyCost;
-		const monthlySavings = monthlyCost * 0.70;
+		const monthlySavings = monthlyCost * 0.7;
 		const annualSavings = monthlySavings * 12;
 
 		if (roiWasteDisplay) {
-			roiWasteDisplay.textContent = `$${Math.round(monthlyCost).toLocaleString('en-US')} USD / mo`;
+			roiWasteDisplay.textContent = `$${Math.round(monthlyCost).toLocaleString("en-US")} USD / mo`;
 		}
 		if (roiHoursWaste) {
 			roiHoursWaste.textContent = `${totalHoursMonth.toFixed(1)} monthly hours spent on mechanical tasks`;
 		}
 		if (roiSavingsDisplay) {
-			roiSavingsDisplay.textContent = `$${Math.round(monthlySavings).toLocaleString('en-US')} USD / mo`;
+			roiSavingsDisplay.textContent = `$${Math.round(monthlySavings).toLocaleString("en-US")} USD / mo`;
 		}
 		if (roiAnnualSavings) {
-			roiAnnualSavings.innerHTML = `Equivalent to <span class="text-brand-accent">$${Math.round(annualSavings).toLocaleString('en-US')} USD / year</span> recovered`;
+			roiAnnualSavings.innerHTML = `Equivalent to <span class="text-brand-accent">$${Math.round(annualSavings).toLocaleString("en-US")} USD / year</span> recovered`;
 		}
 
 		if (btnRoiWhatsapp) {
-			const peopleText = `${people} ${people === 1 ? 'person' : 'people'}`;
+			const peopleText = `${people} ${people === 1 ? "person" : "people"}`;
 			const hoursText = `${hoursPerDay} hrs/day per person`;
 			const costText = `$${hourlyCost} USD/hr`;
-			const savingsText = `$${Math.round(monthlySavings).toLocaleString('en-US')} USD/mo`;
+			const savingsText = `$${Math.round(monthlySavings).toLocaleString("en-US")} USD/mo`;
 
 			const waMessage = `Hello Antonio / Soluvirtus,%0A%0AI used the ROI Calculator on your website and would like to automate these workflows:%0A• *Team members on repetitive manual tasks:* ${encodeURIComponent(peopleText)}%0A• *Daily hours spent on manual processes (per person):* ${encodeURIComponent(hoursText)}%0A• *Average hourly cost per person (USD):* ${encodeURIComponent(costText)}%0A• *Projected monthly savings:* ${encodeURIComponent(savingsText)}%0A%0ACan we schedule a call or review our automation opportunities?`;
 			btnRoiWhatsapp.href = `https://wa.me/5215570603839?text=${waMessage}`;
 		}
 	};
 
-	roiPeople?.addEventListener('input', updateROI);
-	roiHours?.addEventListener('input', updateROI);
-	roiCost?.addEventListener('input', updateROI);
+	roiPeople?.addEventListener("input", updateROI);
+	roiHours?.addEventListener("input", updateROI);
+	roiCost?.addEventListener("input", updateROI);
 	updateROI();
 
 	// -------------------------------------------------------------
 	// Lead Magnet Audit Modal & Form (Local Storage + WhatsApp Pre-populated)
 	// -------------------------------------------------------------
-	const auditModal = document.getElementById('audit-modal');
-	const auditModalBackdrop = document.getElementById('audit-modal-backdrop');
-	const btnCloseAuditModal = document.getElementById('btn-close-audit-modal');
-	const heroOpenAuditBtn = document.getElementById('hero-open-audit-btn');
-	const btnRoiOpenModal = document.getElementById('btn-roi-open-modal');
+	const auditModal = document.getElementById("audit-modal");
+	const auditModalBackdrop = document.getElementById("audit-modal-backdrop");
+	const btnCloseAuditModal = document.getElementById("btn-close-audit-modal");
+	const heroOpenAuditBtn = document.getElementById("hero-open-audit-btn");
+	const btnRoiOpenModal = document.getElementById("btn-roi-open-modal");
 
 	const openAuditModal = () => {
 		if (auditModal) {
-			auditModal.classList.remove('hidden');
-			auditModal.classList.add('flex');
-			document.body.style.overflow = 'hidden';
-			const firstInput = document.getElementById('audit-contact') as HTMLInputElement | null;
+			auditModal.classList.remove("hidden");
+			auditModal.classList.add("flex");
+			document.body.style.overflow = "hidden";
+			const firstInput = document.getElementById(
+				"audit-contact",
+			) as HTMLInputElement | null;
 			if (firstInput) setTimeout(() => firstInput.focus(), 150);
 		}
 	};
 
 	const closeAuditModal = () => {
 		if (auditModal) {
-			auditModal.classList.add('hidden');
-			auditModal.classList.remove('flex');
-			document.body.style.overflow = '';
+			auditModal.classList.add("hidden");
+			auditModal.classList.remove("flex");
+			document.body.style.overflow = "";
 		}
 	};
 
-	heroOpenAuditBtn?.addEventListener('click', openAuditModal);
-	btnRoiOpenModal?.addEventListener('click', openAuditModal);
-	btnCloseAuditModal?.addEventListener('click', closeAuditModal);
-	auditModalBackdrop?.addEventListener('click', closeAuditModal);
+	heroOpenAuditBtn?.addEventListener("click", openAuditModal);
+	btnRoiOpenModal?.addEventListener("click", openAuditModal);
+	btnCloseAuditModal?.addEventListener("click", closeAuditModal);
+	auditModalBackdrop?.addEventListener("click", closeAuditModal);
 
-	document.addEventListener('keydown', (e) => {
-		if (e.key === 'Escape' && auditModal && !auditModal.classList.contains('hidden')) {
+	document.addEventListener("keydown", (e) => {
+		if (
+			e.key === "Escape" &&
+			auditModal &&
+			!auditModal.classList.contains("hidden")
+		) {
 			closeAuditModal();
 		}
 	});
 
-	const auditForm = document.getElementById('audit-form') as HTMLFormElement | null;
-	const auditSuccessBox = document.getElementById('audit-success-box');
-	const auditResultText = document.getElementById('audit-result-text');
-	const auditWhatsappLink = document.getElementById('audit-whatsapp-link') as HTMLAnchorElement | null;
+	const auditForm = document.getElementById(
+		"audit-form",
+	) as HTMLFormElement | null;
+	const auditSuccessBox = document.getElementById("audit-success-box");
+	const auditResultText = document.getElementById("audit-result-text");
+	const auditWhatsappLink = document.getElementById(
+		"audit-whatsapp-link",
+	) as HTMLAnchorElement | null;
 
-	auditForm?.addEventListener('submit', (e) => {
+	auditForm?.addEventListener("submit", (e) => {
 		e.preventDefault();
-		const contactInput = (document.getElementById('audit-contact') as HTMLInputElement)?.value.trim();
-		const area = (document.getElementById('audit-area') as HTMLSelectElement)?.value;
-		const hoursEl = document.querySelector('input[name="audit-hours"]:checked') as HTMLInputElement | null;
-		const hours = hoursEl ? hoursEl.value : 'N/A';
+		const contactInput = (
+			document.getElementById("audit-contact") as HTMLInputElement
+		)?.value.trim();
+		const area = (
+			document.getElementById("audit-area") as HTMLSelectElement
+		)?.value;
+		const hoursEl = document.querySelector(
+			'input[name="audit-hours"]:checked',
+		) as HTMLInputElement | null;
+		const hours = hoursEl ? hoursEl.value : "N/A";
 
 		const leadData = {
 			contact: contactInput,
 			area,
 			hoursLost: hours,
 			timestamp: new Date().toISOString(),
-			source: 'Express Audit Streamlined Lead Magnet EN'
+			source: "Express Audit Streamlined Lead Magnet EN",
 		};
 
 		try {
-			const existingLeads = JSON.parse(localStorage.getItem('soluvirtus_leads') || '[]');
+			const existingLeads = JSON.parse(
+				localStorage.getItem("soluvirtus_leads") || "[]",
+			);
 			existingLeads.push(leadData);
-			localStorage.setItem('soluvirtus_leads', JSON.stringify(existingLeads));
+			localStorage.setItem(
+				"soluvirtus_leads",
+				JSON.stringify(existingLeads),
+			);
 		} catch (err) {
-			console.warn('Storage warning', err);
+			console.warn("Storage warning", err);
 		}
 
 		const areaLabels: Record<string, string> = {
-			leads: 'Lead Scraping & CRM Pipeline Automation',
-			catalog: 'Massive Catalog & Technical PDF Ingestion',
-			ai_local: 'Hybrid AI & Sovereign Local Privacy',
-			web_app: 'High-Performance Headless Web (Astro / Next.js)',
-			workflows: 'Eliminating Repetitive Manual Team Tasks'
+			leads: "Lead Scraping & CRM Pipeline Automation",
+			catalog: "Massive Catalog & Technical PDF Ingestion",
+			ai_local: "Hybrid AI & Sovereign Local Privacy",
+			web_app: "High-Performance Headless Web (Astro / Next.js)",
+			workflows: "Eliminating Repetitive Manual Team Tasks",
 		};
 		const areaName = areaLabels[area] || area;
 
@@ -2138,25 +3687,37 @@ import Layout from '../../layouts/Layout.astro';
 		}
 
 		if (auditSuccessBox) {
-			auditSuccessBox.classList.remove('hidden');
+			auditSuccessBox.classList.remove("hidden");
 		}
 
-		window.open(waUrl, '_blank');
+		window.open(waUrl, "_blank");
 	});
 
 	// -------------------------------------------------------------
 	// Main Contact Form Handler (Lead Scoring & Direct WhatsApp)
 	// -------------------------------------------------------------
-	const mainContactForm = document.getElementById('main-contact-form') as HTMLFormElement | null;
-	const contactSuccessBox = document.getElementById('contact-success-box');
+	const mainContactForm = document.getElementById(
+		"main-contact-form",
+	) as HTMLFormElement | null;
+	const contactSuccessBox = document.getElementById("contact-success-box");
 
-	mainContactForm?.addEventListener('submit', (e) => {
+	mainContactForm?.addEventListener("submit", (e) => {
 		e.preventDefault();
-		const name = (document.getElementById('contact-name') as HTMLInputElement)?.value.trim();
-		const email = (document.getElementById('contact-email') as HTMLInputElement)?.value.trim();
-		const phone = (document.getElementById('contact-phone') as HTMLInputElement)?.value.trim();
-		const service = (document.getElementById('contact-service') as HTMLSelectElement)?.value;
-		const message = (document.getElementById('contact-message') as HTMLTextAreaElement)?.value.trim();
+		const name = (
+			document.getElementById("contact-name") as HTMLInputElement
+		)?.value.trim();
+		const email = (
+			document.getElementById("contact-email") as HTMLInputElement
+		)?.value.trim();
+		const phone = (
+			document.getElementById("contact-phone") as HTMLInputElement
+		)?.value.trim();
+		const service = (
+			document.getElementById("contact-service") as HTMLSelectElement
+		)?.value;
+		const message = (
+			document.getElementById("contact-message") as HTMLTextAreaElement
+		)?.value.trim();
 
 		const contactData = {
 			name,
@@ -2164,56 +3725,66 @@ import Layout from '../../layouts/Layout.astro';
 			phone,
 			service,
 			message,
-			date: new Date().toISOString()
+			date: new Date().toISOString(),
 		};
 
 		try {
-			const messages = JSON.parse(localStorage.getItem('soluvirtus_contact_requests') || '[]');
+			const messages = JSON.parse(
+				localStorage.getItem("soluvirtus_contact_requests") || "[]",
+			);
 			messages.push(contactData);
-			localStorage.setItem('soluvirtus_contact_requests', JSON.stringify(messages));
+			localStorage.setItem(
+				"soluvirtus_contact_requests",
+				JSON.stringify(messages),
+			);
 		} catch (err) {
-			console.warn('Storage warning', err);
+			console.warn("Storage warning", err);
 		}
 
-		const waMessage = `Hello Soluvirtus,%0A%0AI would like to inquire about your engineering services:%0A• *Name:* ${encodeURIComponent(name)}%0A• *Email:* ${encodeURIComponent(email)}%0A• *Phone:* ${encodeURIComponent(phone)}%0A• *Service:* ${encodeURIComponent(service)}%0A• *Details:* ${encodeURIComponent(message || 'No additional message')}`;
+		const waMessage = `Hello Soluvirtus,%0A%0AI would like to inquire about your engineering services:%0A• *Name:* ${encodeURIComponent(name)}%0A• *Email:* ${encodeURIComponent(email)}%0A• *Phone:* ${encodeURIComponent(phone)}%0A• *Service:* ${encodeURIComponent(service)}%0A• *Details:* ${encodeURIComponent(message || "No additional message")}`;
 		const waUrl = `https://wa.me/5215570603839?text=${waMessage}`;
 
 		if (contactSuccessBox) {
-			contactSuccessBox.classList.remove('hidden');
+			contactSuccessBox.classList.remove("hidden");
 		}
 
-		window.open(waUrl, '_blank');
+		window.open(waUrl, "_blank");
 	});
 
 	// -------------------------------------------------------------
 	// Floating Contact Widget Toggle
 	// -------------------------------------------------------------
-	const btnFloatingContact = document.getElementById('btn-floating-contact');
-	const floatingContactMenu = document.getElementById('floating-contact-menu');
-	const iconFloatingChat = document.getElementById('icon-floating-chat');
-	const iconFloatingClose = document.getElementById('icon-floating-close');
+	const btnFloatingContact = document.getElementById("btn-floating-contact");
+	const floatingContactMenu = document.getElementById(
+		"floating-contact-menu",
+	);
+	const iconFloatingChat = document.getElementById("icon-floating-chat");
+	const iconFloatingClose = document.getElementById("icon-floating-close");
 
-	btnFloatingContact?.addEventListener('click', (e) => {
+	btnFloatingContact?.addEventListener("click", (e) => {
 		e.stopPropagation();
-		const isHidden = floatingContactMenu?.classList.contains('hidden');
+		const isHidden = floatingContactMenu?.classList.contains("hidden");
 		if (isHidden) {
-			floatingContactMenu?.classList.remove('hidden');
-			iconFloatingChat?.classList.add('hidden');
-			iconFloatingClose?.classList.remove('hidden');
+			floatingContactMenu?.classList.remove("hidden");
+			iconFloatingChat?.classList.add("hidden");
+			iconFloatingClose?.classList.remove("hidden");
 		} else {
-			floatingContactMenu?.classList.add('hidden');
-			iconFloatingChat?.classList.remove('hidden');
-			iconFloatingClose?.classList.add('hidden');
+			floatingContactMenu?.classList.add("hidden");
+			iconFloatingChat?.classList.remove("hidden");
+			iconFloatingClose?.classList.add("hidden");
 		}
 	});
 
 	// Close on outside click
-	document.addEventListener('click', (e) => {
+	document.addEventListener("click", (e) => {
 		const target = e.target as HTMLElement | null;
-		if (!target?.closest('#btn-floating-contact') && !target?.closest('#floating-contact-menu')) {
-			floatingContactMenu?.classList.add('hidden');
-			iconFloatingChat?.classList.remove('hidden');
-			iconFloatingClose?.classList.add('hidden');
+		if (
+			!target?.closest("#btn-floating-contact") &&
+			!target?.closest("#floating-contact-menu")
+		) {
+			floatingContactMenu?.classList.add("hidden");
+			iconFloatingChat?.classList.remove("hidden");
+			iconFloatingClose?.classList.add("hidden");
 		}
 	});
 </script>
