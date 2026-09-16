@@ -157,3 +157,26 @@ Implementación de un esquema enriquecido en formato `@graph` que valida la enti
    - Superación del dogmatismo "local-only": se articula claramente que Soluvirtus despliega modelos abiertos locales (Llama 3, Mistral) para salvaguardar datos confidenciales y eliminar costos fijos por token, mientras que orquesta de forma pragmática modelos comerciales de vanguardia (OpenAI, Anthropic) para razonamiento complejo no confidencial y flujos multimodales elásticos.
    - Sincronización completa en Especialidad 3, tabla QA-First, FAQ #1 bilingüe y datos estructurados Schema.org JSON-LD.
 
+---
+
+## 9. Refactorización UI/UX, Trust Banner SVG y Consolidación de Funnel (Septiembre 2026)
+
+1. **Trust Banner Institucional Vectorial (SVG Monocromático):**
+   - Sustitución de menciones en texto plano por logotipos vectoriales oficiales SVG estilizados para **BBVA**, **Warner Bros. Discovery** y **JK Tornel (GINTOR)**.
+   - Tratamiento de escala de grises atenuada (`opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all`) con sobrelínea tipográfica monoespaciada centrada, elevando el impacto de autoridad E-E-A-T en el primer pliegue.
+
+2. **Estandarización de Marcos OS & Escaneabilidad en Tarjetas de Especialidad:**
+   - Implementación de contenedores homogéneos de sistema operativo (fondo `#0a0a0a`, borde fino `border-white/[0.08]`, tres puntos de control discretos).
+   - Síntesis de textos a 2 líneas y 3 viñetas técnicas por tarjeta (patrón F/Z) con mención explícita de `PyMuPDF`, `pgvector`, `Supabase RLS`, `Selenium`, `Playwright`, `Llama 3` y tokens WCAG AAA.
+
+3. **Simulador de ROI de Alto Contraste:**
+   - Protagonismo tipográfico del ahorro estimado (`text-3xl sm:text-4xl lg:text-5xl font-mono font-extrabold text-emerald-400`) con números tabulares y enlace directo al roadmap.
+
+4. **Tabla Comparativa Sintética & Escaneable:**
+   - Reemplazo de párrafos densos por tabla estructurada de 4 criterios: Validación de Calidad (Suites E2E), Latencia (<150ms vs >900ms), Privacidad de Datos (Inferencia Local Soberana) y Arquitectura/Mantenimiento (Código modular sin deuda técnica).
+
+5. **Consolidación del Embudo de Conversión (Single Capture Point):**
+   - Desacoplamiento del Diagnóstico Express como un componente modal (`#audit-modal`) accesible desde el Hero y el Simulador de ROI con fondo `backdrop-blur-md` y control por teclado (`Esc`).
+   - Eliminación de la duplicidad de formularios al pie de página: se preserva un único punto de captura principal al fondo (**Canal Directo de Ingeniería**).
+
+

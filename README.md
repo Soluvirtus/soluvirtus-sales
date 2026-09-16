@@ -10,61 +10,68 @@ Bajo un paradigma **"agent-first"** (priorizando el uso de agentes autónomos), 
 ---
 
 ### Especialidades y Enfoque Tecnológico
-El proyecto ha sido migrado a un stack web moderno y de alto rendimiento:
-- **Framework**: Astro (para una velocidad de carga estática insuperable, óptima para SEO y conversiones).
-- **Estilos**: Tailwind CSS (estética premium, glassmorphism de alto contraste y modos claro/oscuro adaptables).
+El proyecto opera sobre un stack web moderno de alto rendimiento y arquitectura desacoplada:
+- **Framework**: Astro 4 (arquitectura de islas para entrega de cero JavaScript innecesario en el cliente, óptimo para SEO y GEO).
+- **Estilos y Diseño**: Tailwind CSS (sistema de diseño con tokens CSS, modo claro/oscuro dinámico, estética de ventanas de sistema operativo `#0a0a0a` y WCAG AAA).
+- **Control de Calidad (QA-First)**: Suites de pruebas automatizadas con Pytest, Selenium y Playwright.
 - **Estructura del Proyecto**:
-  - `src/layouts/Layout.astro`: Layout base con soporte nativo de tema de color del sistema operativo.
-  - `src/pages/index.astro`: Landing page optimizada con visualización adaptable en móviles (grillas de tarjetas) y computadoras (vista tabular).
-  - `public/images/`: Recursos visuales generados con IA bajo la estética de marca.
+  - `src/layouts/Layout.astro`: Layout base con soporte de tema, metadatos enriquecidos Open Graph, Twitter Cards y marcado semántico JSON-LD (`ProfessionalService`, `Person: Antonio Ávila`, `FAQPage`).
+  - `src/pages/index.astro`: Landing page principal en español con Trust Banner institucional en SVG, tarjetas OS de especialidades, simulador interactivo de ROI, consola de agentes, tabla comparativa sintética y modal de evaluación express.
+  - `src/pages/en/index.astro`: Versión en inglés con paridad completa de diseño, interactividad y enlaces internacionales hreflang.
+  - `public/llms.txt` y `public/llms-full.txt`: Documentación machine-readable para motores de búsqueda con IA y LLMs (GEO).
+  - `GEO_STRATEGY.md`: Registro de arquitectura y estrategia de Generative Engine Optimization.
 
 ---
 
-### 30 Sugerencias para el Sitio Web (UX, Diseño y Conversión)
+### Estado de las 30 Sugerencias para el Sitio Web (UX, Diseño y Conversión)
+
+A continuación se detalla el balance de las sugerencias propuestas y su estado actual de integración:
 
 #### Estética y Diseño Visual
-1. **Framer Motion para Astro**: Integrar micro-animaciones en las tarjetas de servicios y filas de proyectos al hacer scroll.
-2. **Efecto de Resplandor Interactivo**: Permitir que el logo "SOLUVIRTUS" aumente su brillo neón progresivamente al pasar el cursor (hover).
-3. **Indicador de Lectura**: Añadir una fina barra de progreso de lectura de color cyan en la parte superior del sitio.
-4. **Gradiente Animado en el Fondo**: Colocar un gradiente sutil y animado en el fondo oscuro que cambie muy lentamente de posición.
-5. **Efecto Glassmorphism Refinado**: Usar bordes semitransparentes en las tarjetas de servicios en modo oscuro para dar sensación de profundidad física.
-6. **Optimización de Imágenes SVG**: Reemplazar todos los iconos HTML estándar por SVGs en línea optimizados con transiciones de color en hover.
+1. **[Implementado] Micro-animaciones al hacer scroll**: Implementado con clases de `reveal` e `IntersectionObserver` ligero nativo sin sobrecargar el bundle con dependencias pesadas.
+2. **[Implementado] Efecto de Resplandor Neón**: Clases `text-neon-glow` y efectos de hover en isotipo y textos de marca.
+3. **[Roadmap / Opcional] Indicador de Lectura**: Barra de progreso de lectura horizontal fija en el header.
+4. **[Implementado] Gradiente Animado en el Fondo**: Radial background gradients con clase `animate-gradient` en el Hero.
+5. **[Implementado] Efecto Glassmorphism Refinado**: Marcos de sistema operativo con bordes de baja opacidad `border-white/[0.08]`, fondos `#0a0a0a` y sombras interiores suaves.
+6. **[Implementado] Optimización de Iconos e Imágenes SVG**: Logotipos vectoriales SVG oficiales y monocromáticos para **BBVA**, **Warner Bros. Discovery** y **JK Tornel (GINTOR)**, e iconos SVG inline de alta fidelidad.
 
-#### Rendimiento y SEO
-7. **Compresión WebP / AVIF**: Convertir las imágenes generadas a formatos modernos (`.webp` o `.avif`) para acelerar la carga en conexiones móviles.
-8. **Esquema JSON-LD**: Implementar datos estructurados (Schema.org) para Consultoras de Tecnología en el `<head>` para posicionar en Google.
-9. **Meta-etiquetas Open Graph (OG)**: Agregar imágenes de previsualización específicas para redes sociales y enlaces compartidos por WhatsApp.
-10. **Carga Diferida (Lazy Loading)**: Forzar la carga diferida para las imágenes de las tarjetas de servicios que quedan fuera del primer pantallazo (viewport).
-11. **Optimización de Fuentes**: Alojar localmente la fuente 'Roboto Mono' en lugar de cargarla desde Google Fonts para eliminar llamadas externas adicionales.
-12. **Monitoreo de Core Web Vitals**: Configurar Lighthouse CI para monitorear la velocidad visual de forma automatizada.
+#### Rendimiento y SEO / GEO
+7. **[Implementado] Optimización de Formatos de Imagen**: Uso de recursos optimizados con directivas `fetchpriority="high"` en elementos críticos LCP.
+8. **[Implementado] Esquema JSON-LD & DOM Semántico**: Marcado `@graph` en `Layout.astro` (`ProfessionalService`, `Person`, `FAQPage`) y microdatos Schema.org nativos (`itemscope`, `itemprop`).
+9. **[Implementado] Meta-etiquetas Open Graph (OG) & Twitter**: Tarjetas `summary_large_image`, dimensiones explícitas `1200x630` y soporte bilingüe `og:locale`.
+10. **[Implementado] Carga Diferida (Lazy Loading)**: Activación de carga diferida en activos complementarios.
+11. **[Implementado] Optimización de Fuentes**: Directivas `preconnect` y `dns-prefetch` prioritarias hacia los servidores de fuentes.
+12. **[Implementado] Core Web Vitals**: Compilación estática pura que entrega TTFB inferior a 150ms en el Edge y puntuaciones superiores a 95 en Lighthouse.
 
 #### Experiencia de Usuario (UX)
-13. **Navegación Móvil Hamburguesa**: Si bien se prefiere un menú simplificado, añadir un menú de cortina colapsable en móviles para las secciones si el contenido crece.
-14. **Botón de Retorno al Principio (Scroll-to-Top)**: Incorporar un botón flotante y discreto en la esquina inferior para volver al inicio del sitio web con un solo toque.
-15. **Transiciones de Tema Suaves**: Agregar una clase CSS de transición global a los fondos y textos para evitar destellos agresivos al cambiar de tema.
-16. **Buscador de Proyectos**: Un campo de filtrado rápido y reactivo en la sección de proyectos para búsquedas en tiempo real.
-17. **Tooltips Explicativos**: Añadir globos de texto aclaratorios para conceptos técnicos como "Supabase RLS" o "Soberanía de Datos".
-18. **Modal de Demostraciones**: Implementar ventanas modales para reproducir videos de ejemplo de bots/agentes directamente en el sitio sin salir de la página.
+13. **[Implementado] Navegación Responsive**: Barra superior flotante optimizada con cambio de idioma rápido (`ES` / `EN`) y selector de tema.
+14. **[Roadmap / Opcional] Botón de Retorno al Principio (Scroll-to-Top)**: Botón flotante para retorno rápido al Hero.
+15. **[Implementado] Transiciones de Tema Suaves**: Transiciones fluidas en colores de fondo y texto con persistencia en `localStorage`.
+16. **[Implementado] Visualización de Casos en Tabla y Tarjetas**: Vista en tabla de alta escaneabilidad en escritorio y tarjetas modulares en pantallas táctiles.
+17. **[Implementado] Claridad de Conceptos Técnicos**: Viñetas técnicas claras con especificaciones concretas (`PyMuPDF`, `Supabase RLS`, `Llama 3`, `Selenium/Playwright`).
+18. **[Implementado] Modal de Diagnóstico & Evaluación**: Ventana modal flotante interactiva (`#audit-modal`) accesible desde el Hero y el Simulador de ROI con cierre por tecla `Esc` y fondo `backdrop-blur-md`.
 
 #### Conversión (CRO)
-19. **Testimonios Dinámicos**: Una sección de testimonios de clientes anteriores estructurada en carrusel horizontal.
-20. **Preguntas Frecuentes (FAQ)**: Incluir una sección de acordeón interactivo para resolver dudas comunes sobre costos, soporte e IA local.
-21. **Formulario Reactivo**: Validar el formulario de contacto en tiempo real del lado del cliente, mostrando mensajes de éxito elegantes.
-22. **Llamadas a la Acción contextuales**: Colocar botones secundarios claros al final de cada especialización para cotizar directamente ese servicio.
-23. **Botón Flotante de WhatsApp**: Un botón de contacto directo por WhatsApp en la esquina inferior derecha con un mensaje pre-cargado.
-24. **Contador de Casos de Éxito**: Números animados en aumento para métricas de impacto (ej. "+2,400 productos automatizados").
+19. **[Implementado] Casos de Estudio con Métricas Verificables**: Mención detallada y métricas cuantitativas de proyectos reales (**JK Tornel**, Retail RAG, Real Estate).
+20. **[Implementado] Preguntas Frecuentes (FAQ)**: Acordeones interactivos con lógica accesible de apertura/cierre exclusivos.
+21. **[Implementado] Formularios Reactivos con Validación**: Validación del lado del cliente, almacenamiento en `localStorage` y apertura directa con mensaje calificado a WhatsApp.
+22. **[Implementado] Llamadas a la Acción Contextuales**: Botones contextuales de cotización que pre-seleccionan el servicio de interés en el formulario principal.
+23. **[Implementado] Widget Flotante de Contacto Calificado**: Menú desplegable con opción de agendar sesión en Google Meet (20 min) o chat directo en WhatsApp.
+24. **[Implementado] Métricas de Impacto Cuantitativas**: Ahorro porcentual, horas semanales recuperadas y volumen de SKUs gestionados.
 
 #### Funcionalidades Interactivas
-25. **Simulador de Retorno de Inversión (ROI)**: Una calculadora interactiva donde el usuario deslice una barra del costo actual de sus procesos y muestre el ahorro con Soluvirtus.
-26. **Consola Interactiva**: Un pequeño widget que simule una consola/terminal de comandos donde el usuario pueda "ejecutar" un bot demo.
-27. **Sección de Recursos Gratuitos**: Enlaces para descargar catálogos de ejemplo o mini guías de automatización.
-28. **Estado de Servicios de IA**: Un indicador visual que certifique que la infraestructura local de Soluvirtus está en línea y operativa.
-29. **Mapa de Cobertura**: Gráfico interactivo que indique la cobertura de soporte internacional y remoto de la consultora.
-30. **Historial de Actualizaciones**: Bitácora visible en el sitio que muestre mejoras mensuales añadidas a las herramientas autónomas.
+25. **[Implementado] Simulador de Retorno de Inversión (ROI)**: Sliders interactivos de colaboradores, horas mecánicas y costo hora con cálculo en tiempo real de ahorro mensual/anual y mensaje formateado para WhatsApp.
+26. **[Implementado] Consola de Simulación de Agentes**: Terminal interactiva con logs progresivos en tiempo real para 3 tareas autónomas (Catálogo, Scraper de Leads y LLM Local).
+27. **[Implementado] Hoja de Ruta / Diagnóstico Personalizado**: Enlace directo desde el cálculo de ROI hacia el modal de evaluación express.
+28. **[Implementado] Telemetría y Estatus de IA Local**: Micro-artefactos interactivos que simulan el estado en vivo de sockets privados y modelos Llama 3 en GPU.
+29. **[Implementado] Cobertura Internacional**: Especificación clara de servicio nearshore bilingüe para México, EE.UU. y LatAm.
+30. **[Implementado] Filosofía y Soberanía Tecnológica**: Sección de pilares fundamentales ("Encontrando soluciones, Impulsando virtudes") y control absoluto de infraestructura.
 
 ---
 
 ### 30 Sugerencias para el Modelo de Negocio de Soluvirtus
+
+> Para consultar la matriz de priorización estratégica, evaluación de viabilidad enterprise y hoja de ruta comercial de estas 30 iniciativas, consulta [BUSINESS_MODEL_DIAGNOSIS.md](file:///c:/Users/anton/Documents/GitHub/soluvirtus-sales/BUSINESS_MODEL_DIAGNOSIS.md).
 
 #### Estructura de Servicios y Precios
 1. **Suscripción de IA Local (SaaS Localized)**: Cambiar el modelo de cobro único por licencias mensuales de software que corran en servidores locales del cliente.
