@@ -1037,7 +1037,7 @@ import Layout from "../layouts/Layout.astro";
 			<!-- Mobile View (Cards) -->
 			<div class="grid grid-cols-1 gap-6 md:hidden">
 				<div
-					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800 spotlight-card"
 				>
 					<div class="flex items-center justify-between gap-2 mb-2">
 						<h4
@@ -1070,7 +1070,7 @@ import Layout from "../layouts/Layout.astro";
 					>
 				</div>
 				<div
-					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800 spotlight-card"
 				>
 					<div class="flex items-center justify-between gap-2 mb-2">
 						<h4
@@ -1099,7 +1099,7 @@ import Layout from "../layouts/Layout.astro";
 					>
 				</div>
 				<div
-					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800 spotlight-card"
 				>
 					<div class="flex items-center justify-between gap-2 mb-2">
 						<h4
@@ -1128,7 +1128,7 @@ import Layout from "../layouts/Layout.astro";
 					>
 				</div>
 				<div
-					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800 spotlight-card"
 				>
 					<div class="flex items-center justify-between gap-2 mb-2">
 						<h4
@@ -1157,7 +1157,7 @@ import Layout from "../layouts/Layout.astro";
 					>
 				</div>
 				<div
-					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800"
+					class="p-6 bg-white dark:bg-brand-bg-dark rounded-xl border border-slate-200 dark:border-slate-800 spotlight-card"
 				>
 					<div class="flex items-center justify-between gap-2 mb-2">
 						<h4
@@ -1186,7 +1186,7 @@ import Layout from "../layouts/Layout.astro";
 
 			<!-- Desktop View (Table) -->
 			<div
-				class="hidden md:block overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-bg-dark shadow-sm"
+				class="hidden md:block overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-brand-bg-dark shadow-sm spotlight-card"
 			>
 				<table class="w-full text-left border-collapse">
 					<thead>
@@ -1395,29 +1395,54 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 
 			<div
-				class="rounded-xl overflow-hidden border border-slate-300 dark:border-slate-800 bg-slate-950 shadow-2xl text-left font-mono"
+				class="rounded-xl overflow-hidden border border-slate-300 dark:border-slate-800 bg-[#090d16] shadow-2xl text-left font-mono spotlight-card"
 			>
+				<!-- Terminal Header -->
 				<div
-					class="flex items-center justify-between px-4 py-3 bg-slate-900 border-b border-slate-850"
+					class="flex items-center justify-between px-4 py-3 bg-slate-900/90 border-b border-slate-800/80 text-xs"
 				>
-					<div class="flex space-x-2">
-						<span class="w-3 h-3 rounded-full bg-red-500"></span>
-						<span class="w-3 h-3 rounded-full bg-yellow-500"></span>
-						<span class="w-3 h-3 rounded-full bg-green-500"></span>
+					<div class="flex items-center gap-2">
+						<div class="flex space-x-1.5">
+							<span class="w-3 h-3 rounded-full bg-[#ff5f56]/90 border border-[#e0443e]"></span>
+							<span class="w-3 h-3 rounded-full bg-[#ffbd2e]/90 border border-[#dea123]"></span>
+							<span class="w-3 h-3 rounded-full bg-[#27c93f]/90 border border-[#1aab29]"></span>
+						</div>
+						<span class="ml-3 text-slate-400 font-medium select-none text-[11px]"
+							>bash · soluvirtus-agent v2.4 (sandbox)</span
+						>
 					</div>
-					<span
-						class="text-xs text-slate-500 font-semibold select-none"
-						>terminal - soluvirtus-agent@local</span
-					>
-					<div class="w-10"></div>
+					<div class="flex items-center gap-2.5 text-[10px] text-slate-400 select-none">
+						<span class="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800/80 border border-slate-700/60 text-emerald-400 font-bold">
+							<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+							Online
+						</span>
+						<span class="px-2 py-0.5 rounded bg-slate-800/80 border border-slate-700/60 text-cyan-400">
+							Llama-3-8B · Local
+						</span>
+					</div>
 				</div>
+				<!-- Terminal Screen -->
 				<div
 					id="terminal-screen"
-					class="p-6 h-80 overflow-y-auto text-sm text-slate-400 space-y-2 select-text scrollbar-thin scrollbar-thumb-slate-800"
+					class="p-6 h-80 overflow-y-auto text-xs sm:text-sm text-slate-300 space-y-2.5 select-text font-mono leading-relaxed bg-[#070b12] border-b border-slate-900"
 				>
-					<div class="text-slate-500">
-						&gt; Consola lista. Selecciona una tarea para comenzar
-						la simulación de ejecución...
+					<div class="text-slate-500 font-normal">
+						&gt; Consola lista. Selecciona un escenario arriba para ejecutar la simulación en tiempo real...
+					</div>
+				</div>
+				<!-- Terminal Status Bar (Tmux / IDE style) -->
+				<div class="flex flex-wrap items-center justify-between px-4 py-2 bg-[#0d131f] border-t border-slate-800/60 text-[11px] text-slate-400 select-none">
+					<div class="flex items-center gap-3">
+						<span class="flex items-center gap-1 text-slate-300">
+							<span class="text-brand-accent font-bold">MODE:</span> SOVEREIGN-AGENT
+						</span>
+						<span class="text-slate-600 hidden sm:inline">|</span>
+						<span class="hidden sm:inline text-slate-400">MEM: 5.2 GB / 16 GB</span>
+					</div>
+					<div class="flex items-center gap-3">
+						<span class="text-emerald-400 font-bold">LATENCY: ~84ms</span>
+						<span class="text-slate-600 hidden sm:inline">|</span>
+						<span class="text-cyan-400">COST: $0.00 / token</span>
 					</div>
 				</div>
 			</div>
