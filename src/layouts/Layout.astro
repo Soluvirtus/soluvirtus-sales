@@ -518,4 +518,18 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 	.spotlight-card:hover::before {
 		opacity: 1;
 	}
+
+	/* Animación 5: Cursor de terminal interactivo / CLI (parpadeo de bloque sutil) */
+	@keyframes terminalCursorBlink {
+		0%, 49% {
+			opacity: 1;
+		}
+		50%, 100% {
+			opacity: 0;
+		}
+	}
+	.animate-cli-cursor {
+		animation: terminalCursorBlink 0.9s cubic-bezier(1, 0, 0, 1) infinite;
+		will-change: opacity;
+	}
 </style>

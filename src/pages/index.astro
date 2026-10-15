@@ -194,11 +194,16 @@ import Layout from "../layouts/Layout.astro";
 				class="text-base sm:text-xl font-medium text-slate-600 dark:text-slate-400 mb-8 min-h-[4.75rem] sm:min-h-[2.5rem] flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-center hero-fade-3"
 			>
 				<span class="shrink-0">Excelente para:</span>
-				<span
-					id="dynamic-word"
-					class="text-[#162e56] dark:text-brand-accent border-r-2 border-[#b89758] dark:border-brand-accent pr-1 font-bold inline-block min-h-[1.5em]"
-					>Automatizar flujos operativos complejos</span
-				>
+				<div class="inline-flex items-center min-h-[1.5em]">
+					<span
+						id="dynamic-word"
+						class="text-[#162e56] dark:text-brand-accent font-bold"
+						>Automatizar flujos operativos complejos</span
+					><span
+						class="inline-block w-[3px] h-[1.15em] bg-[#b89758] dark:bg-brand-accent ml-1.5 rounded-sm animate-cli-cursor select-none"
+						aria-hidden="true"
+					></span>
+				</div>
 			</div>
 			<div
 				class="max-w-3xl mx-auto px-2 sm:px-0 mb-10 text-base sm:text-lg text-slate-600 dark:text-brand-text-darkSecondary leading-relaxed space-y-4 font-light text-center hero-fade-4"
