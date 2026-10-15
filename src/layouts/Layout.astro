@@ -325,4 +325,33 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 		background-size: 200% 200%;
 		animation: gradientMove 12s ease infinite;
 	}
+
+	/* Parpadeo sutil / respiración elegante para el logo en el header */
+	@keyframes logoFlicker {
+		0%, 100% {
+			opacity: 1;
+			filter: drop-shadow(0 0 0px rgba(0, 240, 255, 0));
+		}
+		50% {
+			opacity: 0.78;
+			filter: drop-shadow(0 0 6px rgba(184, 151, 88, 0.4));
+		}
+	}
+	:global(.dark) .animate-logo-pulse,
+	.dark .animate-logo-pulse {
+		animation: logoFlickerDark 3.5s ease-in-out infinite;
+	}
+	@keyframes logoFlickerDark {
+		0%, 100% {
+			opacity: 1;
+			filter: drop-shadow(0 0 2px rgba(0, 240, 255, 0.3));
+		}
+		50% {
+			opacity: 0.82;
+			filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.65));
+		}
+	}
+	.animate-logo-pulse {
+		animation: logoFlicker 3.5s ease-in-out infinite;
+	}
 </style>
