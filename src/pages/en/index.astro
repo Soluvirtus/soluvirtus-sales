@@ -1066,6 +1066,9 @@ import Layout from "../../layouts/Layout.astro";
 					<div class="flex items-center justify-between mb-2">
 						<span
 							class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full"
+							data-counter-target="85"
+							data-counter-prefix="-"
+							data-counter-suffix="% Search Time"
 							>-85% Search Time</span
 						>
 						<span class="text-xs text-slate-400"
@@ -1096,6 +1099,9 @@ import Layout from "../../layouts/Layout.astro";
 					<div class="flex items-center justify-between mb-2">
 						<span
 							class="text-xs font-mono font-bold text-sky-500 bg-sky-500/10 px-2.5 py-0.5 rounded-full"
+							data-counter-target="150"
+							data-counter-prefix="<"
+							data-counter-suffix="ms Edge · 0 Errs"
 							>&lt;150ms Edge · 0 Checkout Errs</span
 						>
 						<span class="text-xs text-slate-400"
@@ -1125,6 +1131,9 @@ import Layout from "../../layouts/Layout.astro";
 					<div class="flex items-center justify-between mb-2">
 						<span
 							class="text-xs font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2.5 py-0.5 rounded-full"
+							data-counter-target="350"
+							data-counter-prefix="+"
+							data-counter-suffix=" Qualified Leads/Mo"
 							>+350 Qualified Leads/Mo</span
 						>
 						<span class="text-xs text-slate-400">Real Estate</span>
@@ -1250,7 +1259,7 @@ import Layout from "../../layouts/Layout.astro";
 							>
 								Vectorization of 2,400+ technical PDF sheets
 								with PyMuPDF. Reduced inquiry lookup times by <strong
-									class="text-emerald-500">85%</strong
+									class="text-emerald-500"><span data-counter-target="85" data-counter-suffix="%">85%</span></strong
 								> (from 12 min to &lt;45s) across support teams.
 							</td>
 							<td
@@ -1277,7 +1286,7 @@ import Layout from "../../layouts/Layout.astro";
 								Complete migration from monolithic WordPress to
 								Next.js with Supabase RLS: <strong
 									class="text-sky-400"
-									>&lt;150ms Edge TTFB</strong
+									>&lt;<span data-counter-target="150" data-counter-suffix="ms">150ms</span> Edge TTFB</strong
 								> and zero checkout crashes across 12,000 monthly
 								sessions.
 							</td>
@@ -1305,7 +1314,7 @@ import Layout from "../../layouts/Layout.astro";
 								Autonomous multi-portal pipeline with QA
 								regression tests: generated <strong
 									class="text-emerald-500"
-									>+350 qualified prospects/mo</strong
+									><span data-counter-target="350" data-counter-prefix="+">+350</span> qualified prospects/mo</strong
 								> and saved 18 weekly hours of manual administrative
 								labor.
 							</td>

@@ -288,6 +288,44 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 						ticking = true;
 					}
 				}, { passive: true });
+
+				// Animación 4: Contadores numéricos al entrar en pantalla (IntersectionObserver)
+				const counters = document.querySelectorAll('[data-counter-target]');
+				if (counters.length && 'IntersectionObserver' in window) {
+					const counterObserver = new IntersectionObserver((entries, observer) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								const el = entry.target;
+								observer.unobserve(el);
+								const target = parseFloat(el.getAttribute('data-counter-target') || '0');
+								const prefix = el.getAttribute('data-counter-prefix') || '';
+								const suffix = el.getAttribute('data-counter-suffix') || '';
+								const decimals = parseInt(el.getAttribute('data-counter-decimals') || '0', 10);
+								const duration = parseInt(el.getAttribute('data-counter-duration') || '1400', 10);
+								const startTime = performance.now();
+
+								const updateCount = (currentTime) => {
+									const elapsed = currentTime - startTime;
+									const progress = Math.min(elapsed / duration, 1);
+									// Easing out cubic para desaceleración natural
+									const easeProgress = 1 - Math.pow(1 - progress, 3);
+									const currentVal = easeProgress * target;
+									
+									el.textContent = `${prefix}${decimals > 0 ? currentVal.toFixed(decimals) : Math.round(currentVal)}${suffix}`;
+
+									if (progress < 1) {
+										requestAnimationFrame(updateCount);
+									} else {
+										el.textContent = `${prefix}${decimals > 0 ? target.toFixed(decimals) : target}${suffix}`;
+									}
+								};
+								requestAnimationFrame(updateCount);
+							}
+						});
+					}, { threshold: 0.35 });
+
+					counters.forEach((counter) => counterObserver.observe(counter));
+				}
 			})();
 		</script>
 	</body>

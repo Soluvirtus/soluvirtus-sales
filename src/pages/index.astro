@@ -1075,6 +1075,9 @@ import Layout from "../layouts/Layout.astro";
 						</h4>
 						<span
 							class="text-[10px] font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20"
+							data-counter-target="85"
+							data-counter-prefix="-"
+							data-counter-suffix="% tiempo"
 							>-85% tiempo</span
 						>
 					</div>
@@ -1101,6 +1104,9 @@ import Layout from "../layouts/Layout.astro";
 						</h4>
 						<span
 							class="text-[10px] font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20"
+							data-counter-target="150"
+							data-counter-prefix="<"
+							data-counter-suffix="ms Edge"
 							>&lt;150ms Edge</span
 						>
 					</div>
@@ -1127,6 +1133,9 @@ import Layout from "../layouts/Layout.astro";
 						</h4>
 						<span
 							class="text-[10px] font-mono font-bold text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20"
+							data-counter-target="350"
+							data-counter-prefix="+"
+							data-counter-suffix=" leads/mes"
 							>+350 leads/mes</span
 						>
 					</div>
@@ -1244,7 +1253,7 @@ import Layout from "../layouts/Layout.astro";
 								Pipeline de extracción y RAG sobre 2,400+ fichas
 								técnicas en PDF: <strong
 									class="text-emerald-500"
-									>reducción del 85% en tiempo de búsqueda
+									>reducción del <span data-counter-target="85" data-counter-suffix="%">85%</span> en tiempo de búsqueda
 									interna</strong
 								> y consultas de cotización en tiempo real.
 							</td>
@@ -1272,7 +1281,7 @@ import Layout from "../layouts/Layout.astro";
 								Migración de arquitectura monolítica a
 								Next.js/Supabase: <strong
 									class="text-emerald-500"
-									>tiempo de carga inferior a 150 ms en el
+									>tiempo de carga inferior a <span data-counter-target="150" data-counter-suffix=" ms">150 ms</span> en el
 									Edge</strong
 								> y tasa de error en checkout reducida a cero.
 							</td>
@@ -1299,7 +1308,7 @@ import Layout from "../layouts/Layout.astro";
 								Scraper de alta precisión con filtrado
 								algorítmico y scoring automático de propiedades: <strong
 									class="text-emerald-500"
-									>+350 leads calificados mensuales</strong
+									><span data-counter-target="350" data-counter-prefix="+">+350</span> leads calificados mensuales</strong
 								> con validación directa por webhook.
 							</td>
 							<td
