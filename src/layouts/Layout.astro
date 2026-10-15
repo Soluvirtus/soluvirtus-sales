@@ -258,6 +258,38 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 	</head>
 	<body class="bg-brand-bg-light dark:bg-brand-bg-dark text-brand-text-light secondary-text dark:text-brand-text-dark font-mono transition-colors duration-300">
 		<slot />
+		
+		<!-- Script global optimizado para Spotlight Cards -->
+		<script is:inline>
+			(function() {
+				const cards = document.querySelectorAll('.spotlight-card');
+				if (!cards.length) return;
+
+				const handleMouseMove = (e) => {
+					cards.forEach((card) => {
+						const rect = card.getBoundingClientRect();
+						const x = e.clientX - rect.left;
+						const y = e.clientY - rect.top;
+						// Solo actualizar si el mouse está cerca de la tarjeta (performance)
+						if (x > -150 && x < rect.width + 150 && y > -150 && y < rect.height + 150) {
+							card.style.setProperty('--mouse-x', `${x}px`);
+							card.style.setProperty('--mouse-y', `${y}px`);
+						}
+					});
+				};
+
+				let ticking = false;
+				window.addEventListener('mousemove', (e) => {
+					if (!ticking) {
+						window.requestAnimationFrame(() => {
+							handleMouseMove(e);
+							ticking = false;
+						});
+						ticking = true;
+					}
+				}, { passive: true });
+			})();
+		</script>
 	</body>
 </html>
 
@@ -394,5 +426,40 @@ const canonicalURL = new URL(Astro.url.pathname, "https://soluvirtus.com");
 	.animate-grid-drift {
 		animation: gridSlowDrift 28s linear infinite;
 		will-change: transform;
+	}
+
+	/* Animación 2: Spotlight border reactivo al cursor (Raycast / Linear style) */
+	.spotlight-card {
+		position: relative;
+		overflow: hidden;
+	}
+	.spotlight-card::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+		padding: 1px;
+		background: radial-gradient(
+			380px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+			rgba(0, 240, 255, 0.45),
+			transparent 60%
+		);
+		-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+		z-index: 10;
+	}
+	html:not(.dark) .spotlight-card::before {
+		background: radial-gradient(
+			380px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+			rgba(184, 151, 88, 0.55),
+			transparent 60%
+		);
+	}
+	.spotlight-card:hover::before {
+		opacity: 1;
 	}
 </style>
